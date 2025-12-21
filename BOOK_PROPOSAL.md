@@ -1,7 +1,7 @@
 # Biblia o Jurtach: Book Proposal
 
-**Working Title:** "Jurta Całoroczna: Kompletny Przewodnik" / "Year-Round Yurt: The Complete Guide"
-**Subtitle:** Od wizji do realizacji – budowa, biznes, życie
+**Working Title:** "Year-Round Yurt: The Complete Guide"
+**Subtitle:** From Vision to Reality – Build, Business, Life
 
 **Version:** 1.0
 **Created:** December 2025
@@ -77,8 +77,8 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 0.1 | **Dlaczego Jurty, Dlaczego Teraz** | - | All | Philosophy of circular shelter, nomadic wisdom meets modern resilience, climate crisis context, Enklava vision | Blog: manifesto piece. Podcast: founder story. Video: cinematic intro |
-| 0.2 | **Całoroczność w Polsce** | - | All | Polish climate challenges, what "year-round" actually means, myths vs reality, case studies | Blog: myth-busting. Podcast: winter yurt dweller interview. Video: 4-season timelapse |
+| 0.1 | **Why Yurts, Why Now** | - | All | Philosophy of circular shelter, nomadic wisdom meets modern resilience, climate crisis context, Enklava vision | Blog: manifesto piece. Podcast: founder story. Video: cinematic intro |
+| 0.2 | **Year-Round Living Reality** | - | All | Polish climate challenges, what "year-round" actually means, myths vs reality, case studies | Blog: myth-busting. Podcast: winter yurt dweller interview. Video: 4-season timelapse |
 
 **Gated/Public:** Ch 0.1 PUBLIC (hook), Ch 0.2 GATED
 
@@ -88,10 +88,10 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 1.1 | **Prawo Budowlane 2025** | - | A,B | Zgłoszenie vs pozwolenie, 70m² rule, building rekreacji indywidualnej, MPZP analysis, warunki zabudowy | Blog: legal guide. Podcast: lawyer interview. Video: document walkthrough |
-| 1.2 | **Wybór Działki** | PREP-001 | A,B | Site selection criteria, MPZP reading, soil types, access, utilities | Blog: checklist. Video: site visit demo |
-| 1.3 | **Model Biznesowy Glampingu** | SALES-* | A | ROI calculator logic, occupancy rates, pricing strategies, seasonality, operational costs | Blog: case study. Podcast: glamping operator interview. Video: spreadsheet walkthrough |
-| 1.4 | **Ubezpieczenie i Ryzyko** | CORE-002 | A | Insurance types, liability, fire, weather, guest injury | Blog: insurance guide. Podcast: broker interview |
+| 1.1 | **Building Law & Permits** | - | A,B | Notification vs permit, 70m² rule, recreational building classification, zoning analysis | Blog: legal guide. Podcast: lawyer interview. Video: document walkthrough |
+| 1.2 | **Site Selection** | PREP-001 | A,B | Site selection criteria, zoning reading, soil types, access, utilities | Blog: checklist. Video: site visit demo |
+| 1.3 | **Glamping Business Model** | SALES-* | A | ROI calculator logic, occupancy rates, pricing strategies, seasonality, operational costs | Blog: case study. Podcast: glamping operator interview. Video: spreadsheet walkthrough |
+| 1.4 | **Insurance & Risk** | CORE-002 | A | Insurance types, liability, fire, weather, guest injury | Blog: insurance guide. Podcast: broker interview |
 
 **Gated/Public:** Ch 1.1 PUBLIC (legal is top search), Ch 1.2-1.4 GATED
 
@@ -101,10 +101,10 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 2.1 | **Anatomia Jurty** | - | All | Khana (lattice), Uni (roof poles), Tono (crown), Door frame, Covers - naming, function, history | Blog: explainer. Video: 3D animated explainer. Podcast: Mongolian tradition context |
-| 2.2 | **Wymiarowanie i Specyfikacja** | PREP-001, PREP-002 | B,C | Diameter options (5m, 6m, 7m+), height calculations, materials quantities, weight | Blog: sizing guide. Video: measurement demo. Data: spec sheets |
-| 2.3 | **Projekt Fundamentu** | ASSY-002 | All | Platform types (deck, concrete, posts), leveling requirements, drainage, frost considerations | Blog: comparison guide. Video: foundation build timelapse |
-| 2.4 | **CAD i Dokumentacja Techniczna** | CORE-004 | C | Reading technical drawings, CAD file formats, modification guidelines | Video: CAD walkthrough. Data: downloadable DXF/PDF |
+| 2.1 | **Yurt Anatomy** | - | All | Khana (lattice), Uni (roof poles), Tono (crown), Door frame, Covers - naming, function, history | Blog: explainer. Video: 3D animated explainer. Podcast: Mongolian tradition context |
+| 2.2 | **Sizing & Specifications** | PREP-001, PREP-002 | B,C | Diameter options (5m, 6m, 7m+), height calculations, materials quantities, weight | Blog: sizing guide. Video: measurement demo. Data: spec sheets |
+| 2.3 | **Foundation Design** | ASSY-002 | All | Platform types (deck, concrete, posts), leveling requirements, drainage, frost considerations | Blog: comparison guide. Video: foundation build timelapse |
+| 2.4 | **CAD & Technical Documentation** | CORE-004 | C | Reading technical drawings, CAD file formats, modification guidelines | Video: CAD walkthrough. Data: downloadable DXF/PDF |
 
 **Gated/Public:** Ch 2.1 PUBLIC (educational hook), Ch 2.2-2.4 GATED
 
@@ -114,9 +114,9 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 3.1 | **Drewno: Selekcja i Przygotowanie** | PROD-001, PROD-002 | B,C | Wood species (sosna, świerk, modrzew), moisture content, grain direction, treatment options, sustainability | Blog: wood guide. Video: lumber yard visit. Podcast: carpenter interview |
-| 3.2 | **Tkaniny i Pokrycia** | PROD-006 | B,C | Canvas types (cotton, poly-cotton, PVC), waterproofing, UV resistance, breathability, weight | Blog: fabric comparison. Video: material tests |
-| 3.3 | **Izolacja i Okucia** | PROD-010, PROD-012-014 | B,C | Insulation types (wool, synthetic, reflective), R-values, hardware (hinges, stakes, tensioners), sourcing | Blog: insulation deep-dive. Video: thermal imaging demo |
+| 3.1 | **Wood: Selection & Preparation** | PROD-001, PROD-002 | B,C | Wood species (pine, spruce, larch), moisture content, grain direction, treatment options, sustainability | Blog: wood guide. Video: lumber yard visit. Podcast: carpenter interview |
+| 3.2 | **Fabrics & Covers** | PROD-006 | B,C | Canvas types (cotton, poly-cotton, PVC), waterproofing, UV resistance, breathability, weight | Blog: fabric comparison. Video: material tests |
+| 3.3 | **Insulation & Hardware** | PROD-010, PROD-012-014 | B,C | Insulation types (wool, synthetic, reflective), R-values, hardware (hinges, stakes, tensioners), sourcing | Blog: insulation deep-dive. Video: thermal imaging demo |
 
 **Gated/Public:** All GATED (practical, high value)
 
@@ -126,10 +126,10 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 4.1 | **Cięcie i Obróbka** | PROD-001 | B,C | Cutting patterns, jigs, tolerances (±2mm), batch production | Video: workshop demo. Data: cut lists |
-| 4.2 | **Konserwacja Drewna** | PROD-002 | B,C | Preservatives, sanding, finishing oils, drying times, safety | Video: treatment process. Blog: product comparison |
-| 4.3 | **Montaż Khany (Kratownicy)** | PROD-003 | B,C | Drilling patterns, joint systems, expansion/contraction testing, QC checks | Video: step-by-step assembly. Data: drilling templates |
-| 4.4 | **Uni i Tono** | PROD-004, PROD-005 | B,C | Roof pole shaping, crown ring construction, fitting tolerances | Video: crown ring build. Blog: geometry explained |
+| 4.1 | **Cutting & Processing** | PROD-001 | B,C | Cutting patterns, jigs, tolerances (±2mm), batch production | Video: workshop demo. Data: cut lists |
+| 4.2 | **Wood Treatment** | PROD-002 | B,C | Preservatives, sanding, finishing oils, drying times, safety | Video: treatment process. Blog: product comparison |
+| 4.3 | **Khana (Lattice) Assembly** | PROD-003 | B,C | Drilling patterns, joint systems, expansion/contraction testing, QC checks | Video: step-by-step assembly. Data: drilling templates |
+| 4.4 | **Uni & Tono Construction** | PROD-004, PROD-005 | B,C | Roof pole shaping, crown ring construction, fitting tolerances | Video: crown ring build. Blog: geometry explained |
 
 **Gated/Public:** Ch 4.1 PUBLIC (shows complexity → builds respect), Ch 4.2-4.4 GATED
 
@@ -141,9 +141,9 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 5.1 | **Pomiary i Cięcie Tkanin** | PROD-006 | B,C | Pattern layout, cutting techniques, waste minimization | Video: cutting demo. Data: patterns |
-| 5.2 | **Szycie Pokryć** | PROD-007, PROD-008 | B,C | Seam types, reinforcement, waterproof stitching, machine settings | Video: sewing walkthrough. Blog: seam strength tests |
-| 5.3 | **Wykończenie i Kontrola** | PROD-009 | B,C | Inner liner construction, attachment systems, final QC | Video: QC inspection. Data: checklist |
+| 5.1 | **Fabric Measurement & Cutting** | PROD-006 | B,C | Pattern layout, cutting techniques, waste minimization | Video: cutting demo. Data: patterns |
+| 5.2 | **Cover Sewing** | PROD-007, PROD-008 | B,C | Seam types, reinforcement, waterproof stitching, machine settings | Video: sewing walkthrough. Blog: seam strength tests |
+| 5.3 | **Finishing & Quality Control** | PROD-009 | B,C | Inner liner construction, attachment systems, final QC | Video: QC inspection. Data: checklist |
 
 **Gated/Public:** All GATED
 
@@ -155,8 +155,8 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 6.1 | **Przygotowanie Izolacji** | PROD-010, PROD-011 | B,C | Cutting patterns, layering, attachment methods, thermal bridging prevention | Video: insulation prep. Data: R-value calculator |
-| 6.2 | **Drzwi, Okna, Okucia** | PROD-012, PROD-013, PROD-014 | B,C | Door/window fitting, rope systems, tensioning hardware, pre-assembly checks | Video: hardware prep. Data: hardware list |
+| 6.1 | **Insulation Preparation** | PROD-010, PROD-011 | B,C | Cutting patterns, layering, attachment methods, thermal bridging prevention | Video: insulation prep. Data: R-value calculator |
+| 6.2 | **Doors, Windows & Hardware** | PROD-012, PROD-013, PROD-014 | B,C | Door/window fitting, rope systems, tensioning hardware, pre-assembly checks | Video: hardware prep. Data: hardware list |
 
 **Gated/Public:** All GATED
 
@@ -168,11 +168,11 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 7.1 | **Bezpieczeństwo i Przygotowanie Terenu** | ASSY-000, ASSY-001, CORE-003 | All | Safety briefing, PPE, site assessment, ground preparation | Video: safety demo. Data: safety checklist. Blog: liability |
-| 7.2 | **Fundament i Poziomowanie** | ASSY-002 | All | Platform construction, leveling (5mm tolerance), drainage verification | Video: foundation build. Data: level check procedure |
-| 7.3 | **Konstrukcja: Khana → Tono** | ASSY-003, ASSY-004, ASSY-005, ASSY-006 | All | Wall erection, door frame, roof poles, crown placement - full sequence | Video: timelapse + detailed. Blog: troubleshooting common issues |
-| 7.4 | **Pokrycia: Izolacja → Zewnętrzne → Wewnętrzne** | ASSY-007a, ASSY-007b, ASSY-007c | All | Layering sequence, attachment, sealing, weatherproofing verification | Video: covering sequence. Data: weatherproof checklist |
-| 7.5 | **Wykończenie i Odbiór** | ASSY-008 | All | Final touches, customer walkthrough, punch list process, handover | Video: final inspection. Data: handover checklist |
+| 7.1 | **Safety & Site Preparation** | ASSY-000, ASSY-001, CORE-003 | All | Safety briefing, PPE, site assessment, ground preparation | Video: safety demo. Data: safety checklist. Blog: liability |
+| 7.2 | **Foundation & Leveling** | ASSY-002 | All | Platform construction, leveling (5mm tolerance), drainage verification | Video: foundation build. Data: level check procedure |
+| 7.3 | **Structure: Khana → Tono** | ASSY-003, ASSY-004, ASSY-005, ASSY-006 | All | Wall erection, door frame, roof poles, crown placement - full sequence | Video: timelapse + detailed. Blog: troubleshooting common issues |
+| 7.4 | **Covering: Insulation → Outer → Inner** | ASSY-007a, ASSY-007b, ASSY-007c | All | Layering sequence, attachment, sealing, weatherproofing verification | Video: covering sequence. Data: weatherproof checklist |
+| 7.5 | **Finishing & Handover** | ASSY-008 | All | Final touches, customer walkthrough, punch list process, handover | Video: final inspection. Data: handover checklist |
 
 **Gated/Public:** Ch 7.1 PUBLIC (safety is universal value), Ch 7.2-7.5 GATED
 
@@ -184,10 +184,10 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 8.1 | **Ogrzewanie** | - | All | Wood stove selection, installation, safety clearances, chimney routing, heat distribution | Video: stove install. Blog: stove comparison. Podcast: fire safety expert |
-| 8.2 | **Wentylacja i Rekuperacja** | - | All | Passive vs mechanical, rekuperation basics, moisture control, condensation prevention | Video: system walkthrough. Blog: DIY vs commercial. **OTO bump content source** |
-| 8.3 | **Elektryka i Solar** | - | All | Off-grid basics, panel sizing, battery selection, wiring for yurt, safety | Video: solar setup. Blog: component guide. Data: sizing calculator |
-| 8.4 | **Woda i Sanitacja** | - | All | Water collection, filtration, greywater, composting toilet, septic options | Video: water system. Podcast: off-grid living interview |
+| 8.1 | **Heating Systems** | - | All | Wood stove selection, installation, safety clearances, chimney routing, heat distribution | Video: stove install. Blog: stove comparison. Podcast: fire safety expert |
+| 8.2 | **Ventilation & Heat Recovery** | - | All | Passive vs mechanical, heat recovery basics, moisture control, condensation prevention | Video: system walkthrough. Blog: DIY vs commercial. **OTO bump content source** |
+| 8.3 | **Electrical & Solar** | - | All | Off-grid basics, panel sizing, battery selection, wiring for yurt, safety | Video: solar setup. Blog: component guide. Data: sizing calculator |
+| 8.4 | **Water & Sanitation** | - | All | Water collection, filtration, greywater, composting toilet, septic options | Video: water system. Podcast: off-grid living interview |
 
 **Gated/Public:** All GATED (high practical value)
 
@@ -197,9 +197,9 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 9.1 | **Konserwacja Sezonowa** | CARE-004 | All | Spring/summer/fall/winter maintenance tasks, inspection schedule | Blog: seasonal checklist. Video: maintenance walkthrough |
-| 9.2 | **Rozwiązywanie Problemów** | CORE-002 | All | Common issues (leaks, condensation, fabric wear, wood damage), troubleshooting guide | Blog: FAQ. Video: repair demos |
-| 9.3 | **Zarządzanie Gośćmi** (Glamping) | CARE-001, CARE-002, CARE-003 | A | Guest communication, check-in/out procedures, cleaning protocols, reviews management | Blog: hospitality guide. Podcast: glamping operator tips |
+| 9.1 | **Seasonal Maintenance** | CARE-004 | All | Spring/summer/fall/winter maintenance tasks, inspection schedule | Blog: seasonal checklist. Video: maintenance walkthrough |
+| 9.2 | **Troubleshooting** | CORE-002 | All | Common issues (leaks, condensation, fabric wear, wood damage), troubleshooting guide | Blog: FAQ. Video: repair demos |
+| 9.3 | **Guest Management** (Glamping) | CARE-001, CARE-002, CARE-003 | A | Guest communication, check-in/out procedures, cleaning protocols, reviews management | Blog: hospitality guide. Podcast: glamping operator tips |
 
 **Gated/Public:** Ch 9.1 PUBLIC (evergreen SEO), Ch 9.2-9.3 GATED
 
@@ -209,9 +209,9 @@ TOTAL: 37 chapters + 6 appendices
 
 | Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
 |----|-------|---------|--------|---------|-------------------|
-| 10.1 | **Model Franczyzowy** | FRANCHISE_HANDBOOK | A | Franchise structure, territory, support, fees, pilot program | Blog: franchise opportunity. Video: founder vision |
+| 10.1 | **Franchise Model** | FRANCHISE_HANDBOOK | A | Franchise structure, territory, support, fees, pilot program | Blog: franchise opportunity. Video: founder vision |
 | 10.2 | **KIT Distribution** | - | A,B | KIT contents, assembly support, quality control, pricing | Blog: KIT overview. Video: unboxing |
-| 10.3 | **Kontrola Jakości w Skali** | All QGs | A | QA systems, training, certification, continuous improvement | Blog: quality philosophy. Video: QC process |
+| 10.3 | **Quality Control at Scale** | All QGs | A | QA systems, training, certification, continuous improvement | Blog: quality philosophy. Video: QC process |
 
 **Gated/Public:** Ch 10.1 PUBLIC (recruitment hook), Ch 10.2-10.3 GATED
 
@@ -221,12 +221,12 @@ TOTAL: 37 chapters + 6 appendices
 
 | App | Title | Content | Format |
 |-----|-------|---------|--------|
-| A | **Rysunki CAD** | Complete technical drawings for 6m yurt | PDF, DXF |
-| B | **Listy Materiałów** | BOM for each size variant | Excel, PDF |
-| C | **Katalog Dostawców** | Verified suppliers for Poland | PDF, live links |
-| D | **Checklisty Produkcyjne** | All QC checklists from SOPs | PDF, printable |
-| E | **Szablony Prawne** | MPZP checklist, zgłoszenie template | DOCX, PDF |
-| F | **Kalkulator Inwestycji** | ROI spreadsheet with formulas | Excel, Google Sheets |
+| A | **CAD Drawings** | Complete technical drawings for 6m yurt | PDF, DXF |
+| B | **Bill of Materials** | BOM for each size variant | Excel, PDF |
+| C | **Supplier Directory** | Verified suppliers (Poland focus, expandable) | PDF, live links |
+| D | **Production Checklists** | All QC checklists from SOPs | PDF, printable |
+| E | **Legal Templates** | Zoning checklist, building notification template | DOCX, PDF |
+| F | **Investment Calculator** | ROI spreadsheet with formulas | Excel, Google Sheets |
 
 ---
 
@@ -346,8 +346,8 @@ Each chapter expands into:
 
 | Week | Release | Type | Purpose |
 |------|---------|------|---------|
-| 1-2 | Ch 0.1 "Dlaczego Jurty" | PUBLIC | Hook, manifesto |
-| 3-4 | Ch 1.1 "Prawo Budowlane" | PUBLIC | SEO, legal searchers |
+| 1-2 | Ch 0.1 "Why Yurts, Why Now" | PUBLIC | Hook, manifesto |
+| 3-4 | Ch 1.1 "Building Law & Permits" | PUBLIC | SEO, legal searchers |
 | | ToC + signup | GATED | List building begins |
 
 ### Phase 2: GROW (Feb-Apr 2025)
@@ -355,14 +355,14 @@ Each chapter expands into:
 
 | Period | Chapters | Mix | Notes |
 |--------|----------|-----|-------|
-| Feb W1-2 | Ch 2.1 "Anatomia Jurty" | PUBLIC | Educational hook |
-| Feb W3-4 | Ch 4.1 "Cięcie i Obróbka" | PUBLIC | Shows complexity |
-| Mar W1-2 | Ch 3.1 "Drewno" | GATED | First gated practical |
-| Mar W3-4 | Ch 7.1 "Bezpieczeństwo" | PUBLIC | Safety universal value |
-| Apr W1-2 | Ch 9.1 "Konserwacja" | PUBLIC | Evergreen SEO |
-| Apr W3-4 | Ch 10.1 "Model Franczyzowy" | PUBLIC | Recruitment hook |
+| Feb W1-2 | Ch 2.1 "Yurt Anatomy" | PUBLIC | Educational hook |
+| Feb W3-4 | Ch 4.1 "Cutting & Processing" | PUBLIC | Shows complexity |
+| Mar W1-2 | Ch 3.1 "Wood Selection" | GATED | First gated practical |
+| Mar W3-4 | Ch 7.1 "Safety & Site Prep" | PUBLIC | Safety universal value |
+| Apr W1-2 | Ch 9.1 "Seasonal Maintenance" | PUBLIC | Evergreen SEO |
+| Apr W3-4 | Ch 10.1 "Franchise Model" | PUBLIC | Recruitment hook |
 
-**Parallel:** OTO funnel active with Niezbędnik Inwestora (37 PLN)
+**Parallel:** OTO funnel active with Investor Essentials Kit (37 PLN)
 
 ### Phase 3: DEPTH (May-Aug 2025)
 **Goal:** Complete production and assembly chapters
@@ -449,15 +449,15 @@ Week 4: RELEASE & PROMOTE
 │  ─────────────────────────────────────────────────────────────────────  │
 │                                                                         │
 │  LOW-TICKET (OTO 37 PLN)                                                │
-│  └── "Niezbędnik Inwestora"                                            │
-│      ├── Kalkulator ROI                                                │
-│      ├── Pakiet Prawny                                                 │
-│      └── Bonus: 360° spacer                                            │
+│  └── "Investor Essentials Kit"                                         │
+│      ├── ROI Calculator                                                │
+│      ├── Legal Safety Pack                                             │
+│      └── Bonus: 360° virtual tour                                      │
 │                                                                         │
 │  ─────────────────────────────────────────────────────────────────────  │
 │                                                                         │
 │  BUMP (97 PLN) - Optional at OTO                                        │
-│  └── "Manual Wentylacji i Rekuperacji"                                 │
+│  └── "Ventilation & Heat Recovery Manual"                              │
 │      (Ch 8.2 expanded + technical specs)                               │
 │                                                                         │
 │  ─────────────────────────────────────────────────────────────────────  │
