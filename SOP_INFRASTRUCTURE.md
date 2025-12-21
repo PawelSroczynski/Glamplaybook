@@ -1,29 +1,32 @@
 # Enklava Yurts: SOP Infrastructure
 
+**Version:** 2.0
+**Optimized:** December 2025
+
 ## Complete Client Flow Coverage
 
 ```
-┌──────────────────────────────────────────────────────────────────────────────────────────┐
-│                           ENKLAVA YURTS - COMPLETE SOP SUITE                             │
-├──────────────────────────────────────────────────────────────────────────────────────────┤
-│                                                                                          │
-│  ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐      │
-│  │  SALES  │ → │  PREP   │ → │  PROD   │ → │   LOG   │ → │  ASSY   │ → │  CARE   │      │
-│  │ Part 0  │   │ Part 1  │   │ Part 2  │   │ Part 3  │   │ Part 4  │   │ Part 5  │      │
-│  └─────────┘   └─────────┘   └─────────┘   └─────────┘   └─────────┘   └─────────┘      │
-│                                                                                          │
-│   8 SOPs        5 SOPs       12 SOPs        4 SOPs        8 SOPs        6 SOPs          │
-│                                                                                          │
-│   Attention    Order         Wood          Pack          Site          Follow-up        │
-│   Engagement   Materials     Sewing        Load          Foundation    Warranty         │
-│   Enquiry      Suppliers     Insulation    Transport     Structure     Referrals        │
-│   Sales        Receiving     External      Deliver       Covers        Maintenance      │
-│   Money        Planning                                  Handover      Repeat           │
-│   Orders                                                                                 │
-│                                                                                          │
-├──────────────────────────────────────────────────────────────────────────────────────────┤
-│                              TOTAL: 43 SOPs + Quality Gates                              │
-└──────────────────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────────────────┐
+│                           ENKLAVA YURTS - COMPLETE SOP SUITE v2.0                          │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                            │
+│  ┌─────────────────────────────────────────────────────────────────────────────────────┐   │
+│  │  CORE (Cross-Cutting)                                                               │   │
+│  │  Communication │ Exceptions │ Safety │ Documentation                                │   │
+│  │  ─────────────────────────────────────────────────────────────────────────────────  │   │
+│  │  Applies to ALL phases below                                              4 SOPs    │   │
+│  └─────────────────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                            │
+│  ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐        │
+│  │  SALES  │ → │  PREP   │ → │  PROD   │ → │   LOG   │ → │  ASSY   │ → │  CARE   │        │
+│  │ Part 1  │   │ Part 2  │   │ Part 3  │   │ Part 4  │   │ Part 5  │   │ Part 6  │        │
+│  └─────────┘   └─────────┘   └─────────┘   └─────────┘   └─────────┘   └─────────┘        │
+│                                                                                            │
+│   8 SOPs        6 SOPs       14 SOPs        3 SOPs       11 SOPs        7 SOPs            │
+│                                                                                            │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│                    TOTAL: 4 CORE + 49 Operational = 53 SOPs + 20 Quality Gates            │
+└────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### CCF Mapping
@@ -32,9 +35,15 @@
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
 │  CRITICAL CLIENT FLOW (Jurta v3.0)           →    SOP COVERAGE                          │
 ├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                         │
+│  ╔═══════════════════════════════════════════════════════════════════════════════════╗  │
+│  ║  CORE: Cross-Cutting SOPs (Apply Throughout)                                      ║  │
+│  ║  CORE-001 Communication │ CORE-002 Exceptions │ CORE-003 Safety │ CORE-004 Docs   ║  │
+│  ╚═══════════════════════════════════════════════════════════════════════════════════╝  │
+│                                                                                         │
 │  Attention ─┐                                                                           │
-│  Engagement ├─→ PART 0: SALES                                                           │
-│  Enquiry    │   (Lead → Customer)                                                       │
+│  Engagement ├─→ PART 1: SALES      (Lead → Customer)                                    │
+│  Enquiry    │                                                                           │
 │  Sales      │                                                                           │
 │  Money      │                                                                           │
 │  Orders ────┘                                                                           │
@@ -42,33 +51,58 @@
 │       ▼                                                                                 │
 │  ─────────────────────────────────────────────────────────────────────────────────────  │
 │       │                                                                                 │
-│       ├─→ PART 1: PREP         (Order → Production Ready)                               │
+│       ├─→ PART 2: PREP         (Order → Production Ready)                               │
 │       │                                                                                 │
-│  Production ─→ PART 2: PROD    (Raw Materials → Components)                             │
-│       │        ├─ Wood Stream                                                           │
-│       │        ├─ Sewing Stream                                                         │
-│       │        └─ Insulation Stream                                                     │
+│  Production ─→ PART 3: PROD    (Raw Materials → Components)                             │
+│       │        ├─ Wood Stream      (6 SOPs)                                             │
+│       │        ├─ Sewing Stream    (4 SOPs)                                             │
+│       │        ├─ Insulation Stream (2 SOPs)                                            │
+│       │        └─ External/Hardware (2 SOPs)                                            │
 │       │                                                                                 │
-│  Delivery ───→ PART 3: LOG     (Workshop → Site)                                        │
+│  Delivery ───→ PART 4: LOG     (Workshop → Site)                                        │
 │       │                                                                                 │
-│  Assembly ───→ PART 4: ASSY    (Components → Standing Yurt)                             │
+│  Assembly ───→ PART 5: ASSY    (Components → Standing Yurt)                             │
 │       │                                                                                 │
 │  ─────────────────────────────────────────────────────────────────────────────────────  │
 │       │                                                                                 │
-│  Repeat ─────→ PART 5: CARE    (Satisfied Customer → Ambassador)                        │
+│  Repeat ─────→ PART 6: CARE    (Satisfied Customer → Ambassador)                        │
 │                                                                                         │
 └─────────────────────────────────────────────────────────────────────────────────────────┘
 
 LEGEND:
 ═══════════════════════════════════════════════════════════════
-  PART 0 + PART 5  = Customer Relationship (before & after)
-  PART 1-4         = Physical Operations (current focus) ◀◀◀
+  CORE           = Cross-cutting (safety, comms, exceptions, docs)
+  PART 1 + 6     = Customer Relationship (before & after)
+  PART 2-5       = Physical Operations (current focus) ◀◀◀
 ═══════════════════════════════════════════════════════════════
 ```
 
 ---
 
-## Part 0: SALES (Lead to Order)
+## Part 0: CORE (Cross-Cutting SOPs)
+
+*These SOPs apply across ALL phases and must be referenced by operational SOPs*
+
+| SOP ID | Name | Purpose | Applies To |
+|--------|------|---------|------------|
+| **CORE-001** | Customer Communication Protocol | Standard touchpoints, updates, response times | SALES → CARE |
+| **CORE-002** | Issue & Exception Handling | What to do when things go wrong, escalation paths | ALL |
+| **CORE-003** | Safety & PPE Standards | Required safety equipment, briefings, incident reporting | PROD, LOG, ASSY |
+| **CORE-004** | Documentation & Photo Capture | Evidence standards for QC, portfolio, disputes | ALL |
+
+### Exception Handling Matrix (CORE-002)
+
+| Phase | Exception Type | Immediate Action | Escalation |
+|-------|---------------|------------------|------------|
+| PREP | Materials fail QC | Reject, reorder, notify customer | Founder if >3 day delay |
+| PROD | Component fails inspection | Rework or remake, log defect | QA Lead |
+| LOG | Damage during transport | Photo document, assess severity | Founder |
+| ASSY | Weather delay | Reschedule, notify customer | Site Lead |
+| ASSY | Customer rejects handover | Document issues, create punch list | Founder |
+
+---
+
+## Part 1: SALES (Lead to Order)
 
 *From first contact to signed agreement and payment*
 
@@ -77,14 +111,14 @@ LEGEND:
 | SOP ID | Name | Purpose | CCF Stage |
 |--------|------|---------|-----------|
 | **SALES-001** | Lead Capture & Response | Respond to inquiries from all channels within 24h | Attention → Engagement |
-| **SALES-002** | Channel Management | Manage Facebook, Messenger, WhatsApp, personal referrals | Engagement |
+| **SALES-002** | Lead Qualification & Scoring | Assess budget, timeline, site viability | Engagement |
 | **SALES-003** | Onboarding Multimedia Delivery | Send intro videos, photos, testimonials | Engagement → Enquiry |
 
 ### Conversion (SALES-004 to SALES-006)
 
 | SOP ID | Name | Purpose | CCF Stage |
 |--------|------|---------|-----------|
-| **SALES-004** | Needs Assessment & Discovery | Define client requirements, site conditions, budget | Enquiry |
+| **SALES-004** | Needs Assessment & Site Discovery | Define requirements, site conditions, constraints | Enquiry |
 | **SALES-005** | Proposal Creation | Build customized proposal with specs and pricing | Sales |
 | **SALES-006** | Agreement & Closing | Present proposal, handle objections, close deal | Sales |
 
@@ -97,129 +131,165 @@ LEGEND:
 
 ### SALES Quality Gates
 
-| Gate | Checkpoint | Pass Criteria |
-|------|------------|---------------|
-| QG-SALES-1 | Lead Qualified | Budget, timeline, site confirmed viable |
-| QG-SALES-2 | Proposal Accepted | Customer confirms specs in writing |
-| QG-SALES-3 | Payment Received | Deposit/full payment cleared |
+| Gate | Checkpoint | Pass Criteria | Fail Action |
+|------|------------|---------------|-------------|
+| QG-SALES-1 | Lead Qualified | Budget ≥ min, timeline realistic, site viable | Archive lead or nurture |
+| QG-SALES-2 | Proposal Accepted | Customer confirms specs in writing | Revise or close lost |
+| QG-SALES-3 | Payment Received | Deposit/full payment cleared | Hold until cleared |
 
 ---
 
-## Part 1: PREP (Production Preparation)
+## Part 2: PREP (Production Preparation)
 
 *Before any production starts - planning, ordering, workspace setup*
 
 | SOP ID | Name | Purpose | Trigger |
 |--------|------|---------|---------|
-| **PREP-001** | Order Intake & Specification | Convert signed agreement into production specs | Agreement signed |
+| **PREP-001** | Order Intake & Specification | Convert signed agreement into production specs | Payment cleared (QG-SALES-3) |
 | **PREP-002** | Materials Calculation | Calculate exact materials needed per order | Specs confirmed |
 | **PREP-003** | Supplier Ordering | Order external components (windows, doors, skylight, connectors, canvases) | Materials calculated |
 | **PREP-004** | Materials Receiving & QC | Inspect incoming materials, reject defects | Delivery arrives |
 | **PREP-005** | Production Planning & Scheduling | Schedule the 3 parallel production streams | All materials ready |
+| **PREP-006** | Workshop & Tool Setup | Prepare workspace, verify tool readiness, calibrate equipment | Before production start |
 
 ### PREP Quality Gates
 
-| Gate | Checkpoint | Pass Criteria |
-|------|------------|---------------|
-| QG-PREP-1 | Spec Confirmation | Customer sign-off on final specs |
-| QG-PREP-2 | Materials Ready | All materials received and QC passed |
-| QG-PREP-3 | Production Scheduled | All 3 streams have start dates |
+| Gate | Checkpoint | Pass Criteria | Fail Action |
+|------|------------|---------------|-------------|
+| QG-PREP-1 | Spec Confirmation | Customer sign-off on final specs | Clarify with customer |
+| QG-PREP-2 | Materials Ready | All materials received and QC passed | Reorder failed items (CORE-002) |
+| QG-PREP-3 | Production Ready | All 3 streams scheduled, workshop ready | Resolve blockers |
 
 ---
 
-## Part 2: PRODUCTION
+## Part 3: PRODUCTION
 
 *Three parallel streams + external orders*
 
-### Stream A: Wooden Structure (PROD-001 to PROD-004)
+### Stream A: Wooden Structure (PROD-001 to PROD-005)
 
-| SOP ID | Name | Purpose | Output |
-|--------|------|---------|--------|
-| **PROD-001** | Wood Selection & Cutting | Cut battens to spec dimensions | Cut pieces |
-| **PROD-002** | Khana (Wall Lattice) Assembly | Drill, connect lattice sections | Lattice panels |
-| **PROD-003** | Uni (Roof Poles) Preparation | Shape and finish roof poles | Roof poles set |
-| **PROD-004** | Tono (Crown Ring) Construction | Build the crown/skylight ring | Crown ring |
+| SOP ID | Name | Purpose | Output | QG After |
+|--------|------|---------|--------|----------|
+| **PROD-001** | Wood Selection & Cutting | Select and cut battens to spec dimensions | Cut pieces | QG-PROD-A1 |
+| **PROD-002** | Wood Treatment & Finishing | Apply preservative, sand, finish | Treated pieces | - |
+| **PROD-003** | Khana (Wall Lattice) Assembly | Drill, connect lattice sections | Lattice panels | QG-PROD-A2 |
+| **PROD-004** | Uni (Roof Poles) Preparation | Shape and finish roof poles | Roof poles set | - |
+| **PROD-005** | Tono (Crown Ring) Construction | Build the crown/skylight ring | Crown ring | QG-PROD-A3 |
 
-### Stream B: Sewing Covers (PROD-005 to PROD-008)
+### Stream B: Sewing Covers (PROD-006 to PROD-009)
 
-| SOP ID | Name | Purpose | Output |
-|--------|------|---------|--------|
-| **PROD-005** | Canvas Measurement & Cutting | Cut canvas to pattern | Cut canvas pieces |
-| **PROD-006** | Wall Cover Sewing | Sew outer wall covering | Wall cover |
-| **PROD-007** | Roof Cover Sewing | Sew roof cone covering | Roof cover |
-| **PROD-008** | Inner Liner Sewing | Sew interior decorative liner | Inner liner |
+| SOP ID | Name | Purpose | Output | QG After |
+|--------|------|---------|--------|----------|
+| **PROD-006** | Canvas Measurement & Cutting | Cut canvas to pattern | Cut canvas pieces | QG-PROD-B1 |
+| **PROD-007** | Wall Cover Sewing | Sew outer wall covering | Wall cover | QG-PROD-B2 |
+| **PROD-008** | Roof Cover Sewing | Sew roof cone covering | Roof cover | - |
+| **PROD-009** | Inner Liner Sewing | Sew interior decorative liner | Inner liner | QG-PROD-B3 |
 
-### Stream C: Insulation Shaping (PROD-009 to PROD-010)
+### Stream C: Insulation Shaping (PROD-010 to PROD-011)
 
-| SOP ID | Name | Purpose | Output |
-|--------|------|---------|--------|
-| **PROD-009** | Insulation Cutting | Cut insulation to pattern | Insulation pieces |
-| **PROD-010** | Insulation Assembly | Layer and connect insulation | Insulation set |
+| SOP ID | Name | Purpose | Output | QG After |
+|--------|------|---------|--------|----------|
+| **PROD-010** | Insulation Cutting | Cut insulation to pattern | Insulation pieces | - |
+| **PROD-011** | Insulation Assembly | Layer and connect insulation | Insulation set | QG-PROD-C1 |
 
-### External Components (PROD-011 to PROD-012)
+### External & Hardware (PROD-012 to PROD-014)
 
-| SOP ID | Name | Purpose | Output |
-|--------|------|---------|--------|
-| **PROD-011** | Door & Window Fitting | Prep ordered doors/windows for install | Fitted openings |
-| **PROD-012** | Hardware & Connectors Prep | Organize all metal connectors, ropes, stakes | Hardware kit |
+| SOP ID | Name | Purpose | Output | QG After |
+|--------|------|---------|--------|----------|
+| **PROD-012** | Door & Window Preparation | Prep ordered doors/windows for install | Fitted openings | - |
+| **PROD-013** | Rope & Tensioning Elements | Prepare all ropes, tension bands, tie-downs | Rope kit | - |
+| **PROD-014** | Hardware & Connectors Prep | Organize all metal connectors, stakes, tools | Hardware kit | - |
 
 ### PRODUCTION Quality Gates
 
-| Gate | Checkpoint | Pass Criteria |
-|------|------------|---------------|
-| QG-PROD-1 | Wood Structure Complete | All wooden components pass dimension check |
-| QG-PROD-2 | Covers Complete | All covers pass seam strength test |
-| QG-PROD-3 | Insulation Complete | Insulation passes thickness check |
-| QG-PROD-4 | Pre-Pack Inspection | All components present, labeled, QC stamped |
+#### In-Process Gates (Per Stream)
+
+| Gate | After | Check | Pass Criteria |
+|------|-------|-------|---------------|
+| QG-PROD-A1 | PROD-001 | Cutting Accuracy | All pieces within ±2mm tolerance |
+| QG-PROD-A2 | PROD-003 | Khana Structure | Lattice expands/contracts smoothly, no cracks |
+| QG-PROD-A3 | PROD-005 | Crown Ring | Ring is true circle, all joints solid |
+| QG-PROD-B1 | PROD-006 | Canvas Cutting | All pieces match pattern, no waste errors |
+| QG-PROD-B2 | PROD-007 | Wall Cover Seams | Seams pass pull test, waterproof |
+| QG-PROD-B3 | PROD-009 | All Covers Complete | All 3 covers pass visual + seam inspection |
+| QG-PROD-C1 | PROD-011 | Insulation Complete | Full coverage, correct thickness, no gaps |
+
+#### Phase Exit Gate
+
+| Gate | Checkpoint | Pass Criteria | Fail Action |
+|------|------------|---------------|-------------|
+| QG-PROD-4 | Pre-Pack Inspection | All components present, labeled, QC stamped | Rework/remake failed items |
 
 ---
 
-## Part 3: LOGISTICS
+## Part 4: LOGISTICS
 
 *From workshop to construction site*
 
 | SOP ID | Name | Purpose | Trigger |
 |--------|------|---------|---------|
-| **LOG-001** | Component Packing | Pack all components for transport | QG-PROD-4 passed |
-| **LOG-002** | Loading & Securing | Load onto transport vehicle | Packing complete |
-| **LOG-003** | Transport & Tracking | Deliver to site, track location | Vehicle loaded |
-| **LOG-004** | Site Delivery & Handover | Unload, verify inventory with site contact | Arrival at site |
+| **LOG-001** | Component Packing | Pack all components for transport, create inventory | QG-PROD-4 passed |
+| **LOG-002** | Loading & Securing | Load onto transport vehicle, secure for transit | Packing complete |
+| **LOG-003** | Transport, Delivery & Site Handover | Deliver to site, track, unload, verify inventory with site contact | Vehicle loaded |
 
 ### LOGISTICS Quality Gates
 
-| Gate | Checkpoint | Pass Criteria |
-|------|------------|---------------|
-| QG-LOG-1 | Packing Complete | All items on checklist packed |
-| QG-LOG-2 | Delivery Confirmed | Site contact signs inventory receipt |
+| Gate | Checkpoint | Pass Criteria | Fail Action |
+|------|------------|---------------|-------------|
+| QG-LOG-1 | Packing Complete | All items on checklist packed, labeled | Complete packing |
+| QG-LOG-2 | Delivery Confirmed | Site contact signs inventory receipt, no damage | Document damage (CORE-002) |
 
 ---
 
-## Part 4: ASSEMBLY
+## Part 5: ASSEMBLY
 
 *On-site construction*
 
+### Pre-Assembly (ASSY-000 to ASSY-002)
+
 | SOP ID | Name | Purpose | Trigger |
 |--------|------|---------|---------|
-| **ASSY-001** | Site Assessment & Preparation | Check ground, mark foundation | Day before assembly |
+| **ASSY-000** | Site Safety Briefing | PPE check, hazard identification, emergency procedures | Before any work |
+| **ASSY-001** | Site Assessment & Preparation | Check ground, mark foundation, clear area | Day before assembly |
 | **ASSY-002** | Foundation Setup | Level platform or ground preparation | Site approved |
-| **ASSY-003** | Khana (Wall) Erection | Expand and connect lattice walls | Foundation ready |
-| **ASSY-004** | Door Frame Installation | Set door frame into wall ring | Walls standing |
-| **ASSY-005** | Uni (Roof Poles) Installation | Connect roof poles to walls and crown | Door frame set |
-| **ASSY-006** | Tono (Crown) Placement | Secure crown ring at apex | Roof poles up |
-| **ASSY-007** | Cover Installation | Install insulation, covers, liner | Structure complete |
-| **ASSY-008** | Final Touches & Customer Handover | Windows, finishing, walkthrough, sign-off | Covers on |
+
+### Structure (ASSY-003 to ASSY-006)
+
+| SOP ID | Name | Purpose | Trigger | QG After |
+|--------|------|---------|---------|----------|
+| **ASSY-003** | Khana (Wall) Erection | Expand and connect lattice walls | Foundation ready (QG-ASSY-1) | - |
+| **ASSY-004** | Door Frame Installation | Set door frame into wall ring | Walls standing | - |
+| **ASSY-005** | Uni (Roof Poles) Installation | Connect roof poles to walls and crown | Door frame set | - |
+| **ASSY-006** | Tono (Crown) Placement | Secure crown ring at apex | Roof poles up | QG-ASSY-2 |
+
+### Covering (ASSY-007a to ASSY-007c)
+
+| SOP ID | Name | Purpose | Trigger | QG After |
+|--------|------|---------|---------|----------|
+| **ASSY-007a** | Insulation Installation | Install insulation layer on walls and roof | Structure complete (QG-ASSY-2) | QG-ASSY-3a |
+| **ASSY-007b** | Outer Cover Installation | Install wall and roof covers, secure, seal | Insulation complete | QG-ASSY-3b |
+| **ASSY-007c** | Inner Liner Installation | Install decorative inner liner | Outer covers complete | - |
+
+### Completion (ASSY-008)
+
+| SOP ID | Name | Purpose | Trigger |
+|--------|------|---------|---------|
+| **ASSY-008** | Final Touches & Customer Handover | Windows, door hardware, finishing, walkthrough, sign-off | All covers installed |
 
 ### ASSEMBLY Quality Gates
 
-| Gate | Checkpoint | Pass Criteria |
-|------|------------|---------------|
-| QG-ASSY-1 | Structure Stable | Walls and roof pass stability test |
-| QG-ASSY-2 | Weatherproof | Covers sealed, no gaps |
-| QG-ASSY-3 | Customer Sign-off | Customer walks through, signs acceptance |
+| Gate | After | Check | Pass Criteria |
+|------|-------|-------|---------------|
+| QG-ASSY-0 | ASSY-000 | Safety Ready | All crew briefed, PPE confirmed |
+| QG-ASSY-1 | ASSY-002 | Foundation Level | Platform level within 5mm across diameter |
+| QG-ASSY-2 | ASSY-006 | Structure Stable | Walls plumb, roof poles secure, crown centered |
+| QG-ASSY-3a | ASSY-007a | Insulation Coverage | No gaps, correct thickness throughout |
+| QG-ASSY-3b | ASSY-007b | Weatherproof | All seams sealed, no visible gaps |
+| QG-ASSY-4 | ASSY-008 | Customer Sign-off | Customer walks through, signs acceptance |
 
 ---
 
-## Part 5: CARE (After-Sale & Repeat)
+## Part 6: CARE (After-Sale & Repeat)
 
 *Customer satisfaction, support, and relationship building*
 
@@ -228,28 +298,29 @@ LEGEND:
 | SOP ID | Name | Purpose | Trigger |
 |--------|------|---------|---------|
 | **CARE-001** | Post-Assembly Follow-up | Check-in call/message 48h after handover | Handover complete |
-| **CARE-002** | Satisfaction Survey | Collect NPS, testimonial, photos | 1 week post-handover |
+| **CARE-002** | Satisfaction Survey & Portfolio | Collect NPS, testimonial, photos for portfolio | 1 week post-handover |
 
 ### Support (CARE-003 to CARE-004)
 
 | SOP ID | Name | Purpose | Trigger |
 |--------|------|---------|---------|
-| **CARE-003** | Warranty Claim Handling | Process and resolve warranty issues | Customer reports issue |
-| **CARE-004** | Maintenance Guidance | Provide seasonal care instructions | Quarterly reminders |
+| **CARE-003a** | Warranty Claim Handling | Process and resolve warranty/defect issues | Customer reports defect |
+| **CARE-003b** | Service Complaint Handling | Handle non-warranty complaints (communication, delays, etc.) | Customer reports complaint |
+| **CARE-004** | Maintenance Guidance | Provide seasonal care instructions, reminders | Quarterly schedule |
 
 ### Growth (CARE-005 to CARE-006)
 
 | SOP ID | Name | Purpose | Trigger |
 |--------|------|---------|---------|
-| **CARE-005** | Referral Program | Incentivize and track customer referrals | Satisfied customer |
+| **CARE-005** | Referral Program | Incentivize and track customer referrals | Satisfied customer (NPS ≥ 8) |
 | **CARE-006** | Repeat & Upsell | Offer additional yurts, upgrades, accessories | 6+ months post-delivery |
 
 ### CARE Quality Gates
 
-| Gate | Checkpoint | Pass Criteria |
-|------|------------|---------------|
-| QG-CARE-1 | Customer Satisfied | NPS ≥ 8, no open complaints |
-| QG-CARE-2 | Referral Active | Customer enrolled in referral program |
+| Gate | Checkpoint | Pass Criteria | Fail Action |
+|------|------------|---------------|-------------|
+| QG-CARE-1 | Customer Satisfied | NPS ≥ 8, no open complaints | Escalate to founder |
+| QG-CARE-2 | Referral Active | Customer enrolled in referral program | Follow up in 30 days |
 
 ---
 
@@ -258,11 +329,17 @@ LEGEND:
 ```
 Glamplaybook/
 ├── SOPs/
+│   ├── CORE/
+│   │   ├── CORE-001_Customer_Communication_Protocol.md
+│   │   ├── CORE-002_Issue_Exception_Handling.md
+│   │   ├── CORE-003_Safety_PPE_Standards.md
+│   │   └── CORE-004_Documentation_Photo_Capture.md
+│   │
 │   ├── SALES/
 │   │   ├── SALES-001_Lead_Capture_Response.md
-│   │   ├── SALES-002_Channel_Management.md
+│   │   ├── SALES-002_Lead_Qualification_Scoring.md
 │   │   ├── SALES-003_Onboarding_Multimedia.md
-│   │   ├── SALES-004_Needs_Assessment.md
+│   │   ├── SALES-004_Needs_Assessment_Site_Discovery.md
 │   │   ├── SALES-005_Proposal_Creation.md
 │   │   ├── SALES-006_Agreement_Closing.md
 │   │   ├── SALES-007_Contract_Documentation.md
@@ -273,62 +350,91 @@ Glamplaybook/
 │   │   ├── PREP-002_Materials_Calculation.md
 │   │   ├── PREP-003_Supplier_Ordering.md
 │   │   ├── PREP-004_Materials_Receiving_QC.md
-│   │   └── PREP-005_Production_Planning.md
+│   │   ├── PREP-005_Production_Planning.md
+│   │   └── PREP-006_Workshop_Tool_Setup.md
 │   │
 │   ├── PROD/
-│   │   ├── PROD-001_Wood_Selection_Cutting.md
-│   │   ├── PROD-002_Khana_Lattice_Assembly.md
-│   │   ├── PROD-003_Uni_Roof_Poles.md
-│   │   ├── PROD-004_Tono_Crown_Ring.md
-│   │   ├── PROD-005_Canvas_Measurement_Cutting.md
-│   │   ├── PROD-006_Wall_Cover_Sewing.md
-│   │   ├── PROD-007_Roof_Cover_Sewing.md
-│   │   ├── PROD-008_Inner_Liner_Sewing.md
-│   │   ├── PROD-009_Insulation_Cutting.md
-│   │   ├── PROD-010_Insulation_Assembly.md
-│   │   ├── PROD-011_Door_Window_Fitting.md
-│   │   └── PROD-012_Hardware_Connectors_Prep.md
+│   │   ├── Stream_A_Wood/
+│   │   │   ├── PROD-001_Wood_Selection_Cutting.md
+│   │   │   ├── PROD-002_Wood_Treatment_Finishing.md
+│   │   │   ├── PROD-003_Khana_Lattice_Assembly.md
+│   │   │   ├── PROD-004_Uni_Roof_Poles.md
+│   │   │   └── PROD-005_Tono_Crown_Ring.md
+│   │   │
+│   │   ├── Stream_B_Sewing/
+│   │   │   ├── PROD-006_Canvas_Measurement_Cutting.md
+│   │   │   ├── PROD-007_Wall_Cover_Sewing.md
+│   │   │   ├── PROD-008_Roof_Cover_Sewing.md
+│   │   │   └── PROD-009_Inner_Liner_Sewing.md
+│   │   │
+│   │   ├── Stream_C_Insulation/
+│   │   │   ├── PROD-010_Insulation_Cutting.md
+│   │   │   └── PROD-011_Insulation_Assembly.md
+│   │   │
+│   │   └── External_Hardware/
+│   │       ├── PROD-012_Door_Window_Preparation.md
+│   │       ├── PROD-013_Rope_Tensioning_Elements.md
+│   │       └── PROD-014_Hardware_Connectors_Prep.md
 │   │
 │   ├── LOG/
 │   │   ├── LOG-001_Component_Packing.md
 │   │   ├── LOG-002_Loading_Securing.md
-│   │   ├── LOG-003_Transport_Tracking.md
-│   │   └── LOG-004_Site_Delivery_Handover.md
+│   │   └── LOG-003_Transport_Delivery_Handover.md
 │   │
 │   ├── ASSY/
-│   │   ├── ASSY-001_Site_Assessment_Preparation.md
-│   │   ├── ASSY-002_Foundation_Setup.md
-│   │   ├── ASSY-003_Khana_Wall_Erection.md
-│   │   ├── ASSY-004_Door_Frame_Installation.md
-│   │   ├── ASSY-005_Uni_Roof_Poles_Installation.md
-│   │   ├── ASSY-006_Tono_Crown_Placement.md
-│   │   ├── ASSY-007_Cover_Installation.md
-│   │   └── ASSY-008_Final_Touches_Handover.md
+│   │   ├── Pre_Assembly/
+│   │   │   ├── ASSY-000_Site_Safety_Briefing.md
+│   │   │   ├── ASSY-001_Site_Assessment_Preparation.md
+│   │   │   └── ASSY-002_Foundation_Setup.md
+│   │   │
+│   │   ├── Structure/
+│   │   │   ├── ASSY-003_Khana_Wall_Erection.md
+│   │   │   ├── ASSY-004_Door_Frame_Installation.md
+│   │   │   ├── ASSY-005_Uni_Roof_Poles_Installation.md
+│   │   │   └── ASSY-006_Tono_Crown_Placement.md
+│   │   │
+│   │   ├── Covering/
+│   │   │   ├── ASSY-007a_Insulation_Installation.md
+│   │   │   ├── ASSY-007b_Outer_Cover_Installation.md
+│   │   │   └── ASSY-007c_Inner_Liner_Installation.md
+│   │   │
+│   │   └── Completion/
+│   │       └── ASSY-008_Final_Touches_Handover.md
 │   │
 │   └── CARE/
 │       ├── CARE-001_Post_Assembly_Followup.md
-│       ├── CARE-002_Satisfaction_Survey.md
-│       ├── CARE-003_Warranty_Claim_Handling.md
+│       ├── CARE-002_Satisfaction_Survey_Portfolio.md
+│       ├── CARE-003a_Warranty_Claim_Handling.md
+│       ├── CARE-003b_Service_Complaint_Handling.md
 │       ├── CARE-004_Maintenance_Guidance.md
 │       ├── CARE-005_Referral_Program.md
 │       └── CARE-006_Repeat_Upsell.md
 │
 ├── Checklists/
+│   ├── QC-CORE_Safety_Briefing.md
 │   ├── QC-SALES_Lead_Qualification.md
 │   ├── QC-PREP_Materials_Receiving.md
+│   ├── QC-PROD-A_Wood_Stream.md
+│   ├── QC-PROD-B_Sewing_Stream.md
+│   ├── QC-PROD-C_Insulation_Stream.md
 │   ├── QC-PROD_Pre_Pack_Inspection.md
 │   ├── QC-LOG_Packing_Inventory.md
+│   ├── QC-ASSY_Foundation_Level.md
 │   ├── QC-ASSY_Structure_Stability.md
+│   ├── QC-ASSY_Weatherproof.md
 │   ├── QC-ASSY_Customer_Handover.md
 │   └── QC-CARE_Satisfaction_Survey.md
 │
 ├── QuickRef/
+│   ├── CORE_Safety_Quick_Reference.pdf
 │   ├── SALES_Quick_Reference.pdf
 │   ├── PREP_Quick_Reference.pdf
 │   ├── PROD_Wood_Quick_Reference.pdf
 │   ├── PROD_Sewing_Quick_Reference.pdf
+│   ├── PROD_Insulation_Quick_Reference.pdf
 │   ├── LOG_Quick_Reference.pdf
-│   ├── ASSY_Quick_Reference.pdf
+│   ├── ASSY_Structure_Quick_Reference.pdf
+│   ├── ASSY_Covering_Quick_Reference.pdf
 │   └── CARE_Quick_Reference.pdf
 │
 └── templates/
@@ -343,7 +449,7 @@ Glamplaybook/
 |------|----------|--------|----------|
 | **ONLINE** | LMS / Course Platform | Video + MD + Quiz | Full SOPs with video walkthroughs |
 | **OFFLINE** | Laptop at site | Local folder | PDF exports + video files |
-| **PHYSICAL** | Workshop / Site | Laminated cards | Quick Reference only |
+| **PHYSICAL** | Workshop / Site | Laminated cards | Quick Reference + Safety |
 
 ### Sync Protocol
 
@@ -353,6 +459,7 @@ Glamplaybook/
    └─ Export updated PDFs → Laptop folder
 3. On version update:
    └─ Reprint laminated Quick Reference cards
+4. Safety cards: Always current, check quarterly
 ```
 
 ---
@@ -363,60 +470,80 @@ Glamplaybook/
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
 │                                                                                         │
 │  ╔═══════════════════════════════════════════════════════════════════════════════════╗  │
-│  ║                            PART 0: SALES                                          ║  │
-│  ║  SALES-001 → 002 → 003 → 004 → 005 → 006 → 007 → 008                              ║  │
-│  ║  (Lead)     (Channels) (Onboard) (Needs) (Proposal) (Close) (Contract) (Payment)  ║  │
+│  ║  CORE: CORE-001 (Comms) │ CORE-002 (Exceptions) │ CORE-003 (Safety) │ CORE-004   ║  │
+│  ║  ─────────────────────────────────────────────────────────────────────────────────║  │
+│  ║                    Applies to all phases below                                    ║  │
 │  ╚═══════════════════════════════════════════════════════════════════════════════════╝  │
-│                                          │                                              │
-│                                          ▼                                              │
+│                                                                                         │
 │  ┌───────────────────────────────────────────────────────────────────────────────────┐  │
-│  │                              PART 1: PREP                                         │  │
-│  │              PREP-001 → 002 → 003 → 004 → 005                                     │  │
+│  │  PART 1: SALES                                                                    │  │
+│  │  001 → 002 → 003 → 004 → 005 → 006 → 007 → 008                                    │  │
+│  │  [QG-1]     [QG-2]                         [QG-3]                                 │  │
 │  └───────────────────────────────────────┬───────────────────────────────────────────┘  │
 │                                          │                                              │
 │                                          ▼                                              │
 │  ┌───────────────────────────────────────────────────────────────────────────────────┐  │
-│  │                              PART 2: PRODUCTION                                   │  │
+│  │  PART 2: PREP                                                                     │  │
+│  │  001 → 002 → 003 → 004 → 005 → 006                                                │  │
+│  │  [QG-1]          [QG-2]     [QG-3]                                                │  │
+│  └───────────────────────────────────────┬───────────────────────────────────────────┘  │
+│                                          │                                              │
+│                                          ▼                                              │
+│  ┌───────────────────────────────────────────────────────────────────────────────────┐  │
+│  │  PART 3: PRODUCTION                                                               │  │
 │  │                                                                                   │  │
-│  │      ┌──────────────┐   ┌──────────────┐   ┌──────────────┐                       │  │
-│  │      │    WOOD      │   │   SEWING     │   │  INSULATION  │                       │  │
-│  │      │  PROD 001-004│   │  PROD 005-008│   │  PROD 009-010│                       │  │
-│  │      └──────┬───────┘   └──────┬───────┘   └──────┬───────┘                       │  │
-│  │             │                  │                  │                               │  │
-│  │             └──────────────────┼──────────────────┘                               │  │
-│  │                                │                                                  │  │
-│  │                    ┌───────────▼───────────┐                                      │  │
-│  │                    │  PROD 011-012         │                                      │  │
-│  │                    │  (External & Hardware)│                                      │  │
-│  │                    └───────────┬───────────┘                                      │  │
-│  └────────────────────────────────┬──────────────────────────────────────────────────┘  │
-│                                   │                                                     │
-│                                   ▼                                                     │
+│  │   STREAM A (Wood)          STREAM B (Sewing)       STREAM C (Insulation)          │  │
+│  │   001→002→003→004→005      006→007→008→009         010→011                        │  │
+│  │      [A1] [A2]    [A3]        [B1][B2]   [B3]            [C1]                      │  │
+│  │            │                      │                       │                       │  │
+│  │            └──────────────────────┴───────────────────────┘                       │  │
+│  │                                   │                                               │  │
+│  │                    ┌──────────────▼──────────────┐                                │  │
+│  │                    │  012 + 013 + 014            │                                │  │
+│  │                    │  (External & Hardware)      │                                │  │
+│  │                    └──────────────┬──────────────┘                                │  │
+│  │                                   │                                               │  │
+│  │                              [QG-PROD-4]                                          │  │
+│  └───────────────────────────────────┬───────────────────────────────────────────────┘  │
+│                                      │                                                  │
+│                                      ▼                                                  │
 │  ┌───────────────────────────────────────────────────────────────────────────────────┐  │
-│  │                              PART 3: LOGISTICS                                    │  │
-│  │                    LOG-001 → 002 → 003 → 004                                      │  │
-│  └───────────────────────────────────────┬───────────────────────────────────────────┘  │
-│                                          │                                              │
-│                                          ▼                                              │
+│  │  PART 4: LOGISTICS                                                                │  │
+│  │  001 → 002 → 003                                                                  │  │
+│  │  [QG-1]     [QG-2]                                                                │  │
+│  └───────────────────────────────────┬───────────────────────────────────────────────┘  │
+│                                      │                                                  │
+│                                      ▼                                                  │
 │  ┌───────────────────────────────────────────────────────────────────────────────────┐  │
-│  │                              PART 4: ASSEMBLY                                     │  │
-│  │        ASSY-001 → 002 → 003 → 004 → 005 → 006 → 007 → 008                         │  │
-│  └───────────────────────────────────────┬───────────────────────────────────────────┘  │
-│                                          │                                              │
-│                                          ▼                                              │
-│  ╔═══════════════════════════════════════════════════════════════════════════════════╗  │
-│  ║                              PART 5: CARE                                         ║  │
-│  ║            CARE-001 → 002 → 003 → 004 → 005 → 006                                 ║  │
-│  ║            (Follow-up) (Survey) (Warranty) (Maint) (Referral) (Repeat)            ║  │
-│  ║                                          │                                        ║  │
-│  ║                                          └────────────────┐                       ║  │
-│  ╚══════════════════════════════════════════════════════════════════════════════════╝  │
-│                                                              │                          │
-│                                                              ▼                          │
-│                                                    ┌─────────────────┐                  │
-│                                                    │  LOOP TO SALES  │                  │
-│                                                    │  (New Order)    │                  │
-│                                                    └─────────────────┘                  │
+│  │  PART 5: ASSEMBLY                                                                 │  │
+│  │                                                                                   │  │
+│  │  PRE:  000 → 001 → 002                                                            │  │
+│  │       [QG-0]      [QG-1]                                                          │  │
+│  │                     │                                                             │  │
+│  │  STRUCT: 003 → 004 → 005 → 006                                                    │  │
+│  │                          [QG-2]                                                   │  │
+│  │                            │                                                      │  │
+│  │  COVER: 007a → 007b → 007c                                                        │  │
+│  │        [QG-3a] [QG-3b]                                                            │  │
+│  │                   │                                                               │  │
+│  │  COMPLETE: 008                                                                    │  │
+│  │           [QG-4]                                                                  │  │
+│  └───────────────────────────────────┬───────────────────────────────────────────────┘  │
+│                                      │                                                  │
+│                                      ▼                                                  │
+│  ┌───────────────────────────────────────────────────────────────────────────────────┐  │
+│  │  PART 6: CARE                                                                     │  │
+│  │  001 → 002 → 003a/003b → 004 → 005 → 006                                          │  │
+│  │            [QG-1]              [QG-2]                                              │  │
+│  │                                   │                                               │  │
+│  │                                   └──────────────────┐                            │  │
+│  └──────────────────────────────────────────────────────┼────────────────────────────┘  │
+│                                                         │                               │
+│                                                         ▼                               │
+│                                               ┌─────────────────┐                       │
+│                                               │  LOOP TO SALES  │                       │
+│                                               │  (Repeat Order) │                       │
+│                                               └─────────────────┘                       │
 │                                                                                         │
 └─────────────────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -425,43 +552,78 @@ Glamplaybook/
 
 ## SOP Summary Table
 
-| Part | Name | SOPs | Focus | Priority |
-|------|------|------|-------|----------|
-| **0** | SALES | 8 | Lead → Order | Later |
-| **1** | PREP | 5 | Order → Production Ready | Medium |
-| **2** | PROD | 12 | Raw → Components | **HIGH** |
-| **3** | LOG | 4 | Workshop → Site | Medium |
-| **4** | ASSY | 8 | Components → Yurt | **HIGH** |
-| **5** | CARE | 6 | Satisfaction → Repeat | Later |
-| | **TOTAL** | **43** | | |
+| Part | Name | SOPs | Quality Gates | Focus | Priority |
+|------|------|------|---------------|-------|----------|
+| **0** | CORE | 4 | - | Cross-cutting | **HIGH** |
+| **1** | SALES | 8 | 3 | Lead → Order | Later |
+| **2** | PREP | 6 | 3 | Order → Ready | Medium |
+| **3** | PROD | 14 | 8 | Raw → Components | **HIGH** |
+| **4** | LOG | 3 | 2 | Workshop → Site | Medium |
+| **5** | ASSY | 11 | 6 | Components → Yurt | **HIGH** |
+| **6** | CARE | 7 | 2 | Satisfaction → Repeat | Later |
+| | **TOTAL** | **53** | **24** | | |
+
+---
+
+## Quality Gate Summary
+
+| Phase | Gates | Critical Gates |
+|-------|-------|----------------|
+| SALES | 3 | QG-SALES-3 (Payment) |
+| PREP | 3 | QG-PREP-2 (Materials QC) |
+| PROD | 8 | QG-PROD-4 (Pre-Pack) |
+| LOG | 2 | QG-LOG-2 (Delivery) |
+| ASSY | 6 | QG-ASSY-2 (Structure), QG-ASSY-4 (Handover) |
+| CARE | 2 | QG-CARE-1 (Satisfaction) |
+| **TOTAL** | **24** | |
 
 ---
 
 ## Priority for Documentation Sprint (Dec 2025 - Feb 2026)
 
-### High Priority (Document First) - PHYSICAL OPERATIONS
+### P0: Critical (Document First)
 | SOP | Reason |
 |-----|--------|
-| PROD-002 | Core skill - Khana assembly is the heart of yurt |
-| PROD-006/007 | Cover sewing requires precision |
-| ASSY-003 | Wall erection is make-or-break moment |
-| ASSY-007 | Cover installation affects weatherproofing |
+| CORE-002 | Exception handling prevents chaos |
+| CORE-003 | Safety is non-negotiable for franchise |
+| PROD-003 | Khana assembly is core skill |
+| PROD-007 | Wall cover sewing requires precision |
+| ASSY-003 | Wall erection is make-or-break |
+| ASSY-007b | Outer cover affects weatherproofing |
 
-### Medium Priority
+### P1: High Priority
 | SOP | Reason |
 |-----|--------|
-| PREP-004 | QC at materials receiving prevents downstream issues |
+| ASSY-000 | Safety briefing for liability |
+| PREP-004 | Materials QC prevents downstream issues |
 | LOG-001 | Packing errors = site problems |
-| ASSY-001/002 | Foundation determines everything |
+| ASSY-002 | Foundation determines everything |
 
-### Lower Priority (Document After Pilot)
+### P2: Medium Priority
+| SOP | Reason |
+|-----|--------|
+| CORE-001 | Customer communication standardization |
+| CORE-004 | Documentation for QC evidence |
+| PROD-001/002 | Wood selection and treatment |
+| All other PROD | Complete production documentation |
+
+### P3: Lower Priority (Document After Pilot)
 | SOP | Reason |
 |-----|--------|
 | SALES-* | Currently founder knowledge, relationship-based |
 | CARE-* | Focus after first satisfied customers from pilot |
-| PREP-001/002/003 | Less hands-on, can document from memory |
+
+---
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | Dec 2025 | Initial structure (43 SOPs) |
+| 2.0 | Dec 2025 | Systemologist optimization: +CORE category, split ASSY-007, added in-process QGs, merged LOG-003/004, added PREP-006, PROD-002, PROD-013, ASSY-000, CARE-003b. Total: 53 SOPs, 24 QGs |
 
 ---
 
 *Document created: December 2025*
+*Optimized: December 2025*
 *Next review: After March 2026 pilot assembly*
