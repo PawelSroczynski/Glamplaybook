@@ -412,6 +412,220 @@ RPL = (TSR × OTO) + (TSR × Bump Rate × Bump) + ((1-TSR) × Downsell Rate × D
 
 ---
 
+### 3.5 Ad Operations Playbook
+
+**Purpose:** Clear actions for campaign operator based on measured metrics.
+
+#### 3.5.1 Single Metric Triggers
+
+| IF... | THEN... | TIMEFRAME |
+|-------|---------|-----------|
+| **CPL < 15 PLN** | Scale budget +25%, test new audiences | After 50+ leads |
+| **CPL 15-25 PLN** | Maintain, optimize creatives | Ongoing |
+| **CPL 25-35 PLN** | Raise OTO to 97 PLN, Bump to 97 PLN | Within 24h |
+| **CPL 35-45 PLN** | Raise to ceiling prices (197/147/97) | Within 24h |
+| **CPL > 45 PLN** | Pause campaign, audit targeting | Immediate |
+| **TSR > 25%** | Test raising OTO price +20 PLN | After 100+ leads |
+| **TSR 15-25%** | Maintain current OTO price | Ongoing |
+| **TSR < 15%** | Lower OTO to floor (37 PLN), add urgency copy | Within 48h |
+| **TSR < 10%** | A/B test completely new OTO offer | Within 48h |
+| **Bump > 35%** | Test raising Bump price +30 PLN | After 50+ OTO sales |
+| **Bump 20-35%** | Maintain current Bump price | Ongoing |
+| **Bump < 20%** | Lower Bump to 47 PLN, reposition as "bonus" | Within 48h |
+| **Downsell > 25%** | Test raising Downsell +20 PLN | After 50+ rejections |
+| **Downsell < 15%** | Lower to 17 PLN, simplify offer | Within 48h |
+
+---
+
+#### 3.5.2 Combined Scenario Matrix
+
+| CPL | TSR | Action Priority |
+|-----|-----|-----------------|
+| Low (<15) | High (>22%) | 🟢 **SCALE** - Increase budget aggressively |
+| Low (<15) | Low (<15%) | 🟡 **FIX OTO** - Traffic quality good, offer weak |
+| High (>25) | High (>22%) | 🟡 **RAISE PRICES** - Good conversion, need margin |
+| High (>25) | Low (<15%) | 🔴 **PAUSE & AUDIT** - Both metrics failing |
+| Mid (15-25) | Mid (15-22%) | 🟡 **OPTIMIZE** - A/B test both ads and OTO |
+
+---
+
+#### 3.5.3 Facebook/Meta Automation Rules
+
+**Set up these automated rules in Meta Ads Manager:**
+
+```
+RULE 1: "CPL Alert High"
+────────────────────────
+Condition: Cost per Lead > 35 PLN (last 3 days)
+Action: Send notification to operator
+Frequency: Once per day
+
+RULE 2: "CPL Kill Switch"
+────────────────────────
+Condition: Cost per Lead > 50 PLN (last 7 days)
+Action: Turn off ad set
+Frequency: Continuous
+
+RULE 3: "Scale Winners"
+────────────────────────
+Condition: Cost per Lead < 12 PLN AND Leads > 10 (last 7 days)
+Action: Increase daily budget by 20%
+Frequency: Once per day
+Cap: Max 3x original budget
+
+RULE 4: "Kill Losers"
+────────────────────────
+Condition: Spend > 100 PLN AND Leads = 0 (last 3 days)
+Action: Turn off ad set
+Frequency: Continuous
+
+RULE 5: "Frequency Cap"
+────────────────────────
+Condition: Frequency > 3.0 (last 7 days)
+Action: Send notification (audience fatigue)
+Frequency: Once per day
+```
+
+---
+
+#### 3.5.4 Price Adjustment Protocol
+
+**Step-by-step for operator when CPL rises:**
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PRICE ADJUSTMENT PROTOCOL                            │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  STEP 1: Confirm CPL trend (minimum 30 leads data)                     │
+│          └── Is this spike or trend? Check 7-day rolling average       │
+│                                                                         │
+│  STEP 2: Calculate current RPL                                         │
+│          └── RPL = (TSR × OTO) + (TSR × Bump% × Bump)                  │
+│                    + ((1-TSR) × Downsell% × Downsell)                  │
+│                                                                         │
+│  STEP 3: Compare RPL vs CPL                                            │
+│          ├── RPL > CPL → Profitable, no action needed                  │
+│          └── RPL < CPL → Proceed to Step 4                             │
+│                                                                         │
+│  STEP 4: Calculate required price increase                             │
+│          └── Gap = CPL - RPL                                           │
+│          └── New OTO = Current OTO + (Gap / TSR)                       │
+│                                                                         │
+│  STEP 5: Apply price tier                                              │
+│          ├── If New OTO ≤ 97  → Set OTO = 97 PLN                       │
+│          ├── If New OTO ≤ 147 → Set OTO = 147 PLN                      │
+│          ├── If New OTO ≤ 197 → Set OTO = 197 PLN (ceiling)            │
+│          └── If New OTO > 197 → PAUSE ADS, ceiling insufficient        │
+│                                                                         │
+│  STEP 6: Proportionally adjust Bump and Downsell                       │
+│          ├── OTO 97  → Bump 97, Downsell 47                            │
+│          ├── OTO 147 → Bump 127, Downsell 67                           │
+│          └── OTO 197 → Bump 147, Downsell 97                           │
+│                                                                         │
+│  STEP 7: Update landing pages (use URL parameters or tool config)      │
+│                                                                         │
+│  STEP 8: Monitor for 48h, then re-evaluate                             │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+#### 3.5.5 Weekly Operator Checklist
+
+```
+□ MONDAY: Pull last 7 days data
+  ├── CPL trend (up/down/stable?)
+  ├── TSR trend
+  ├── Bump rate
+  ├── Downsell rate
+  └── Calculate RPL vs CPL
+
+□ TUESDAY: Creative audit
+  ├── Which ads have highest CTR?
+  ├── Which ads have lowest CPL?
+  ├── Any ad with Frequency > 2.5?
+  └── Plan 1-2 new creatives if needed
+
+□ WEDNESDAY: Funnel audit
+  ├── Check landing page load speed
+  ├── Review OTO page conversion rate
+  ├── Check email delivery rates
+  └── Test all payment links
+
+□ THURSDAY: Price calibration review
+  ├── Are current prices optimal for CPL?
+  ├── Any price adjustment needed?
+  └── Update prices if required
+
+□ FRIDAY: Reporting
+  ├── Weekly summary to stakeholder
+  ├── Net profit/loss calculation
+  ├── Recommendations for next week
+  └── Update tracking spreadsheet
+```
+
+---
+
+#### 3.5.6 Escalation Matrix
+
+| Situation | Operator Action | Escalate to Owner If... |
+|-----------|-----------------|-------------------------|
+| CPL spike (1 day) | Monitor, don't react | Spike lasts 3+ days |
+| CPL > 45 PLN sustained | Apply ceiling prices | Still losing after 48h |
+| TSR < 10% | A/B test new OTO | No improvement after 3 tests |
+| Zero leads (24h) | Check pixel, landing page | Technical issue confirmed |
+| Negative comments on ads | Hide, don't delete | Pattern of complaints |
+| Budget depleted early | Reduce daily cap | Happening weekly |
+| Competitor copying ads | Document, notify owner | Immediate |
+
+---
+
+#### 3.5.7 Quick Reference Card (Print This)
+
+```
+╔═══════════════════════════════════════════════════════════════════════╗
+║                    ENKLAVA AD OPERATIONS CHEAT SHEET                  ║
+╠═══════════════════════════════════════════════════════════════════════╣
+║                                                                       ║
+║  PRICE TIERS:                                                         ║
+║  ┌─────────┬────────┬─────────┬─────────┐                            ║
+║  │ Tier    │ OTO    │ Bump    │ Downsell│                            ║
+║  ├─────────┼────────┼─────────┼─────────┤                            ║
+║  │ Floor   │ 37     │ 47      │ 17      │                            ║
+║  │ Default │ 47     │ 67      │ 27      │                            ║
+║  │ Mid     │ 97     │ 97      │ 47      │                            ║
+║  │ High    │ 147    │ 127     │ 67      │                            ║
+║  │ Ceiling │ 197    │ 147     │ 97      │                            ║
+║  └─────────┴────────┴─────────┴─────────┘                            ║
+║                                                                       ║
+║  CPL RESPONSE:                                                        ║
+║  < 15 PLN  → Scale (+25% budget)                                     ║
+║  15-25 PLN → Optimize (test creatives)                               ║
+║  25-35 PLN → Raise to Mid tier                                       ║
+║  35-45 PLN → Raise to Ceiling tier                                   ║
+║  > 45 PLN  → PAUSE & ESCALATE                                        ║
+║                                                                       ║
+║  BREAKEVEN FORMULA:                                                   ║
+║  RPL = (TSR × OTO) + (TSR × Bump% × Bump) + ((1-TSR) × DS% × DS)     ║
+║  IF RPL ≥ CPL → Profitable ✓                                         ║
+║  IF RPL < CPL → Raise prices or pause                                ║
+║                                                                       ║
+║  TARGETS:          RED FLAGS:                                         ║
+║  CPL < 15          CPL > 45                                          ║
+║  TSR > 22%         TSR < 10%                                         ║
+║  Bump > 25%        Bump < 15%                                        ║
+║  Downsell > 20%    Downsell < 10%                                    ║
+║                                                                       ║
+║  EMERGENCY CONTACTS:                                                  ║
+║  Owner: [phone]    Tech: [phone]    Payments: [phone]                ║
+║                                                                       ║
+╚═══════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## Part IV: Organic Traffic Strategy
 
 ### 4.1 Public Content SEO Value
