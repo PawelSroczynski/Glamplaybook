@@ -1,9 +1,9 @@
 # Enklava Yurts: Franchise Systems Handbook
 ## From Craft Business to Scalable International Franchise
 
-**Version:** 1.0
-**Date:** December 2024
-**Status:** Strategic Planning Document
+**Version:** 1.1
+**Date:** December 2025
+**Status:** Strategic Planning Document + Active Pilot Phase
 
 ---
 
@@ -16,6 +16,8 @@
 5. [Required System Layers](#5-required-system-layers)
 6. [Strategic Questions to Resolve](#6-strategic-questions-to-resolve)
 7. [Implementation Roadmap](#7-implementation-roadmap)
+   - 7.1-7.5: Standard Phases (Months 1-36)
+   - 7.6: [Accelerated Pilot Strategy (Dec 2025 - May 2026)](#76-accelerated-pilot-strategy-current-production-cycle-december-2025---may-2026) ⬅️ **ACTIVE**
 8. [Appendices](#8-appendices)
 
 ---
@@ -718,50 +720,206 @@ Before proceeding with franchise development, the following strategic decisions 
 
 ---
 
+### 7.6 Accelerated Pilot Strategy: Current Production Cycle (December 2025 - May 2026)
+
+> **Status:** ACTIVE - This section documents the current pilot opportunity.
+
+The current production cycle presents a unique opportunity to accelerate franchise readiness by treating upcoming assemblies as **franchise pilot proofs-of-concept**.
+
+#### 7.6.1 Current Situation
+
+| Period | Activity | Units |
+|--------|----------|-------|
+| December 2025 | Production phase | 3 yurts |
+| March 2026 | First assembly | 1 yurt |
+| April-May 2026 | Batch assemblies | 3 yurts |
+| **Total** | | **4 assemblies** |
+
+#### 7.6.2 Strategic Opportunity
+
+These 4 assemblies can serve as **franchise pilot PoCs** if we treat each one as a test of franchise-ready systems:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│  PRODUCTION (Dec 2025)     →  ASSEMBLY PILOTS (Mar-May 2026)        │
+│  ─────────────────────        ──────────────────────────────        │
+│  • Document as we build       • Test SOPs in real conditions        │
+│  • Create quality checklists  • Validate training materials         │
+│  • Time each process          • Measure against benchmarks          │
+│  • Photo/video everything     • Collect franchisee-perspective data │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+#### 7.6.3 Pilot Timeline
+
+##### Phase A: Documentation Sprint (December 2025 - February 2026)
+
+| Week | Focus | Deliverables |
+|------|-------|--------------|
+| Dec W1-2 | Production SOPs | Frame assembly SOP, cutting SOP |
+| Dec W3-4 | Production SOPs | Canvas sewing SOP, insulation SOP |
+| Jan W1-2 | Quality Systems | Pre-ship inspection checklist, quality gates |
+| Jan W3-4 | Assembly SOPs | Site prep SOP, frame erection SOP |
+| Feb W1-2 | Assembly SOPs | Cover installation SOP, finishing SOP |
+| Feb W3-4 | Training Materials | Quick reference cards, video scripts |
+
+**Documentation Infrastructure:**
+
+```
+GlampModeler/
+├── SOPs/
+│   ├── PROD-001_Frame_Assembly.md
+│   ├── PROD-002_Canvas_Sewing.md
+│   ├── PROD-003_Insulation_Prep.md
+│   ├── PROD-004_Connector_Install.md
+│   ├── ASSY-001_Site_Preparation.md
+│   ├── ASSY-002_Frame_Erection.md
+│   ├── ASSY-003_Cover_Installation.md
+│   └── ASSY-004_Final_Touches.md
+├── Checklists/
+│   ├── QC-001_Materials_Receiving.md
+│   ├── QC-002_Pre_Ship_Inspection.md
+│   ├── QC-003_Post_Assembly.md
+│   └── QC-004_Customer_Handover.md
+├── templates/
+│   └── SOP_TEMPLATE.md
+└── Training/
+    ├── videos/
+    └── quick-reference/
+```
+
+##### Phase B: First Assembly Pilot (March 2026)
+
+**Objective:** Validate all SOPs and checklists in real conditions.
+
+| Activity | Pilot Test Focus | Documentation |
+|----------|------------------|---------------|
+| Pre-assembly | Logistics SOP, shipping checklist | Time log, issues encountered |
+| Site prep | ASSY-001 validation | Photos, deviation notes |
+| Frame erection | ASSY-002 validation, tool list accuracy | Video recording, timing |
+| Cover install | ASSY-003 validation | Quality checkpoint photos |
+| Handover | Customer sign-off process | Customer feedback form |
+
+**Pilot Metrics to Capture:**
+
+| Metric | Target | Actual | Notes |
+|--------|--------|--------|-------|
+| SOP adherence rate | 100% | ___ | Steps followed vs. improvised |
+| Time variance | ±20% | ___ | Actual vs. estimated |
+| Quality gate pass rate | 100% | ___ | First-time passes |
+| Customer satisfaction | >8/10 | ___ | Post-handover survey |
+| Issues requiring founder | 0 | ___ | Escalations |
+
+**Post-Pilot Debrief:**
+- [ ] What worked exactly as documented?
+- [ ] What required improvisation?
+- [ ] What was missing from SOPs?
+- [ ] What would a new person struggle with?
+- [ ] Update all documents based on findings
+
+##### Phase C: Batch Assembly Pilots (April-May 2026)
+
+**Objective:** Prove repeatability with 3 consecutive assemblies.
+
+| Assembly | Focus | Success Criteria |
+|----------|-------|------------------|
+| #2 (April) | Consistency test | Same process, same results |
+| #3 (April/May) | Efficiency test | Reduced time, fewer issues |
+| #4 (May) | Independence test | Minimal founder involvement |
+
+**Franchise Readiness Indicators:**
+
+| Indicator | Assembly #2 | Assembly #3 | Assembly #4 |
+|-----------|-------------|-------------|-------------|
+| SOP deviations | Target: <5 | Target: <3 | Target: 0 |
+| Time improvement | - | +10% faster | +15% faster |
+| Founder hours | Baseline | -25% | -50% |
+| Quality consistency | Same as #1 | Same | Same |
+
+#### 7.6.4 Pilot Success Criteria
+
+By end of May 2026, the following must be true:
+
+**Documentation Complete:**
+- [ ] 8+ production SOPs validated in real use
+- [ ] 4+ assembly SOPs validated through 4 assemblies
+- [ ] 4+ quality checklists with pass/fail data
+- [ ] Video documentation of key processes
+- [ ] Quick reference cards for field use
+
+**Systems Validated:**
+- [ ] Quality gates enforced on all 4 assemblies
+- [ ] Checklists completed 100%
+- [ ] Customer sign-off collected 100%
+- [ ] All issues documented and SOPs updated
+
+**Metrics Established:**
+- [ ] Baseline timing for all production processes
+- [ ] Baseline timing for assembly process
+- [ ] Customer satisfaction benchmark (target: >8.5/10)
+- [ ] Defect/issue rate established
+
+**Scalability Demonstrated:**
+- [ ] At least one assembly completed with <4 hours founder involvement
+- [ ] All SOPs understandable without verbal explanation
+- [ ] No critical knowledge only in founder's head
+
+#### 7.6.5 Risk Mitigation
+
+| Risk | Mitigation |
+|------|------------|
+| Documentation delays during busy production | Dedicated 2 hours/day for documentation |
+| Assembly issues overshadow documentation | Assign documentation observer role |
+| Customer pressure conflicts with pilot rigor | Set customer expectations upfront |
+| Perfectionism delays progress | "Good enough to train" standard, iterate later |
+
+#### 7.6.6 Investment Required
+
+| Category | Items | Estimated Effort |
+|----------|-------|------------------|
+| Documentation | SOP writing, photos, diagrams | 40-60 hours |
+| Video | Recording, basic editing | 20-30 hours |
+| Checklists | Creation and formatting | 10-15 hours |
+| Pilot observation | Note-taking during assemblies | 4 hours × 4 = 16 hours |
+| Iteration | Post-pilot updates | 20-30 hours |
+| **Total** | | **~110-150 hours** |
+
+> **Note:** This investment pays dividends immediately - documented processes reduce future training time, reduce errors, and enable delegation.
+
+---
+
 ## 8. Appendices
 
 ### 8.1 Appendix A: SOP Template
 
-```markdown
-# SOP-XXX: [Process Name]
+> **Full template available at:** [`templates/SOP_TEMPLATE.md`](templates/SOP_TEMPLATE.md)
 
-## Overview
-**Purpose:** [Why this process exists]
-**Scope:** [What this covers and doesn't cover]
-**Owner:** [Role responsible]
-**Last Updated:** [Date]
+The comprehensive SOP template includes 14 sections:
 
-## Prerequisites
-- [Required materials/tools]
-- [Required training/certification]
-- [Required information]
+| Section | Purpose |
+|---------|---------|
+| 1. Document Control | Version tracking, ownership, approval |
+| 2. Purpose | Why the process exists |
+| 3. Scope | What's included/excluded |
+| 4. Responsibilities | RACI for the process |
+| 5. Safety Requirements | PPE and hazard warnings |
+| 6. Tools & Equipment | Required tools with specifications |
+| 7. Materials | Bill of materials per unit |
+| 8. Procedure | Step-by-step instructions with QC checks |
+| 9. Quality Control | In-process and final inspection criteria |
+| 10. Troubleshooting | Common problems and solutions |
+| 11. Time Summary | Estimated vs. actual timing |
+| 12. Documentation & Records | What to keep and where |
+| 13. Related Documents | Links to related SOPs |
+| 14. Training Verification | Competency sign-off |
 
-## Procedure
+**Quick Reference Card:** Each SOP includes a printable quick reference section for workshop use.
 
-### Step 1: [Step Name]
-**Action:** [Detailed instruction]
-**Quality Check:** [What to verify]
-**Time Estimate:** [Expected duration]
-**Photo/Diagram:** [Visual reference]
-
-### Step 2: [Step Name]
-[Continue pattern...]
-
-## Quality Criteria
-- [ ] [Criterion 1]
-- [ ] [Criterion 2]
-- [ ] [Criterion 3]
-
-## Troubleshooting
-| Problem | Possible Cause | Solution |
-|---------|----------------|----------|
-| [Issue] | [Cause] | [Fix] |
-
-## Related Documents
-- [Link to related SOP]
-- [Link to checklist]
-- [Link to template]
-```
+**Usage:** Copy the template for each new SOP, replace all `[bracketed]` text with actual content, and save to the `SOPs/` directory using the naming convention:
+- Production: `PROD-XXX_Process_Name.md`
+- Assembly: `ASSY-XXX_Process_Name.md`
+- Quality: `QC-XXX_Process_Name.md`
+- Logistics: `LOG-XXX_Process_Name.md`
 
 ---
 
@@ -850,6 +1008,7 @@ Before proceeding with franchise development, the following strategic decisions 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | 1.0 | Dec 2024 | Systems Analysis | Initial document |
+| 1.1 | Dec 2025 | Systems Analysis | Added Section 7.6: Accelerated Pilot Strategy (Dec 2025 - May 2026); Updated Appendix A with reference to full SOP template; Added templates/SOP_TEMPLATE.md |
 
 ---
 
