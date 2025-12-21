@@ -1,186 +1,88 @@
 # Writing in Public: Lead Magnet Strategy v2.0
 
-**Document:** Critical Analysis + Improved Strategy
+**Document:** Paid Evergreen Funnel Strategy
 **Based on:** Analiza Strategii Marketingowej Jurt.docx
 **Goal:** Self-liquidating evergreen funnel with calibration levers
 
 ---
 
-## Part I: Critical Thinking Session
+## Glossary
 
-### What the Original Strategy Gets Right
-
-| Element | Assessment | Keep? |
-|---------|------------|-------|
-| Co-creation positioning | Differentiates from static ebook LMs | ✅ YES |
-| 3-avatar segmentation | Matches real buyer personas | ✅ YES |
-| OTO structure (tripwire) | Standard SLO funnel mechanics | ✅ YES |
-| Instant utility tools (calc, legal) | Addresses real pain points | ✅ YES |
-| Anchor pricing (197→37) | Proven psychological technique | ✅ YES |
-| Negative opt-out | Increases conversion | ✅ YES |
-
-### Critical Gaps & Risks
-
-#### 1. **Single Price Point = No Calibration**
-
-**Problem:** Strategy assumes fixed OTO at 37 PLN. If CPL rises (common in construction niche), there's no lever to restore breakeven.
-
-**Risk:** At CPL 15 PLN, you need 40.5% TSR - nearly impossible for cold traffic.
-
-**Fix needed:** Bump offer + price tiers + dynamic pricing based on segment.
+| Term | Definition |
+|------|------------|
+| **CPL** | Cost Per Lead — ad spend divided by leads captured |
+| **TSR** | Thank-you page Sales Rate — % of leads who buy OTO immediately after opt-in |
+| **OTO** | One-Time Offer — tripwire product shown on thank-you page |
+| **RPL** | Revenue Per Lead — total revenue from OTO + Bump + Downsell per lead |
+| **Bump** | Add-on offer shown as checkbox on OTO page |
+| **Downsell** | Lower-priced offer shown if OTO is rejected |
+| **SLO** | Self-Liquidating Offer — funnel where RPL ≥ CPL (breakeven or profit) |
 
 ---
 
-#### 2. **No Bump Offer in Original**
+## Part I: Funnel Strategy
 
-**Problem:** Document mentions bump (97 PLN Ventilation Manual) only as recommendation, not core strategy.
+### 1.1 Paid Evergreen Model (Two Paths)
 
-**Risk:** Missing 20-40% of potential revenue per transaction.
-
-**Fix needed:** Bump is mandatory, not optional. Design it now.
-
----
-
-#### 3. **"Writing in Public" Not Fully Leveraged**
-
-**Problem:** Strategy mentions co-creation but doesn't specify HOW public writing creates ongoing lead flow.
-
-**Current model:**
-```
-Ad → Squeeze → OTO → Email nurture
-```
-
-**Missing model:**
-```
-Public content → Organic traffic → Email capture → OTO
-     ↑                                              │
-     └──────────── Content loop ←──────────────────┘
-```
-
-**Fix needed:** Public chapters = SEO assets = free traffic = lower blended CPL.
-
----
-
-#### 4. **No Evergreen Mechanism**
-
-**Problem:** Strategy assumes campaign mode (spend → leads → stop). No system for continuous low-cost acquisition.
-
-**Risk:** Once ad budget stops, lead flow dies.
-
-**Fix needed:** Organic content flywheel that reduces paid dependency over time.
-
----
-
-#### 5. **Segmentation Underutilized Post-Capture**
-
-**Problem:** Segments A/B/C are tagged but strategy doesn't specify different OTO paths.
-
-**Current:** Same OTO for all → suboptimal conversion.
-
-**Better:** Dynamic OTO content based on declared intent.
-
----
-
-#### 6. **Missing Downsell**
-
-**Problem:** If user rejects OTO at 37 PLN, they exit funnel with only free chapter.
-
-**Risk:** Lost revenue from price-sensitive leads who might buy at lower price.
-
-**Fix needed:** Downsell at 19 PLN (partial kit) or payment plan.
-
----
-
-#### 7. **CPL Assumptions Too Optimistic**
-
-**Problem:** Document targets 10 PLN CPL. Polish construction/real estate niche typically 15-25 PLN.
-
-**Risk:** Strategy breaks at realistic CPL levels.
-
-**Fix needed:** Model must work at 45 PLN CPL (worst case construction niche) with ceiling price calibration.
-
----
-
-### Critical Verdict
-
-| Aspect | Original Score | After Fixes |
-|--------|----------------|-------------|
-| Lead Magnet concept | 9/10 | 9/10 |
-| Funnel mechanics | 6/10 | 9/10 |
-| Financial model | 5/10 | 8/10 |
-| Evergreen potential | 3/10 | 8/10 |
-| Calibration levers | 2/10 | 9/10 |
-
----
-
-## Part II: Improved Strategy
-
-### 2.1 The "Writing in Public" Flywheel
+**Core Concept:** All traffic is PAID. Blog chapters exist as retargeting fuel, not organic discovery.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                    WRITING IN PUBLIC FLYWHEEL                           │
+│                    PAID EVERGREEN FUNNEL (TWO PATHS)                    │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
-│                         ┌──────────────┐                                │
-│                         │  PUBLIC      │                                │
-│              ┌─────────▶│  CHAPTER     │◀─────────┐                     │
-│              │          │  (Blog/SEO)  │          │                     │
-│              │          └──────┬───────┘          │                     │
-│              │                 │                  │                     │
-│              │                 ▼                  │                     │
-│              │          ┌──────────────┐          │                     │
-│              │          │  ORGANIC     │          │                     │
-│              │          │  TRAFFIC     │          │                     │
-│              │          └──────┬───────┘          │                     │
-│              │                 │                  │                     │
-│              │                 ▼                  │                     │
-│  ┌───────────┴──┐       ┌──────────────┐          │                     │
-│  │  PAID ADS    │──────▶│  SQUEEZE     │          │                     │
-│  │  (Amplify)   │       │  PAGE        │          │                     │
-│  └──────────────┘       └──────┬───────┘          │                     │
-│                                │                  │                     │
-│                                ▼                  │                     │
-│                         ┌──────────────┐          │                     │
-│                         │  OTO +       │          │                     │
-│                         │  BUMP        │──────────┤                     │
-│                         └──────┬───────┘          │                     │
-│                                │                  │                     │
-│                                ▼                  │                     │
-│                         ┌──────────────┐          │                     │
-│                         │  EMAIL       │          │                     │
-│                         │  NURTURE     │──────────┘                     │
-│                         └──────┬───────┘    (shares content)            │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                         VIDEO ADS                                │    │
+│  │         (CTA: "Join the creation of the Yurt Handbook")         │    │
+│  └─────────────────────────────┬───────────────────────────────────┘    │
+│                                │                                        │
+│                ┌───────────────┴───────────────┐                        │
+│                │                               │                        │
+│                ▼                               ▼                        │
+│  ┌─────────────────────────┐     ┌─────────────────────────┐            │
+│  │      PATH A: DIRECT     │     │    PATH B: WARM-UP      │            │
+│  │                         │     │                         │            │
+│  │   Video Ad              │     │   Video Ad              │            │
+│  │       ↓                 │     │       ↓                 │            │
+│  │   Squeeze Page          │     │   Blog Chapter          │            │
+│  │       ↓                 │     │   (pixel visitor)       │            │
+│  │   OTO                   │     │       ↓                 │            │
+│  │                         │     │   RETARGET AD           │            │
+│  │                         │     │       ↓                 │            │
+│  │                         │     │   Squeeze Page          │            │
+│  │                         │     │       ↓                 │            │
+│  │                         │     │   OTO                   │            │
+│  └─────────────────────────┘     └─────────────────────────┘            │
+│                │                               │                        │
+│                └───────────────┬───────────────┘                        │
 │                                │                                        │
 │                                ▼                                        │
-│                         ┌──────────────┐                                │
-│                         │  HIGH-TICKET │                                │
-│                         │  SALE        │                                │
-│                         └──────────────┘                                │
+│                    ┌───────────────────────┐                            │
+│                    │  A/B TEST BOTH PATHS  │                            │
+│                    │  Optimize for best    │                            │
+│                    │  RPL per path         │                            │
+│                    └───────────────────────┘                            │
+│                                                                         │
+│  PATH A: Lower CPL, colder audience, may have lower TSR                │
+│  PATH B: Higher CPL (2 touches), warmer audience, likely higher TSR    │
+│                                                                         │
+│  GOAL: Find which path delivers better NET (RPL - CPL)                 │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
-
-FLYWHEEL EFFECT:
-1. Public chapters rank in SEO → free traffic
-2. Free traffic converts → cheaper blended CPL
-3. Email list shares content → organic amplification
-4. Reduced paid dependency → evergreen sustainability
 ```
 
 ---
 
-### 2.2 Complete Funnel Architecture
+### 1.2 Complete Funnel Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                         FUNNEL ARCHITECTURE v2.0                        │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
-│  TRAFFIC SOURCES                                                        │
-│  ├── Paid: FB/IG Ads (calibration phase)                               │
-│  ├── Organic: SEO blog posts (8 public chapters)                       │
-│  ├── Social: LinkedIn, YouTube, Podcast                                │
-│  └── Referral: Email forwards, community shares                        │
+│  PAID TRAFFIC (100% of acquisition)                                    │
+│  ├── Path A: Video Ad → Squeeze Page (direct conversion)              │
+│  └── Path B: Video Ad → Blog Chapter → Retarget → Squeeze Page        │
 │                                                                         │
 │  ─────────────────────────────────────────────────────────────────────  │
 │                                                                         │
@@ -243,7 +145,7 @@ FLYWHEEL EFFECT:
 
 ---
 
-### 2.3 Pricing Architecture with Calibration Levers
+### 1.3 Pricing Architecture with Calibration Levers
 
 **Core Principle:** Multiple price points create calibration flexibility.
 
@@ -259,24 +161,26 @@ FLYWHEEL EFFECT:
 │  DOWNSELL (Quick)     │ 17    │ 27      │ 97      │ Rescue conversions │
 │  POST-UPSELL (Book)   │ 147   │ 197     │ 297     │ LTV extension      │
 │                                                                         │
-│  CALIBRATION RULES:                                                     │
+│  CALIBRATION RULES (closed ranges):                                     │
 │  ─────────────────────────────────────────────────────────────────────  │
-│  IF CPL > 25 PLN     → Raise OTO to 97-147 PLN                         │
-│  IF CPL > 40 PLN     → Raise OTO to 197 PLN (ceiling)                  │
-│  IF TSR < 20%        → Lower OTO to 37 PLN, add scarcity               │
-│  IF Bump Rate < 15%  → Lower Bump to 47 PLN                            │
-│  IF Downsell < 30%   → Test 17 PLN price point                         │
+│  CPL 0.00–15.00      → Use FLOOR prices (scale mode)                   │
+│  CPL 15.01–25.00     → Use DEFAULT prices                              │
+│  CPL 25.01–35.00     → Raise OTO to 97, Bump to 97, Downsell to 47     │
+│  CPL 35.01–45.00     → Use CEILING prices (197/147/97)                 │
+│  CPL > 45.00         → PAUSE ADS, ceiling insufficient                 │
 │                                                                         │
-│  PESSIMISTIC SCENARIO = Use CEILING prices to guarantee breakeven      │
+│  TSR < 15%           → Lower OTO to 37 PLN, add scarcity               │
+│  Bump Rate < 15%     → Lower Bump to 47 PLN                            │
+│  Downsell < 15%      → Lower Downsell to 17 PLN                        │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Part III: Financial Model
+## Part II: Financial Model
 
-### 3.1 Revenue Per Lead Calculation
+### 2.1 Revenue Per Lead Calculation
 
 **Assumptions (Calibrated by Scenario):**
 
@@ -308,7 +212,7 @@ RPL = (TSR × OTO) + (TSR × Bump Rate × Bump) + ((1-TSR) × Downsell Rate × D
 
 ---
 
-### 3.2 Breakeven Analysis
+### 2.2 Breakeven Analysis
 
 **Question:** At what conversion rates do we break even for each CPL?
 
@@ -323,7 +227,7 @@ RPL = (TSR × OTO) + (TSR × Bump Rate × Bump) + ((1-TSR) × Downsell Rate × D
 
 ---
 
-### 3.3 Calibration Decision Tree
+### 2.3 Calibration Decision Tree
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -338,106 +242,121 @@ RPL = (TSR × OTO) + (TSR × Bump Rate × Bump) + ((1-TSR) × Downsell Rate × D
 │                              │                                          │
 │                              ▼                                          │
 │                    ┌─────────────────┐                                  │
-│                    │  RPL > CPL?     │                                  │
+│                    │  RPL ≥ CPL?     │                                  │
 │                    └────────┬────────┘                                  │
 │                             │                                           │
-│              ┌──────────────┼──────────────┐                            │
-│              │              │              │                            │
-│              ▼              │              ▼                            │
-│         ┌────────┐          │         ┌────────┐                        │
-│         │  YES   │          │         │   NO   │                        │
-│         └───┬────┘          │         └───┬────┘                        │
-│             │               │             │                             │
-│             ▼               │             ▼                             │
-│    ┌──────────────┐         │    ┌──────────────────────┐               │
-│    │ SCALE UP     │         │    │ DIAGNOSE:            │               │
-│    │ Increase     │         │    │ Which metric failing?│               │
-│    │ ad spend     │         │    └──────────┬───────────┘               │
-│    └──────────────┘         │               │                           │
-│                             │    ┌──────────┼──────────┐                │
-│                             │    │          │          │                │
-│                             │    ▼          ▼          ▼                │
-│                             │ ┌──────┐  ┌──────┐  ┌──────┐              │
-│                             │ │ CPL  │  │ TSR  │  │ Bump │              │
-│                             │ │ High │  │ Low  │  │ Low  │              │
-│                             │ └──┬───┘  └──┬───┘  └──┬───┘              │
-│                             │    │         │         │                  │
-│                             │    ▼         ▼         ▼                  │
-│                             │ ┌────────┐ ┌────────┐ ┌────────┐          │
-│                             │ │Test new│ │Raise   │ │Lower   │          │
-│                             │ │ad      │ │OTO     │ │Bump    │          │
-│                             │ │creatives│ │price  │ │price   │          │
-│                             │ │or      │ │to 57-67│ │to 47   │          │
-│                             │ │audiences│ │PLN    │ │PLN     │          │
-│                             │ └────────┘ └────────┘ └────────┘          │
-│                             │    │         │         │                  │
-│                             │    └─────────┴─────────┘                  │
-│                             │               │                           │
-│                             │               ▼                           │
-│                             │      ┌──────────────┐                     │
-│                             │      │ RETEST with  │                     │
-│                             │      │ new config   │                     │
-│                             │      └──────────────┘                     │
-│                             │               │                           │
-│                             │               ▼                           │
-│                             │      ┌──────────────┐                     │
-│                             │      │ RPL > CPL?   │───YES──▶ SCALE      │
-│                             │      └──────┬───────┘                     │
-│                             │             │NO                           │
-│                             │             ▼                             │
-│                             │      ┌──────────────┐                     │
-│                             │      │ Add organic  │                     │
-│                             │      │ traffic layer│                     │
-│                             │      │ (lower blend)│                     │
-│                             │      └──────────────┘                     │
+│              ┌──────────────┴──────────────┐                            │
+│              ▼                             ▼                            │
+│         ┌────────┐                    ┌────────┐                        │
+│         │  YES   │                    │   NO   │                        │
+│         └───┬────┘                    └───┬────┘                        │
+│             │                             │                             │
+│             ▼                             ▼                             │
+│    ┌──────────────┐              ┌──────────────────────┐               │
+│    │ SCALE UP     │              │ DIAGNOSE:            │               │
+│    │ Increase     │              │ Which metric failing?│               │
+│    │ ad spend     │              └──────────┬───────────┘               │
+│    └──────────────┘                         │                           │
+│                                  ┌──────────┼──────────┐                │
+│                                  ▼          ▼          ▼                │
+│                               ┌──────┐  ┌──────┐  ┌──────┐              │
+│                               │ CPL  │  │ TSR  │  │ Bump │              │
+│                               │ High │  │ Low  │  │ Low  │              │
+│                               └──┬───┘  └──┬───┘  └──┬───┘              │
+│                                  │         │         │                  │
+│                                  ▼         ▼         ▼                  │
+│                               ┌────────┐ ┌────────┐ ┌────────┐          │
+│                               │RAISE   │ │Lower   │ │Lower   │          │
+│                               │price   │ │OTO to  │ │Bump    │          │
+│                               │tier    │ │floor   │ │price   │          │
+│                               │(see    │ │(37 PLN)│ │to 47   │          │
+│                               │matrix) │ │+scarcity│ │PLN    │          │
+│                               └────────┘ └────────┘ └────────┘          │
+│                                  │         │         │                  │
+│                                  └─────────┴─────────┘                  │
+│                                            │                            │
+│                                            ▼                            │
+│                                   ┌──────────────┐                      │
+│                                   │ RETEST with  │                      │
+│                                   │ new config   │                      │
+│                                   └──────┬───────┘                      │
+│                                          │                              │
+│                                          ▼                              │
+│                                 ┌─────────────────┐                     │
+│                                 │  RPL ≥ CPL?     │──YES──▶ SCALE       │
+│                                 └────────┬────────┘                     │
+│                                          │NO                            │
+│                                          ▼                              │
+│                                 ┌─────────────────┐                     │
+│                                 │ At ceiling      │──NO──▶ RAISE TO     │
+│                                 │ prices?         │        CEILING      │
+│                                 └────────┬────────┘                     │
+│                                          │YES                           │
+│                                          ▼                              │
+│                                 ┌─────────────────┐                     │
+│                                 │ PAUSE ADS       │                     │
+│                                 │ Ceiling cannot  │                     │
+│                                 │ cover CPL       │                     │
+│                                 └─────────────────┘                     │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### 3.4 Blended CPL Model (Organic + Paid)
+### 2.4 Path A vs Path B Cost Comparison
 
-**The Evergreen Mechanism:** As organic traffic grows, blended CPL drops.
+**Two Parallel Paid Paths — A/B Test to Find Winner:**
 
-| Month | Paid Leads | Paid Cost | Organic Leads | Total Leads | Blended CPL |
-|-------|------------|-----------|---------------|-------------|-------------|
-| 1 | 100 | 1,500 PLN | 10 | 110 | 13.64 PLN |
-| 2 | 100 | 1,500 PLN | 25 | 125 | 12.00 PLN |
-| 3 | 100 | 1,500 PLN | 50 | 150 | 10.00 PLN |
-| 6 | 100 | 1,500 PLN | 100 | 200 | 7.50 PLN |
-| 12 | 50 | 750 PLN | 200 | 250 | 3.00 PLN |
+| Metric | Path A (Direct) | Path B (Warm-Up) |
+|--------|-----------------|------------------|
+| **Flow** | Video Ad → Squeeze | Video Ad → Blog → Retarget → Squeeze |
+| **Touches** | 1 | 2 (initial + retarget) |
+| **Est. CPL** | 15–25 PLN | 25–40 PLN (higher due to 2 ad touches) |
+| **Expected TSR** | 15–20% (cold) | 25–35% (warmer audience) |
+| **Pixel Value** | Squeeze page only | Blog page + Squeeze page |
 
-**At Month 12:** Can reduce paid spend by 50% while maintaining lead flow.
+**Cost Model Example (1,000 PLN test budget each):**
+
+| Path | Budget | Est. CPL | Leads | Est. TSR | OTO Sales | Revenue (47 PLN) |
+|------|--------|----------|-------|----------|-----------|------------------|
+| A | 1,000 | 20 PLN | 50 | 18% | 9 | 423 PLN |
+| B | 1,000 | 35 PLN | 29 | 30% | 9 | 423 PLN |
+
+**Key Insight:** Both paths can yield similar revenue, but:
+- **Path A** = more leads, lower quality, bigger email list
+- **Path B** = fewer leads, higher quality, better TSR, retargetable blog visitors
+
+**Recommendation:** Run both in parallel. Measure NET per path (Revenue - Ad Spend). Scale the winner.
 
 ---
 
-### 3.5 Ad Operations Playbook
+### 2.5 Ad Operations Playbook
 
 **Purpose:** Clear actions for campaign operator based on measured metrics.
 
-#### 3.5.1 Single Metric Triggers
+#### 2.5.1 Single Metric Triggers
 
 | IF... | THEN... | TIMEFRAME |
 |-------|---------|-----------|
-| **CPL < 15 PLN** | Scale budget +25%, test new audiences | After 50+ leads |
-| **CPL 15-25 PLN** | Maintain, optimize creatives | Ongoing |
-| **CPL 25-35 PLN** | Raise OTO to 97 PLN, Bump to 97 PLN | Within 24h |
-| **CPL 35-45 PLN** | Raise to ceiling prices (197/147/97) | Within 24h |
-| **CPL > 45 PLN** | Pause campaign, audit targeting | Immediate |
+| **CPL 0.00–15.00** | Scale budget +25%, test new audiences | After 50+ leads |
+| **CPL 15.01–25.00** | Maintain, optimize creatives | Ongoing |
+| **CPL 25.01–35.00** | Raise OTO to 97 PLN, Bump to 97 PLN | Within 24h |
+| **CPL 35.01–45.00** | Raise to ceiling prices (197/147/97) | Within 24h |
+| **CPL > 45.00** | Pause campaign, audit targeting | Immediate |
 | **TSR > 25%** | Test raising OTO price +20 PLN | After 100+ leads |
-| **TSR 15-25%** | Maintain current OTO price | Ongoing |
-| **TSR < 15%** | Lower OTO to floor (37 PLN), add urgency copy | Within 48h |
+| **TSR 15–25%** | Maintain current OTO price | Ongoing |
+| **TSR 10–15%** | Lower OTO to floor (37 PLN), add urgency copy | Within 48h |
 | **TSR < 10%** | A/B test completely new OTO offer | Within 48h |
 | **Bump > 35%** | Test raising Bump price +30 PLN | After 50+ OTO sales |
-| **Bump 20-35%** | Maintain current Bump price | Ongoing |
+| **Bump 20–35%** | Maintain current Bump price | Ongoing |
 | **Bump < 20%** | Lower Bump to 47 PLN, reposition as "bonus" | Within 48h |
 | **Downsell > 25%** | Test raising Downsell +20 PLN | After 50+ rejections |
 | **Downsell < 15%** | Lower to 17 PLN, simplify offer | Within 48h |
 
 ---
 
-#### 3.5.2 Combined Scenario Matrix
+#### 2.5.2 Combined Scenario Matrix
 
 | CPL | TSR | Action Priority |
 |-----|-----|-----------------|
@@ -449,7 +368,7 @@ RPL = (TSR × OTO) + (TSR × Bump Rate × Bump) + ((1-TSR) × Downsell Rate × D
 
 ---
 
-#### 3.5.3 Facebook/Meta Automation Rules
+#### 2.5.3 Facebook/Meta Automation Rules
 
 **Set up these automated rules in Meta Ads Manager:**
 
@@ -488,7 +407,7 @@ Frequency: Once per day
 
 ---
 
-#### 3.5.4 Price Adjustment Protocol
+#### 2.5.4 Price Adjustment Protocol
 
 **Step-by-step for operator when CPL rises:**
 
@@ -532,7 +451,7 @@ Frequency: Once per day
 
 ---
 
-#### 3.5.5 Weekly Operator Checklist
+#### 2.5.5 Weekly Operator Checklist
 
 ```
 □ MONDAY: Pull last 7 days data
@@ -568,7 +487,7 @@ Frequency: Once per day
 
 ---
 
-#### 3.5.6 Escalation Matrix
+#### 2.5.6 Escalation Matrix
 
 | Situation | Operator Action | Escalate to Owner If... |
 |-----------|-----------------|-------------------------|
@@ -582,7 +501,7 @@ Frequency: Once per day
 
 ---
 
-#### 3.5.7 Quick Reference Card (Print This)
+#### 2.5.7 Quick Reference Card (Print This)
 
 ```
 ╔═══════════════════════════════════════════════════════════════════════╗
@@ -626,43 +545,96 @@ Frequency: Once per day
 
 ---
 
-## Part IV: Organic Traffic Strategy
+## Part III: Blog as Retargeting Fuel
 
-### 4.1 Public Content SEO Value
+### 3.1 How Blog Powers Path B
 
-**8 Public Chapters = 8 SEO Assets**
+**Primary Purpose:** Warm up cold traffic before squeeze page.
 
-| Chapter | Target Keyword | Est. Monthly Search (PL) | Competition |
-|---------|----------------|--------------------------|-------------|
-| 0.1 The Itch | "jurta całoroczna" | 500 | Medium |
-| 0.2 Surviving January | "jurta zimą" | 200 | Low |
-| 1.1 Paper Jungle | "jurta pozwolenie na budowę" | 300 | Medium |
-| 2.1 Circle and Parts | "budowa jurty" | 400 | Medium |
-| 4.1 First Cut | "jurta drewniana" | 150 | Low |
-| 7.1 Before Anyone Lifts | "montaż jurty" | 100 | Low |
-| 9.1 Four Seasons | "konserwacja jurty" | 50 | Very Low |
-| 10.1 Joining Network | "jurta franczyza" | 20 | Very Low |
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PATH B: BLOG RETARGETING FLOW                        │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  STEP 1: Video Ad (CTA: "Read how we build yurts year-round")          │
+│          └── Drives to: Blog chapter (e.g., "Surviving January")       │
+│                                                                         │
+│  STEP 2: Blog Chapter                                                   │
+│          ├── Visitor reads valuable content                            │
+│          ├── Facebook Pixel fires → visitor added to custom audience   │
+│          └── Soft CTA at end: "Want to join the handbook creation?"    │
+│                                                                         │
+│  STEP 3: Retarget Ad (shown 1-7 days later)                            │
+│          ├── "You read about winter yurts. Here's what's next..."      │
+│          └── CTA: Direct to squeeze page                               │
+│                                                                         │
+│  STEP 4: Squeeze Page → OTO → Bump → Downsell                          │
+│          └── Warmer lead = higher TSR expected                         │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
-**Estimated total organic potential:** 1,700 monthly searches
-**At 3% CTR:** ~50 organic leads/month after 6-12 months of SEO work
+**Why This Works:**
+- First touch = value (blog), not ask (squeeze)
+- Pixel builds retargetable audience automatically
+- Second touch = familiar brand, warmer reception
+- Blog readers self-qualify by topic interest
 
 ---
 
-### 4.2 Content Distribution Matrix
+### 3.2 Blog Chapters for Path B
 
-| Content | Blog | YouTube | Podcast | LinkedIn | Email |
-|---------|------|---------|---------|----------|-------|
-| Ch 0.1 Manifesto | ✓ SEO | ✓ Cinematic intro | ✓ Founder story | ✓ Article | Welcome |
-| Ch 1.1 Legal | ✓ SEO | ✓ Explainer | ✓ Lawyer interview | ✓ Summary | Nurture |
-| Ch 2.1 Anatomy | ✓ SEO | ✓ 3D Animation | ✓ Tradition context | - | Nurture |
-| Ch 4.1 First Cut | ✓ SEO | ✓ Workshop demo | ✓ Carpenter tips | - | Nurture |
-| Ch 7.1 Safety | ✓ SEO | ✓ Safety demo | - | ✓ Case study | Nurture |
+**8 Chapters = 8 Warm-Up Landing Pages**
+
+| Chapter | Topic | Best For Avatar | Retarget Message |
+|---------|-------|-----------------|------------------|
+| 0.1 The Itch | Why year-round yurts | All | "Ready to take the first step?" |
+| 0.2 Surviving January | Winter insulation | B, C | "Get the full insulation specs" |
+| 1.1 Paper Jungle | Legal & permits | A, B | "Avoid the legal traps we discovered" |
+| 2.1 Circle and Parts | Yurt anatomy | B, C | "See the full construction breakdown" |
+| 4.1 First Cut | Workshop basics | C | "Access the technical manual" |
+| 7.1 Before Anyone Lifts | Assembly safety | B, C | "Don't lift without this checklist" |
+| 9.1 Four Seasons | Maintenance | A, B | "Protect your investment year-round" |
+| 10.1 Joining Network | Franchise model | A | "Join our builder network" |
 
 ---
 
-## Part V: Implementation Roadmap
+### 3.3 Retargeting Audience Setup (Meta Ads)
 
-### 5.1 Phase 1: Calibration (Weeks 1-4)
+**Custom Audiences to Create:**
+
+| Audience Name | Source | Retention | Use For |
+|---------------|--------|-----------|---------|
+| Blog_All_Visitors | All blog pages | 30 days | Broad retarget |
+| Blog_Legal_Readers | Ch 1.1 page | 14 days | Avatar A retarget |
+| Blog_Technical_Readers | Ch 2.1, 4.1, 7.1 | 14 days | Avatar C retarget |
+| Blog_Winter_Readers | Ch 0.2 | 14 days | Insulation-focused retarget |
+| Squeeze_Visitors_NoConvert | Squeeze page, no thank-you | 7 days | Abandonment retarget |
+
+**Lookalike Audiences (after 500+ conversions):**
+- 1% Lookalike of OTO Buyers
+- 1% Lookalike of Blog_Technical_Readers
+
+---
+
+### 3.4 Blog SEO Bonus (Long-Term)
+
+**Secondary benefit:** Blog posts index in Google over time.
+
+| Chapter | Target Keyword | Est. Monthly Search (PL) |
+|---------|----------------|--------------------------|
+| 0.1 The Itch | "jurta całoroczna" | 500 |
+| 0.2 Surviving January | "jurta zimą" | 200 |
+| 1.1 Paper Jungle | "jurta pozwolenie na budowę" | 300 |
+| 2.1 Circle and Parts | "budowa jurty" | 400 |
+
+**Note:** SEO is a bonus, not the strategy. Primary acquisition remains paid ads. Any organic traffic is free bonus leads that enter the same funnel.
+
+---
+
+## Part IV: Implementation Roadmap
+
+### 4.1 Phase 1: Calibration (Weeks 1-4)
 
 **Goal:** Find profitable configuration
 
@@ -678,7 +650,7 @@ Frequency: Once per day
 
 ---
 
-### 5.2 Phase 2: Stabilization (Weeks 5-12)
+### 4.2 Phase 2: Stabilization (Weeks 5-12)
 
 **Goal:** Consistent profitable acquisition
 
@@ -691,7 +663,7 @@ Frequency: Once per day
 
 ---
 
-### 5.3 Phase 3: Evergreen (Month 4+)
+### 4.3 Phase 3: Evergreen (Month 4+)
 
 **Goal:** Reduce paid dependency, increase organic
 
@@ -703,9 +675,9 @@ Frequency: Once per day
 
 ---
 
-## Part VI: Risk Mitigation
+## Part V: Risk Mitigation
 
-### 6.1 Scenario Planning
+### 5.1 Scenario Planning
 
 | Risk | Probability | Impact | Mitigation |
 |------|-------------|--------|------------|
@@ -719,20 +691,24 @@ Frequency: Once per day
 
 ---
 
-### 6.2 Kill Criteria
+### 5.2 Kill Criteria
 
 **Stop paid campaigns if after 4 weeks:**
 - CPL > 45 PLN consistently (ceiling prices already in use)
 - TSR < 10% after 3 A/B tests
 - Combined (OTO + Bump + Downsell) < 50% of CPL at ceiling prices
 
-**Pivot to:** Pure organic + community building mode
+**If kill criteria met:**
+- Pause all paid campaigns
+- Audit offer positioning, pricing, and creative
+- Consider market timing (seasonality, competition)
+- Resume testing with new hypothesis after 30 days
 
 ---
 
-## Part VII: Metrics Dashboard
+## Part VI: Metrics Dashboard
 
-### 7.1 Weekly Tracking
+### 6.1 Weekly Tracking
 
 | Metric | Target | Red Flag |
 |--------|--------|----------|
@@ -745,7 +721,7 @@ Frequency: Once per day
 
 ---
 
-### 7.2 Monthly Tracking
+### 6.2 Monthly Tracking
 
 | Metric | Target | Red Flag |
 |--------|--------|----------|
@@ -757,9 +733,9 @@ Frequency: Once per day
 
 ---
 
-## Part VIII: Product Requirements
+## Part VII: Product Requirements
 
-### 8.1 Assets to Create
+### 7.1 Assets to Create
 
 | Asset | Priority | Est. Effort | Deadline |
 |-------|----------|-------------|----------|
@@ -776,7 +752,7 @@ Frequency: Once per day
 
 ---
 
-### 8.2 Tech Stack
+### 7.2 Tech Stack
 
 | Function | Tool | Cost |
 |----------|------|------|
