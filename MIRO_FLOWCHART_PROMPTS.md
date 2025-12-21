@@ -1,9 +1,9 @@
 # Miro AI Flowchart Prompts - Enklava Yurts SOP Infrastructure v2.1
 
-## Strategy: 7 Standalone Flowcharts → Manual Assembly
+## Strategy: 13 Modular Flowcharts → Manual Assembly
 
 **Workflow:**
-1. Create each column as a separate flowchart using prompts below
+1. Create each section as a separate flowchart using prompts below
 2. Manually drag them side-by-side in Miro (left to right)
 3. Manually add connecting arrows between columns
 4. Add title and legend
@@ -17,12 +17,13 @@ Create a vertical flowchart titled "CORE - Cross-Cutting SOPs"
 
 Header bar: Dark gray (#4A4A4A), white text "CORE"
 
-Stack these 4 labeled boxes vertically, connected by down arrows:
-
-Row 1: Box labeled "CORE-001" with subtitle "Customer Communication Protocol"
-Row 2: Box labeled "CORE-002" with subtitle "Issue & Exception Handling"
-Row 3: Box labeled "CORE-003" with subtitle "Safety & PPE Standards"
-Row 4: Box labeled "CORE-004" with subtitle "Documentation & Photo Capture"
+[BOX] CORE-001: Customer Communication Protocol
+  ↓
+[BOX] CORE-002: Issue & Exception Handling
+  ↓
+[BOX] CORE-003: Safety & PPE Standards
+  ↓
+[BOX] CORE-004: Documentation & Photo Capture
 
 Styling:
 - Gray boxes (#D9D9D9) with dark gray border
@@ -41,25 +42,33 @@ Create a vertical flowchart titled "SALES - Lead to Order"
 
 Header bar: Yellow (#FFD966), text "SALES"
 
-Stack these rows vertically, connected by arrows:
-
-Row 1: Box "SALES-001" / "Lead Capture"
-Row 2: Box "SALES-002" / "Lead Qualification"
-Row 3: Diamond "QG-1" / "Qualified?"
-        → YES (green arrow down): continue
-        → NO (red arrow right): gray box "Archive/Nurture" (exit)
-Row 4: Box "SALES-003" / "Onboarding Multimedia"
-Row 5: Box "SALES-004" / "Needs Assessment"
-Row 6: Box "SALES-005" / "Proposal Creation"
-Row 7: Diamond "QG-2" / "Accepted?"
-        → YES (green down): continue
-        → NO (red left): arrow loops back to Row 6 with label "Revise"
-Row 8: Box "SALES-006" / "Agreement & Close"
-Row 9: Box "SALES-007" / "Contract"
-Row 10: Box "SALES-008" / "Payment"
-Row 11: Diamond "QG-3" / "Paid?"
-        → YES (green right): box "→ PREP" (exit point)
-        → NO (red down): box "Hold/Remind" with loop arrow
+[BOX] SALES-001: Lead Capture
+  ↓
+[BOX] SALES-002: Lead Qualification
+  ↓
+[DIAMOND] QG-1: Qualified?
+  → YES → SALES-003
+  → NO  → EXIT gray box "Archive/Nurture"
+  ↓
+[BOX] SALES-003: Onboarding Multimedia
+  ↓
+[BOX] SALES-004: Needs Assessment
+  ↓
+[BOX] SALES-005: Proposal Creation
+  ↓
+[DIAMOND] QG-2: Accepted?
+  → YES → SALES-006
+  → NO  → LOOP back to SALES-005 "Revise"
+  ↓
+[BOX] SALES-006: Agreement & Close
+  ↓
+[BOX] SALES-007: Contract
+  ↓
+[BOX] SALES-008: Payment
+  ↓
+[DIAMOND] QG-3: Paid?
+  → YES → EXIT box "→ PREP"
+  → NO  → box "Hold/Remind" with loop arrow
 
 Styling:
 - Yellow boxes (#FFF2CC fill, #FFD966 border)
@@ -77,23 +86,29 @@ Create a vertical flowchart titled "PREP - Production Preparation"
 
 Header bar: Blue (#9FC5E8), text "PREP"
 
-Stack these rows vertically:
-
-Row 1: Box "PREP-001" / "Order Intake & Specification"
-Row 2: Diamond "QG-1" / "Specs Confirmed?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 1 with label "Clarify"
-Row 3: Box "PREP-002" / "Materials Calculation"
-Row 4: Box "PREP-003" / "Supplier Ordering"
-Row 5: Box "PREP-004" / "Materials Receiving QC"
-Row 6: Diamond "QG-2" / "Materials OK?"
-        → YES (green down): continue
-        → NO (red right): box "Reject" → loops to Row 4
-Row 7: Box "PREP-005" / "Production Planning"
-Row 8: Box "PREP-006" / "Workshop & Tool Setup"
-Row 9: Diamond "QG-3" / "Ready?"
-        → YES (green right): box "→ PROD" (exit)
-        → NO (red down): box "Resolve Blockers" → loops to Row 7
+[BOX] PREP-001: Order Intake & Specification
+  ↓
+[DIAMOND] QG-1: Specs Confirmed?
+  → YES → PREP-002
+  → NO  → LOOP to PREP-001 "Clarify"
+  ↓
+[BOX] PREP-002: Materials Calculation
+  ↓
+[BOX] PREP-003: Supplier Ordering
+  ↓
+[BOX] PREP-004: Materials Receiving QC
+  ↓
+[DIAMOND] QG-2: Materials OK?
+  → YES → PREP-005
+  → NO  → box "Reject" → LOOP to PREP-003
+  ↓
+[BOX] PREP-005: Production Planning
+  ↓
+[BOX] PREP-006: Workshop & Tool Setup
+  ↓
+[DIAMOND] QG-3: Ready?
+  → YES → EXIT box "→ PROD"
+  → NO  → box "Resolve Blockers" → LOOP to PREP-005
 
 Styling:
 - Blue boxes (#CFE2F3 fill, #9FC5E8 border)
@@ -110,22 +125,27 @@ Create a vertical flowchart titled "PROD - Stream A: Wood"
 
 Header bar: Green (#93C47D), text "WOOD"
 
-Stack these rows vertically:
-
-Row 1: Box "PROD-001" / "Wood Selection & Cutting"
-Row 2: Small diamond "QG-A1" / "Accurate?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 1 "Recut"
-Row 3: Box "PROD-002" / "Wood Treatment & Finishing"
-Row 4: Box "PROD-003" / "Khana Lattice Assembly"
-Row 5: Small diamond "QG-A2" / "Structure OK?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 4 "Repair"
-Row 6: Box "PROD-004" / "Uni Roof Poles"
-Row 7: Box "PROD-005" / "Tono Crown Ring"
-Row 8: Small diamond "QG-A3" / "Complete?"
-        → YES (green down): box "→ MERGE"
-        → NO (red left): loops to Row 7 "Rebuild"
+[BOX] PROD-001: Wood Selection & Cutting
+  ↓
+[DIAMOND] QG-A1: Accurate?
+  → YES → PROD-002
+  → NO  → LOOP to PROD-001 "Recut"
+  ↓
+[BOX] PROD-002: Wood Treatment & Finishing
+  ↓
+[BOX] PROD-003: Khana Lattice Assembly
+  ↓
+[DIAMOND] QG-A2: Structure OK?
+  → YES → PROD-004
+  → NO  → LOOP to PROD-003 "Repair"
+  ↓
+[BOX] PROD-004: Uni Roof Poles
+  ↓
+[BOX] PROD-005: Tono Crown Ring
+  ↓
+[DIAMOND] QG-A3: Complete?
+  → YES → EXIT box "→ MERGE"
+  → NO  → LOOP to PROD-005 "Rebuild"
 
 Styling:
 - Light green boxes (#B6D7A8 fill, #93C47D border)
@@ -142,21 +162,25 @@ Create a vertical flowchart titled "PROD - Stream B: Sewing"
 
 Header bar: Green (#93C47D) with blue tint, text "SEWING"
 
-Stack these rows vertically:
-
-Row 1: Box "PROD-006" / "Canvas Measurement & Cutting"
-Row 2: Small diamond "QG-B1" / "Cut OK?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 1 "Recut"
-Row 3: Box "PROD-007" / "Wall Cover Sewing"
-Row 4: Small diamond "QG-B2" / "Seams OK?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 3 "Resew"
-Row 5: Box "PROD-008" / "Roof Cover Sewing"
-Row 6: Box "PROD-009" / "Inner Liner Sewing"
-Row 7: Small diamond "QG-B3" / "All Covers OK?"
-        → YES (green down): box "→ MERGE"
-        → NO (red left): loops to affected row "Repair"
+[BOX] PROD-006: Canvas Measurement & Cutting
+  ↓
+[DIAMOND] QG-B1: Cut OK?
+  → YES → PROD-007
+  → NO  → LOOP to PROD-006 "Recut"
+  ↓
+[BOX] PROD-007: Wall Cover Sewing
+  ↓
+[DIAMOND] QG-B2: Seams OK?
+  → YES → PROD-008
+  → NO  → LOOP to PROD-007 "Resew"
+  ↓
+[BOX] PROD-008: Roof Cover Sewing
+  ↓
+[BOX] PROD-009: Inner Liner Sewing
+  ↓
+[DIAMOND] QG-B3: All Covers OK?
+  → YES → EXIT box "→ MERGE"
+  → NO  → LOOP to affected row "Repair"
 
 Styling:
 - Light blue-green boxes (#A4C2F4 fill)
@@ -173,13 +197,13 @@ Create a vertical flowchart titled "PROD - Stream C: Insulation"
 
 Header bar: Green (#93C47D) with orange tint, text "INSULATION"
 
-Stack these rows vertically:
-
-Row 1: Box "PROD-010" / "Insulation Cutting"
-Row 2: Box "PROD-011" / "Insulation Assembly"
-Row 3: Small diamond "QG-C1" / "Complete?"
-        → YES (green down): box "→ MERGE"
-        → NO (red left): loops to Row 2 "Rework"
+[BOX] PROD-010: Insulation Cutting
+  ↓
+[BOX] PROD-011: Insulation Assembly
+  ↓
+[DIAMOND] QG-C1: Complete?
+  → YES → EXIT box "→ MERGE"
+  → NO  → LOOP to PROD-011 "Rework"
 
 Styling:
 - Light orange boxes (#F9CB9C fill)
@@ -194,16 +218,16 @@ Styling:
 ```
 Create a flowchart section titled "PROD - External & Exit"
 
-Three boxes in a horizontal row:
-Box 1: "PROD-012" / "Door & Window Prep"
-Box 2: "PROD-013" / "Rope & Tensioning"
-Box 3: "PROD-014" / "Hardware & Connectors"
+Three boxes in horizontal row:
+[BOX] PROD-012: Door & Window Prep
+[BOX] PROD-013: Rope & Tensioning
+[BOX] PROD-014: Hardware & Connectors
 
 All three connect down to:
 
-Row: Large diamond "QG-PROD-4" / "Pre-Pack Inspection OK?"
-        → YES (green right): box "→ LOG" (exit)
-        → NO (red up): three red dashed arrows going back up labeled "Rework Stream A/B/C"
+[DIAMOND] QG-PROD-4: Pre-Pack Inspection OK?
+  → YES → EXIT box "→ LOG"
+  → NO  → three red dashed arrows up labeled "Rework Stream A/B/C"
 
 Styling:
 - Gray boxes (#D9D9D9)
@@ -220,17 +244,19 @@ Create a vertical flowchart titled "LOG - Logistics"
 
 Header bar: Purple (#B4A7D6), text "LOGISTICS"
 
-Stack these rows vertically:
-
-Row 1: Box "LOG-001" / "Component Packing"
-Row 2: Diamond "QG-1" / "All Packed?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 1 "Complete"
-Row 3: Box "LOG-002" / "Loading & Securing"
-Row 4: Box "LOG-003" / "Transport, Delivery & Handover"
-Row 5: Diamond "QG-2" / "Delivered OK?"
-        → YES (green right): box "→ ASSY" (exit)
-        → NO (red down): box "Document Damage" → "CORE-002"
+[BOX] LOG-001: Component Packing
+  ↓
+[DIAMOND] QG-1: All Packed?
+  → YES → LOG-002
+  → NO  → LOOP to LOG-001 "Complete"
+  ↓
+[BOX] LOG-002: Loading & Securing
+  ↓
+[BOX] LOG-003: Transport, Delivery & Handover
+  ↓
+[DIAMOND] QG-2: Delivered OK?
+  → YES → EXIT box "→ ASSY"
+  → NO  → box "Document Damage" → "CORE-002"
 
 Styling:
 - Purple boxes (#D9D2E9 fill, #B4A7D6 border)
@@ -248,17 +274,21 @@ Create a flowchart section titled "ASSY - Pre-Assembly"
 
 Light red container box (#F4CCCC) with label "PRE-ASSEMBLY"
 
-Inside, stack vertically:
+Inside container:
 
-Row 1: Box "ASSY-000" / "Site Safety Briefing"
-Row 2: Diamond "QG-0" / "Safety OK?"
-        → YES (green down): continue
-        → NO (red right): red box "⛔ STOP WORK" (hard stop, no loop)
-Row 3: Box "ASSY-001" / "Site Assessment & Preparation"
-Row 4: Box "ASSY-002" / "Foundation Setup"
-Row 5: Diamond "QG-1" / "Foundation Level?"
-        → YES (green down): exits container "→ STRUCTURE"
-        → NO (red left): loops to Row 4 "Re-level"
+[BOX] ASSY-000: Site Safety Briefing
+  ↓
+[DIAMOND] QG-0: Safety OK?
+  → YES → ASSY-001
+  → NO  → red box "⛔ STOP WORK" (hard stop, no loop)
+  ↓
+[BOX] ASSY-001: Site Assessment & Preparation
+  ↓
+[BOX] ASSY-002: Foundation Setup
+  ↓
+[DIAMOND] QG-1: Foundation Level?
+  → YES → EXIT container "→ STRUCTURE"
+  → NO  → LOOP to ASSY-002 "Re-level"
 
 Styling:
 - Light red boxes inside light red container
@@ -275,15 +305,19 @@ Create a flowchart section titled "ASSY - Structure"
 
 Medium red container box (#EA9999) with label "STRUCTURE"
 
-Inside, stack vertically:
+Inside container:
 
-Row 1: Box "ASSY-003" / "Khana Wall Erection"
-Row 2: Box "ASSY-004" / "Door Frame Installation"
-Row 3: Box "ASSY-005" / "Uni Roof Poles Installation"
-Row 4: Box "ASSY-006" / "Tono Crown Placement"
-Row 5: Diamond "QG-2" / "Structure Stable?"
-        → YES (green down): exits container "→ COVERING"
-        → NO (red left): loops to Row 1 "Adjust"
+[BOX] ASSY-003: Khana Wall Erection
+  ↓
+[BOX] ASSY-004: Door Frame Installation
+  ↓
+[BOX] ASSY-005: Uni Roof Poles Installation
+  ↓
+[BOX] ASSY-006: Tono Crown Placement
+  ↓
+[DIAMOND] QG-2: Structure Stable?
+  → YES → EXIT container "→ COVERING"
+  → NO  → LOOP to ASSY-003 "Adjust"
 
 Styling:
 - Red-tinted boxes inside container
@@ -300,18 +334,22 @@ Create a flowchart section titled "ASSY - Covering"
 
 Red container box (#E06666) with label "COVERING"
 
-Inside, stack vertically:
+Inside container:
 
-Row 1: Box "ASSY-007a" / "Insulation Installation"
-Row 2: Diamond "QG-3a" / "Coverage OK?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 1 "Fill Gaps"
-Row 3: Box "ASSY-007b" / "Outer Cover Installation"
-Row 4: Diamond "QG-3b" / "Sealed?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 3 "Reseal"
-Row 5: Box "ASSY-007c" / "Inner Liner Installation"
-        → exits container "→ COMPLETION"
+[BOX] ASSY-007a: Insulation Installation
+  ↓
+[DIAMOND] QG-3a: Coverage OK?
+  → YES → ASSY-007b
+  → NO  → LOOP to ASSY-007a "Fill Gaps"
+  ↓
+[BOX] ASSY-007b: Outer Cover Installation
+  ↓
+[DIAMOND] QG-3b: Sealed?
+  → YES → ASSY-007c
+  → NO  → LOOP to ASSY-007b "Reseal"
+  ↓
+[BOX] ASSY-007c: Inner Liner Installation
+  → EXIT container "→ COMPLETION"
 
 Styling:
 - Red boxes inside red container
@@ -328,12 +366,13 @@ Create a flowchart section titled "ASSY - Completion"
 
 Dark red container box (#CC0000) with white text label "COMPLETION"
 
-Inside:
+Inside container:
 
-Row 1: Box "ASSY-008" / "Final Touches & Customer Handover"
-Row 2: Diamond "QG-4" / "Customer Accepts?"
-        → YES (green right): box "→ CARE" (exit point)
-        → NO (red down): box "Punch List" → loops back to Row 1
+[BOX] ASSY-008: Final Touches & Customer Handover
+  ↓
+[DIAMOND] QG-4: Customer Accepts?
+  → YES → EXIT box "→ CARE"
+  → NO  → box "Punch List" → LOOP to ASSY-008
 
 Styling:
 - Dark red container, white text for label
@@ -350,24 +389,28 @@ Create a vertical flowchart titled "CARE - After-Sale & Repeat"
 
 Header bar: Teal (#76A5AF), text "CARE"
 
-Stack these rows vertically:
-
-Row 1: Box "CARE-001" / "Post-Assembly Follow-up (48h)"
-Row 2: Box "CARE-002" / "Satisfaction Survey & Portfolio"
-Row 3: Diamond "QG-1" / "NPS ≥ 8?"
-        → YES (green down): continue
-        → NO (red right): box "Escalate → CORE-002"
-Row 4: Two boxes side by side:
-        Left: "CARE-003a" / "Warranty Claims"
-        Right: "CARE-003b" / "Service Complaints"
-        Both connect down
-Row 5: Box "CARE-004" / "Maintenance Guidance"
-Row 6: Box "CARE-005" / "Referral Program"
-Row 7: Diamond "QG-2" / "Referred?"
-        → YES (green down): continue
-        → NO (red left): loops to Row 6 "Follow up 30d"
-Row 8: Box "CARE-006" / "Repeat & Upsell"
-Row 9: Curved arrow pointing LEFT with label "→ SALES (Repeat Order)"
+[BOX] CARE-001: Post-Assembly Follow-up (48h)
+  ↓
+[BOX] CARE-002: Satisfaction Survey & Portfolio
+  ↓
+[DIAMOND] QG-1: NPS ≥ 8?
+  → YES → CARE-003
+  → NO  → box "Escalate → CORE-002"
+  ↓
+[BOX] CARE-003a: Warranty Claims    [BOX] CARE-003b: Service Complaints
+  (side by side, both connect down)
+  ↓
+[BOX] CARE-004: Maintenance Guidance
+  ↓
+[BOX] CARE-005: Referral Program
+  ↓
+[DIAMOND] QG-2: Referred?
+  → YES → CARE-006
+  → NO  → LOOP to CARE-005 "Follow up 30d"
+  ↓
+[BOX] CARE-006: Repeat & Upsell
+  ↓
+Curved arrow pointing LEFT: "→ SALES (Repeat Order)"
 
 Styling:
 - Teal boxes (#B2D8D8 fill, #76A5AF border)
@@ -428,17 +471,15 @@ December 2025
 ┌─────────────────────────────────────────┐
 │ LEGEND                                  │
 │                                         │
-│ ┌─────────┐  = SOP Process              │
-│ │ ID/Name │                             │
-│ └─────────┘                             │
+│ [BOX]     = SOP Process                 │
+│ [DIAMOND] = Quality Gate (Decision)     │
 │                                         │
-│    ◇       = Quality Gate (Decision)    │
-│                                         │
-│ ────────►  = YES / Pass (green)         │
-│ - - - - ►  = NO / Fail (red dashed)     │
-│    ↺       = Rework loop                │
-│    ⛔      = Hard stop (safety)         │
-│ ─ · ─ · ► = Cross-cutting (CORE)        │
+│ → YES →   = Pass (green arrow)          │
+│ → NO  →   = Fail (red dashed)           │
+│ LOOP      = Rework loop                 │
+│ EXIT      = Proceed to next phase       │
+│ ⛔        = Hard stop (safety)          │
+│ CORE →    = Cross-cutting reference     │
 └─────────────────────────────────────────┘
 ```
 
@@ -475,3 +516,4 @@ CARE: Teal #76A5AF
 
 *Created: December 2025*
 *For: Enklava Yurts SOP Infrastructure v2.1*
+*Format: Hybrid notation for Miro AI*
