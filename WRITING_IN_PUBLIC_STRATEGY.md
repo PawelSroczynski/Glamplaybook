@@ -254,17 +254,19 @@ FLYWHEEL EFFECT:
 │                                                                         │
 │  PRODUCT              │ FLOOR │ DEFAULT │ CEILING │ LEVER              │
 │  ─────────────────────┼───────┼─────────┼─────────┼────────────────     │
-│  OTO (Essentials)     │ 37    │ 47      │ 67      │ Main calibration   │
+│  OTO (Essentials)     │ 37    │ 47      │ 77      │ Main calibration   │
 │  BUMP (Technical)     │ 47    │ 67      │ 97      │ Margin boost       │
-│  DOWNSELL (Quick)     │ 17    │ 27      │ 37      │ Rescue conversions │
+│  DOWNSELL (Quick)     │ 17    │ 27      │ 47      │ Rescue conversions │
 │  POST-UPSELL (Book)   │ 147   │ 197     │ 247     │ LTV extension      │
 │                                                                         │
 │  CALIBRATION RULES:                                                     │
 │  ─────────────────────────────────────────────────────────────────────  │
-│  IF CPL > 15 PLN     → Raise OTO to 57-67 PLN                          │
+│  IF CPL > 15 PLN     → Raise OTO to 57-77 PLN                          │
 │  IF TSR < 20%        → Lower OTO to 37 PLN, add scarcity               │
 │  IF Bump Rate < 15%  → Lower Bump to 47 PLN                            │
 │  IF Downsell < 30%   → Test 17 PLN price point                         │
+│                                                                         │
+│  PESSIMISTIC SCENARIO = Use CEILING prices to guarantee breakeven      │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
@@ -275,17 +277,19 @@ FLYWHEEL EFFECT:
 
 ### 3.1 Revenue Per Lead Calculation
 
-**Assumptions (Conservative Calibration Phase):**
+**Assumptions (Calibrated by Scenario):**
 
 | Metric | Pessimistic | Realistic | Optimistic |
 |--------|-------------|-----------|------------|
 | CPL (Cost Per Lead) | 20 PLN | 15 PLN | 10 PLN |
-| OTO Price | 47 PLN | 47 PLN | 47 PLN |
+| OTO Price | **77 PLN** (ceiling) | 47 PLN | 47 PLN |
 | OTO Conversion (TSR) | 15% | 22% | 30% |
-| Bump Price | 67 PLN | 67 PLN | 67 PLN |
+| Bump Price | **97 PLN** (ceiling) | 67 PLN | 67 PLN |
 | Bump Take Rate | 20% | 30% | 40% |
-| Downsell Price | 27 PLN | 27 PLN | 27 PLN |
+| Downsell Price | **47 PLN** (ceiling) | 27 PLN | 27 PLN |
 | Downsell Rate (of rejectors) | 15% | 20% | 25% |
+
+**Key Insight:** Pessimistic scenario uses CEILING prices. That's the whole point of calibration levers - when CPL is high and conversions are low, you raise prices to maintain breakeven.
 
 **Revenue Per Lead (RPL) Formula:**
 
@@ -297,8 +301,8 @@ RPL = (TSR × OTO) + (TSR × Bump Rate × Bump) + ((1-TSR) × Downsell Rate × D
 
 | Scenario | OTO Rev | Bump Rev | Downsell Rev | Total RPL | CPL | Net/Lead |
 |----------|---------|----------|--------------|-----------|-----|----------|
-| **Pessimistic** | 7.05 | 2.01 | 3.44 | **12.50 PLN** | 20 | **-7.50** |
-| **Realistic** | 10.34 | 4.42 | 4.25 | **19.01 PLN** | 15 | **+4.01** |
+| **Pessimistic** | 11.55 | 2.91 | 5.99 | **20.45 PLN** | 20 | **≈0** |
+| **Realistic** | 10.34 | 4.42 | 4.21 | **18.97 PLN** | 15 | **+3.97** |
 | **Optimistic** | 14.10 | 8.04 | 4.73 | **26.87 PLN** | 10 | **+16.87** |
 
 ---
@@ -582,7 +586,7 @@ RPL = (TSR × OTO) + (TSR × Bump Rate × Bump) + ((1-TSR) × Downsell Rate × D
 | Calibration | None | Decision tree + price matrix |
 | Evergreen | Not designed | Blended CPL model |
 | Risk model | Optimistic CPL | Conservative 20 PLN CPL |
-| Breakeven | 27% TSR (no help) | 21% TSR (with Bump+Downsell) |
+| Breakeven | 27% TSR (no help) | **0 net at 20 PLN CPL** (ceiling prices) |
 
 ---
 
