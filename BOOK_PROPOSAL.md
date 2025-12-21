@@ -1,6 +1,6 @@
-# Biblia o Jurtach: Book Proposal
+# Year-Round Yurt: Book Proposal
 
-**Working Title:** "Year-Round Yurt: The Complete Guide"
+**Working Title:** "Year-Round Yurt: The Complete Handbook"
 **Subtitle:** From Vision to Reality – Build, Business, Life
 
 **Version:** 1.0
