@@ -1,10 +1,11 @@
 # Year-Round Yurt: Book Proposal
 
 **Working Title:** "Year-Round Yurt: The Complete Handbook"
-**Subtitle:** From Vision to Reality – Build, Business, Life
+**Subtitle:** From Dream to Dwelling – Build Shelter That Breathes
 
-**Version:** 1.0
+**Version:** 2.0
 **Created:** December 2025
+**Updated:** December 2025 (Journey Edition)
 
 ---
 
@@ -19,7 +20,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                         BIBLIA O JURTACH                                │
+│                    YEAR-ROUND YURT HANDBOOK                             │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
 │  1. LEAD MAGNET (Free chapters)                                         │
@@ -44,27 +45,88 @@
 
 ---
 
-## Book Structure
+## The Journey Arc
 
-### Overview
+*The book follows a builder's journey, not a syllabus*
 
 ```
-PART 0:  VISION           (2 chapters)   ─┐
-PART I:  LEGAL & BUSINESS (4 chapters)    │  CONTEXT LAYER
-PART II: DESIGN           (4 chapters)   ─┘  (Avatar A heavy)
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         THE BUILDER'S JOURNEY                           │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│   PART 0   ○ THE CALL          Why you're here                          │
+│            │                                                            │
+│   PART I   ○ THE MAP           Legal, business, site terrain            │
+│            │                                                            │
+│   PART II  ○ THE VISION        Design before build                      │
+│            │                                                            │
+│   PART III ○ THE GATHERING     Materials, knowledge, allies             │
+│            │                                                            │
+│   PART IV  ○ THE CRAFT: WOOD   Shaping the skeleton                     │
+│   PART V   ○ THE CRAFT: SKIN   Canvas becomes shelter                   │
+│   PART VI  ○ THE CRAFT: WARMTH Invisible infrastructure                 │
+│            │                                                            │
+│   PART VII ○ THE RAISING       Assembly day - the climax                │
+│            │                                                            │
+│   PART VIII○ THE LIVING        Systems that make shelter home           │
+│            │                                                            │
+│   PART IX  ○ THE KEEPING       Stewardship across seasons               │
+│            │                                                            │
+│   PART X   ○ THE SPREADING     Scale the knowledge                      │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
-PART III: MATERIALS       (3 chapters)   ─┐
-PART IV:  WOOD PRODUCTION (4 chapters)    │
-PART V:   COVERS          (3 chapters)    │  PRODUCTION LAYER
-PART VI:  INSULATION+HW   (2 chapters)   ─┘  (Avatar B/C heavy)
+---
 
-PART VII: ASSEMBLY        (5 chapters)   ─┐  EXECUTION LAYER
-PART VIII: SYSTEMS        (4 chapters)   ─┘  (Avatar All)
+## Chapter Format
 
-PART IX:  OPERATIONS      (3 chapters)   ─┐  SCALE LAYER
-PART X:   SCALING         (3 chapters)   ─┘  (Avatar A heavy)
+*Each chapter follows this rhythm:*
 
-APPENDICES               (6 sections)       REFERENCE
+```
+┌─────────────────────────────────────────────┐
+│  OPENING: The Story                         │
+│  A real scenario, problem, or person        │
+│  "Tomek spent 3 winters in a leaky yurt..." │
+├─────────────────────────────────────────────┤
+│  THE STAKES: Why This Matters               │
+│  Emotional/practical consequences           │
+│  What you gain / what you risk              │
+├─────────────────────────────────────────────┤
+│  THE KNOWLEDGE: How-To Core                 │
+│  Technical content, steps, specs            │
+│  (SOP essence, human-readable)              │
+├─────────────────────────────────────────────┤
+│  VOICES: Community Wisdom                   │
+│  Quotes, tips, warnings from real builders  │
+│  "I wish someone told me..." moments        │
+├─────────────────────────────────────────────┤
+│  THE CHECKPOINT: What You Now Know          │
+│  Summary, decision points, next step        │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+## Book Structure Overview
+
+```
+PART 0:   THE CALL         (2 chapters)   ─┐
+PART I:   THE MAP          (4 chapters)    │  CONTEXT LAYER
+PART II:  THE VISION       (4 chapters)   ─┘  (Avatar A heavy)
+
+PART III: THE GATHERING    (3 chapters)   ─┐
+PART IV:  THE CRAFT: WOOD  (4 chapters)    │
+PART V:   THE CRAFT: SKIN  (3 chapters)    │  PRODUCTION LAYER
+PART VI:  THE CRAFT: WARMTH(2 chapters)   ─┘  (Avatar B/C heavy)
+
+PART VII: THE RAISING      (5 chapters)   ─┐  EXECUTION LAYER
+PART VIII:THE LIVING       (4 chapters)   ─┘  (Avatar All)
+
+PART IX:  THE KEEPING      (3 chapters)   ─┐  SCALE LAYER
+PART X:   THE SPREADING    (3 chapters)   ─┘  (Avatar A heavy)
+
+APPENDICES                 (6 sections)       REFERENCE
 ─────────────────────────────────────────────────────────
 TOTAL: 37 chapters + 6 appendices
 ```
@@ -73,77 +135,89 @@ TOTAL: 37 chapters + 6 appendices
 
 ## Detailed Chapter Plan
 
-### PART 0: VISION (2 chapters)
+### PART 0: THE CALL (2 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 0.1 | **Why Yurts, Why Now** | - | All | Philosophy of circular shelter, nomadic wisdom meets modern resilience, climate crisis context, Enklava vision | Blog: manifesto piece. Podcast: founder story. Video: cinematic intro |
-| 0.2 | **Year-Round Living Reality** | - | All | Polish climate challenges, what "year-round" actually means, myths vs reality, case studies | Blog: myth-busting. Podcast: winter yurt dweller interview. Video: 4-season timelapse |
+*Why are you here? What's the itch you can't scratch with conventional housing?*
 
-**Gated/Public:** Ch 0.1 PUBLIC (hook), Ch 0.2 GATED
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 0.1 | **The Itch That Won't Go Away** | Corporate exec who couldn't sleep until she built her first yurt | - | All | Philosophy of circular shelter, nomadic wisdom, climate crisis context, Enklava vision | 3 "why I built" stories | Blog: manifesto. Podcast: founder story. Video: cinematic intro |
+| 0.2 | **Surviving January** | First winter - what they got right, what almost killed them | - | All | Polish climate reality, year-round myths debunked, case studies | Winter dwellers' "first frost" moments | Blog: myth-busting. Podcast: winter dweller interview. Video: 4-season timelapse |
 
----
-
-### PART I: LEGAL & BUSINESS (4 chapters)
-
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 1.1 | **Building Law & Permits** | - | A,B | Notification vs permit, 70m² rule, recreational building classification, zoning analysis | Blog: legal guide. Podcast: lawyer interview. Video: document walkthrough |
-| 1.2 | **Site Selection** | PREP-001 | A,B | Site selection criteria, zoning reading, soil types, access, utilities | Blog: checklist. Video: site visit demo |
-| 1.3 | **Glamping Business Model** | SALES-* | A | ROI calculator logic, occupancy rates, pricing strategies, seasonality, operational costs | Blog: case study. Podcast: glamping operator interview. Video: spreadsheet walkthrough |
-| 1.4 | **Insurance & Risk** | CORE-002 | A | Insurance types, liability, fire, weather, guest injury | Blog: insurance guide. Podcast: broker interview |
-
-**Gated/Public:** Ch 1.1 PUBLIC (legal is top search), Ch 1.2-1.4 GATED
+**Gated/Public:** Both PUBLIC - manifesto hooks
 
 ---
 
-### PART II: DESIGN & PLANNING (4 chapters)
+### PART I: THE MAP (4 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 2.1 | **Yurt Anatomy** | - | All | Khana (lattice), Uni (roof poles), Tono (crown), Door frame, Covers - naming, function, history | Blog: explainer. Video: 3D animated explainer. Podcast: Mongolian tradition context |
-| 2.2 | **Sizing & Specifications** | PREP-001, PREP-002 | B,C | Diameter options (5m, 6m, 7m+), height calculations, materials quantities, weight | Blog: sizing guide. Video: measurement demo. Data: spec sheets |
-| 2.3 | **Foundation Design** | ASSY-002 | All | Platform types (deck, concrete, posts), leveling requirements, drainage, frost considerations | Blog: comparison guide. Video: foundation build timelapse |
-| 2.4 | **CAD & Technical Documentation** | CORE-004 | C | Reading technical drawings, CAD file formats, modification guidelines | Video: CAD walkthrough. Data: downloadable DXF/PDF |
+*Before you build, understand the terrain - legal, financial, site.*
 
-**Gated/Public:** Ch 2.1 PUBLIC (educational hook), Ch 2.2-2.4 GATED
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 1.1 | **The Paper Jungle** | Builder shut down by authorities - how he came back legal | - | A,B | Permits vs notifications, 70m² rule, zoning, recreational classification | Lawyer Q&A, "I wish I'd known" | Blog: legal guide. Podcast: lawyer. Video: document walkthrough |
+| 1.2 | **Finding Your Ground** | Three sites rejected before "the one" | PREP-001 | A,B | Site criteria, zoning reading, soil, access, utilities | Site fails and wins | Blog: checklist. Video: site visit demo |
+| 1.3 | **The Numbers Game** | Glamping operator's first year - real P&L exposed | SALES-* | A | ROI modeling, occupancy, pricing, seasonality, breakeven | Operators share real numbers | Blog: case study. Podcast: operator. Video: spreadsheet |
+| 1.4 | **When Things Go Wrong** | A fire, a storm, a lawsuit - three insurance claims | CORE-002 | A | Insurance types, liability, risk mitigation | Broker interview + claim stories | Blog: insurance guide. Podcast: broker |
 
----
-
-### PART III: MATERIALS & SOURCING (3 chapters)
-
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 3.1 | **Wood: Selection & Preparation** | PROD-001, PROD-002 | B,C | Wood species (pine, spruce, larch), moisture content, grain direction, treatment options, sustainability | Blog: wood guide. Video: lumber yard visit. Podcast: carpenter interview |
-| 3.2 | **Fabrics & Covers** | PROD-006 | B,C | Canvas types (cotton, poly-cotton, PVC), waterproofing, UV resistance, breathability, weight | Blog: fabric comparison. Video: material tests |
-| 3.3 | **Insulation & Hardware** | PROD-010, PROD-012-014 | B,C | Insulation types (wool, synthetic, reflective), R-values, hardware (hinges, stakes, tensioners), sourcing | Blog: insulation deep-dive. Video: thermal imaging demo |
-
-**Gated/Public:** All GATED (practical, high value)
+**Gated/Public:** Ch 1.1 PUBLIC (legal = top search), rest GATED
 
 ---
 
-### PART IV: WOOD PRODUCTION (4 chapters)
+### PART II: THE VISION (4 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 4.1 | **Cutting & Processing** | PROD-001 | B,C | Cutting patterns, jigs, tolerances (±2mm), batch production | Video: workshop demo. Data: cut lists |
-| 4.2 | **Wood Treatment** | PROD-002 | B,C | Preservatives, sanding, finishing oils, drying times, safety | Video: treatment process. Blog: product comparison |
-| 4.3 | **Khana (Lattice) Assembly** | PROD-003 | B,C | Drilling patterns, joint systems, expansion/contraction testing, QC checks | Video: step-by-step assembly. Data: drilling templates |
-| 4.4 | **Uni & Tono Construction** | PROD-004, PROD-005 | B,C | Roof pole shaping, crown ring construction, fitting tolerances | Video: crown ring build. Blog: geometry explained |
+*See your yurt before it exists. Design is decision-making in advance.*
 
-**Gated/Public:** Ch 4.1 PUBLIC (shows complexity → builds respect), Ch 4.2-4.4 GATED
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 2.1 | **The Circle and Its Parts** | First time seeing a yurt skeleton - "it just made sense" | - | All | Yurt anatomy (Khana, Uni, Tono), naming, function, history | Mongolian builder perspective | Blog: explainer. Video: 3D animation. Podcast: tradition context |
+| 2.2 | **How Big Is Big Enough?** | Couple who built too small, then too big | PREP-001, PREP-002 | B,C | Sizing options (5m, 6m, 7m+), height, materials quantities | "Why I chose 6m" stories | Blog: sizing guide. Video: measurement demo. Data: specs |
+| 2.3 | **The Ground Beneath** | Foundation that failed - the $4k lesson | ASSY-002 | All | Foundation types (deck, concrete, posts), leveling, drainage, frost | Foundation horror stories + fixes | Blog: comparison. Video: foundation timelapse |
+| 2.4 | **Reading the Blueprints** | First CAD file - "I had no idea what I was looking at" | CORE-004 | C | Technical drawings, CAD formats, modification basics | Engineer explains like you're 5 | Video: CAD walkthrough. Data: DXF/PDF |
+
+**Gated/Public:** Ch 2.1 PUBLIC (educational hook), rest GATED
+
+---
+
+### PART III: THE GATHERING (3 chapters)
+
+*Collecting what you need - materials, knowledge, maybe courage.*
+
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 3.1 | **The Wood Whisperer** | Carpenter selecting wood at lumber yard - what his hands know | PROD-001, PROD-002 | B,C | Species (pine, spruce, larch), moisture, grain, treatment, sourcing | Carpenter: "How I read a board" | Blog: wood guide. Video: lumber yard. Podcast: carpenter |
+| 3.2 | **The Skin of the Shelter** | Canvas failure in year 2 - "It just started leaking everywhere" | PROD-006 | B,C | Canvas types (cotton, poly-cotton, PVC), waterproofing, UV, breathability | Fabric tester destruction tests | Blog: fabric comparison. Video: material tests |
+| 3.3 | **The Invisible Layer** | Condensation nightmare - "Water dripping inside constantly" | PROD-010, PROD-012-014 | B,C | Insulation types (wool, synthetic, reflective), R-values, hardware | Thermal imaging: good vs bad | Blog: insulation deep-dive. Video: thermal imaging |
+
+**Gated/Public:** All GATED (high practical value)
+
+---
+
+### PART IV: THE CRAFT - WOOD (4 chapters)
+
+*Shaping the skeleton. This is where patience becomes structure.*
+
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 4.1 | **The First Cut** | "I measured twice, cut once - and it was still wrong" | PROD-001 | B,C | Cutting patterns, jigs, tolerances (±2mm), batch production | "My expensive mistakes" | Video: workshop demo. Data: cut lists |
+| 4.2 | **Making Wood Last** | Untreated wood rotting in year 3 | PROD-002 | B,C | Preservatives, sanding, finishing, drying, safety | Before/after at 5 years | Video: treatment process. Blog: product comparison |
+| 4.3 | **Weaving the Wall** | First khana assembly - "It suddenly clicked open like magic" | PROD-003 | B,C | Drilling patterns, joint systems, expansion testing, QC | Builder's internal monologue | Video: step-by-step. Data: drilling templates |
+| 4.4 | **Crown and Bones** | The tono that didn't fit - "One centimeter off" | PROD-004, PROD-005 | B,C | Roof pole shaping, crown ring construction, tolerances | The "accidental engineer" | Video: crown build. Blog: geometry explained |
+
+**Gated/Public:** Ch 4.1 PUBLIC (shows complexity → respect), rest GATED
 
 **Quality Gate Coverage:** QG-PROD-A1, QG-PROD-A2, QG-PROD-A3
 
 ---
 
-### PART V: COVER PRODUCTION (3 chapters)
+### PART V: THE CRAFT - SKIN (3 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 5.1 | **Fabric Measurement & Cutting** | PROD-006 | B,C | Pattern layout, cutting techniques, waste minimization | Video: cutting demo. Data: patterns |
-| 5.2 | **Cover Sewing** | PROD-007, PROD-008 | B,C | Seam types, reinforcement, waterproof stitching, machine settings | Video: sewing walkthrough. Blog: seam strength tests |
-| 5.3 | **Finishing & Quality Control** | PROD-009 | B,C | Inner liner construction, attachment systems, final QC | Video: QC inspection. Data: checklist |
+*Canvas becomes shelter. Sewing that must survive storms.*
+
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 5.1 | **Measure Twice, Cut Canvas Once** | The $800 cutting mistake | PROD-006 | B,C | Pattern layout, cutting techniques, waste minimization | Sewing pros' measuring rituals | Video: cutting demo. Data: patterns |
+| 5.2 | **Stitches That Hold** | A seam that blew open in a storm | PROD-007, PROD-008 | B,C | Seam types, reinforcement, waterproof stitching, machine settings | Sailmaker's wisdom for yurts | Video: sewing walkthrough. Blog: seam tests |
+| 5.3 | **The Final Fitting** | Cover that didn't fit the frame - "Off by 10cm" | PROD-009 | B,C | Inner liner, attachment systems, final QC | QC inspector: "What I look for" | Video: QC inspection. Data: checklist |
 
 **Gated/Public:** All GATED
 
@@ -151,12 +225,14 @@ TOTAL: 37 chapters + 6 appendices
 
 ---
 
-### PART VI: INSULATION & HARDWARE (2 chapters)
+### PART VI: THE CRAFT - WARMTH (2 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 6.1 | **Insulation Preparation** | PROD-010, PROD-011 | B,C | Cutting patterns, layering, attachment methods, thermal bridging prevention | Video: insulation prep. Data: R-value calculator |
-| 6.2 | **Doors, Windows & Hardware** | PROD-012, PROD-013, PROD-014 | B,C | Door/window fitting, rope systems, tensioning hardware, pre-assembly checks | Video: hardware prep. Data: hardware list |
+*The invisible infrastructure that makes year-round possible.*
+
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 6.1 | **The Warmth Sandwich** | Thermal imaging reveal - "We found the cold spots" | PROD-010, PROD-011 | B,C | Insulation cutting, layering, attachment, thermal bridging | Thermal before/after gallery | Video: insulation prep. Data: R-value calc |
+| 6.2 | **The Small Parts That Matter** | Door that wouldn't close in winter | PROD-012, PROD-013, PROD-014 | B,C | Door/window fitting, rope systems, tensioning, pre-checks | "The €20 hinge that ruined everything" | Video: hardware prep. Data: hardware list |
 
 **Gated/Public:** All GATED
 
@@ -164,56 +240,64 @@ TOTAL: 37 chapters + 6 appendices
 
 ---
 
-### PART VII: ASSEMBLY (5 chapters)
+### PART VII: THE RAISING (5 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 7.1 | **Safety & Site Preparation** | ASSY-000, ASSY-001, CORE-003 | All | Safety briefing, PPE, site assessment, ground preparation | Video: safety demo. Data: safety checklist. Blog: liability |
-| 7.2 | **Foundation & Leveling** | ASSY-002 | All | Platform construction, leveling (5mm tolerance), drainage verification | Video: foundation build. Data: level check procedure |
-| 7.3 | **Structure: Khana → Tono** | ASSY-003, ASSY-004, ASSY-005, ASSY-006 | All | Wall erection, door frame, roof poles, crown placement - full sequence | Video: timelapse + detailed. Blog: troubleshooting common issues |
-| 7.4 | **Covering: Insulation → Outer → Inner** | ASSY-007a, ASSY-007b, ASSY-007c | All | Layering sequence, attachment, sealing, weatherproofing verification | Video: covering sequence. Data: weatherproof checklist |
-| 7.5 | **Finishing & Handover** | ASSY-008 | All | Final touches, customer walkthrough, punch list process, handover | Video: final inspection. Data: handover checklist |
+*The climax. Components become shelter. Usually in one day.*
 
-**Gated/Public:** Ch 7.1 PUBLIC (safety is universal value), Ch 7.2-7.5 GATED
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 7.1 | **Before Anyone Lifts a Finger** | The injury that stopped a build | ASSY-000, ASSY-001, CORE-003 | All | Safety briefing, PPE, site assessment, ground prep | Safety officer: "Near-misses I've seen" | Video: safety demo. Data: checklist. Blog: liability |
+| 7.2 | **The Ground Truth** | Foundation not level - discovered after walls up | ASSY-002 | All | Platform construction, leveling (5mm), drainage | "We re-did foundation three times" | Video: foundation build. Data: level check |
+| 7.3 | **Walls Rise, Crown Floats** | First-timer's internal monologue during raising | ASSY-003-006 | All | Wall erection, door frame, roof poles, crown - full sequence | Timelapse voiceover: the emotions | Video: timelapse + detailed. Blog: troubleshooting |
+| 7.4 | **Wrapping the Bones** | Rain started mid-assembly - "We had 20 minutes" | ASSY-007a-c | All | Insulation → outer → inner sequence, sealing | Weather war stories | Video: covering sequence. Data: weatherproof checklist |
+| 7.5 | **The First Night** | Sleeping in your yurt the first night | ASSY-008 | All | Final touches, walkthrough, punch list, handover | "That first night, I couldn't believe I built this" | Video: final inspection. Data: handover checklist |
+
+**Gated/Public:** Ch 7.1 PUBLIC (safety = universal), rest GATED
 
 **Quality Gate Coverage:** QG-ASSY-0, QG-ASSY-1, QG-ASSY-2, QG-ASSY-3a, QG-ASSY-3b, QG-ASSY-4
 
 ---
 
-### PART VIII: SYSTEMS (4 chapters)
+### PART VIII: THE LIVING (4 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 8.1 | **Heating Systems** | - | All | Wood stove selection, installation, safety clearances, chimney routing, heat distribution | Video: stove install. Blog: stove comparison. Podcast: fire safety expert |
-| 8.2 | **Ventilation & Heat Recovery** | - | All | Passive vs mechanical, heat recovery basics, moisture control, condensation prevention | Video: system walkthrough. Blog: DIY vs commercial. **OTO bump content source** |
-| 8.3 | **Electrical & Solar** | - | All | Off-grid basics, panel sizing, battery selection, wiring for yurt, safety | Video: solar setup. Blog: component guide. Data: sizing calculator |
-| 8.4 | **Water & Sanitation** | - | All | Water collection, filtration, greywater, composting toilet, septic options | Video: water system. Podcast: off-grid living interview |
+*A shell isn't a home. Systems make it livable.*
+
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 8.1 | **Fire in the Circle** | First winter with wood stove - "Temperature swings were insane" | - | All | Stove selection, installation, safety clearances, heat distribution | Stove comparison: who heats what | Video: stove install. Blog: comparison. Podcast: fire safety |
+| 8.2 | **Breathing Without Freezing** | Condensation so bad "it rained inside" | - | All | Ventilation, heat recovery, moisture control | HRV installer: "Yurts are ideal for this" | Video: system walkthrough. Blog: DIY vs commercial. **OTO bump source** |
+| 8.3 | **Power from the Sun** | Going off-grid - "Haven't paid electric in 3 years" | - | All | Solar basics, panel sizing, batteries, wiring | 3 different off-grid setups | Video: solar setup. Blog: component guide. Data: sizing calc |
+| 8.4 | **Water In, Water Out** | Composting toilet learning curve | - | All | Water collection, filtration, greywater, sanitation | "What I wish I knew about composting toilets" | Video: water system. Podcast: off-grid interview |
 
 **Gated/Public:** All GATED (high practical value)
 
 ---
 
-### PART IX: OPERATIONS (3 chapters)
+### PART IX: THE KEEPING (3 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 9.1 | **Seasonal Maintenance** | CARE-004 | All | Spring/summer/fall/winter maintenance tasks, inspection schedule | Blog: seasonal checklist. Video: maintenance walkthrough |
-| 9.2 | **Troubleshooting** | CORE-002 | All | Common issues (leaks, condensation, fabric wear, wood damage), troubleshooting guide | Blog: FAQ. Video: repair demos |
-| 9.3 | **Guest Management** (Glamping) | CARE-001, CARE-002, CARE-003 | A | Guest communication, check-in/out procedures, cleaning protocols, reviews management | Blog: hospitality guide. Podcast: glamping operator tips |
+*Built is just the beginning. Now you steward.*
 
-**Gated/Public:** Ch 9.1 PUBLIC (evergreen SEO), Ch 9.2-9.3 GATED
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 9.1 | **The Four Seasons Checklist** | Spring inspection caught problem before expensive | CARE-004 | All | Seasonal maintenance tasks, inspection schedule | Year-round dwellers' routines | Blog: seasonal checklist. Video: maintenance |
+| 9.2 | **When Things Break** | Mysterious leak took 6 months to find | CORE-002 | All | Troubleshooting common issues, repair techniques | "My dumbest fix that worked" | Blog: FAQ. Video: repair demos |
+| 9.3 | **Hosting Strangers** | First Airbnb guest - the review that changed everything | CARE-001-003 | A | Guest management, check-in/out, cleaning, reviews | Glamping hosts share guest stories | Blog: hospitality guide. Podcast: operator tips |
+
+**Gated/Public:** Ch 9.1 PUBLIC (evergreen SEO), rest GATED
 
 ---
 
-### PART X: SCALING (3 chapters)
+### PART X: THE SPREADING (3 chapters)
 
-| Ch | Title | SOP Ref | Avatar | Content | Multi-Format Notes |
-|----|-------|---------|--------|---------|-------------------|
-| 10.1 | **Franchise Model** | FRANCHISE_HANDBOOK | A | Franchise structure, territory, support, fees, pilot program | Blog: franchise opportunity. Video: founder vision |
-| 10.2 | **KIT Distribution** | - | A,B | KIT contents, assembly support, quality control, pricing | Blog: KIT overview. Video: unboxing |
-| 10.3 | **Quality Control at Scale** | All QGs | A | QA systems, training, certification, continuous improvement | Blog: quality philosophy. Video: QC process |
+*One yurt changes you. Many yurts change the world.*
 
-**Gated/Public:** Ch 10.1 PUBLIC (recruitment hook), Ch 10.2-10.3 GATED
+| Ch | Title | Story Opener | SOP Ref | Avatar | Content | Community Voice | Multi-Format |
+|----|-------|--------------|---------|--------|---------|-----------------|--------------|
+| 10.1 | **Joining the Network** | First franchise builder - "I went from DIY to teaching others" | FRANCHISE | A | Franchise model, territory, support, pilot program | Franchise builder interview | Blog: opportunity. Video: founder vision |
+| 10.2 | **The KIT Path** | Unboxing a KIT - "Everything was there, but I was terrified" | - | A,B | KIT contents, assembly support, quality control | KIT builders: expectations vs reality | Blog: KIT overview. Video: unboxing |
+| 10.3 | **Quality at Scale** | QC failure that reached customer - "We had to rebuild trust" | All QGs | A | QA systems, training, certification, improvement | QC lead: "How we catch problems" | Blog: quality philosophy. Video: QC process |
+
+**Gated/Public:** Ch 10.1 PUBLIC (recruitment hook), rest GATED
 
 ---
 
@@ -221,34 +305,34 @@ TOTAL: 37 chapters + 6 appendices
 
 | App | Title | Content | Format |
 |-----|-------|---------|--------|
-| A | **CAD Drawings** | Complete technical drawings for 6m yurt | PDF, DXF |
-| B | **Bill of Materials** | BOM for each size variant | Excel, PDF |
-| C | **Supplier Directory** | Verified suppliers (Poland focus, expandable) | PDF, live links |
-| D | **Production Checklists** | All QC checklists from SOPs | PDF, printable |
-| E | **Legal Templates** | Zoning checklist, building notification template | DOCX, PDF |
-| F | **Investment Calculator** | ROI spreadsheet with formulas | Excel, Google Sheets |
+| A | **The Drawings** | Complete CAD for 6m yurt | PDF, DXF |
+| B | **The Shopping List** | BOM by size variant | Excel, PDF |
+| C | **The Rolodex** | Verified suppliers (Poland+) | PDF, live links |
+| D | **The Checklists** | All QC checklists | PDF, printable |
+| E | **The Paperwork** | Legal templates | DOCX, PDF |
+| F | **The Calculator** | ROI spreadsheet | Excel, Sheets |
 
 ---
 
 ## Chapter Summary
 
-| Part | Chapters | Public | Gated | Primary Avatar |
-|------|----------|--------|-------|----------------|
-| 0 - Vision | 2 | 1 | 1 | All |
-| I - Legal/Business | 4 | 1 | 3 | A |
-| II - Design | 4 | 1 | 3 | All |
-| III - Materials | 3 | 0 | 3 | B,C |
-| IV - Wood | 4 | 1 | 3 | B,C |
-| V - Covers | 3 | 0 | 3 | B,C |
-| VI - Insulation/HW | 2 | 0 | 2 | B,C |
-| VII - Assembly | 5 | 1 | 4 | All |
-| VIII - Systems | 4 | 0 | 4 | All |
-| IX - Operations | 3 | 1 | 2 | All/A |
-| X - Scaling | 3 | 1 | 2 | A |
-| **TOTAL** | **37** | **7** | **30** | |
+| Part | Name | Chapters | Public | Gated | Primary Avatar |
+|------|------|----------|--------|-------|----------------|
+| 0 | The Call | 2 | 2 | 0 | All |
+| I | The Map | 4 | 1 | 3 | A |
+| II | The Vision | 4 | 1 | 3 | All |
+| III | The Gathering | 3 | 0 | 3 | B,C |
+| IV | The Craft: Wood | 4 | 1 | 3 | B,C |
+| V | The Craft: Skin | 3 | 0 | 3 | B,C |
+| VI | The Craft: Warmth | 2 | 0 | 2 | B,C |
+| VII | The Raising | 5 | 1 | 4 | All |
+| VIII | The Living | 4 | 0 | 4 | All |
+| IX | The Keeping | 3 | 1 | 2 | All/A |
+| X | The Spreading | 3 | 1 | 2 | A |
+| **TOTAL** | | **37** | **8** | **29** | |
 
-**Free content:** 7 chapters (19%) - strategic hooks for SEO and lead capture
-**Gated content:** 30 chapters (81%) - requires email signup
+**Free content:** 8 chapters (22%) - strategic hooks for SEO and lead capture
+**Gated content:** 29 chapters (78%) - requires email signup
 
 ---
 
@@ -292,7 +376,7 @@ Each chapter expands into:
 
 ## Community Contributors
 
-### Core Contributors (mentioned)
+### Core Contributors
 - Yurt owners (living experience)
 - Franchise developers (business perspective)
 - Glamp operators (hospitality angle)
@@ -337,6 +421,19 @@ Each chapter expands into:
 | Case study | Medium | Featured story, promotion |
 | Technical validation | Medium | Expert acknowledgment |
 
+### Community Voice Sources
+
+| Source | Content Type | Collection Method |
+|--------|--------------|-------------------|
+| Yurt owners | Living stories, maintenance tips | Interview, survey |
+| DIY builders | Build stories, mistakes, wins | Video testimonials |
+| Glamp operators | Business reality, guest stories | Podcast episodes |
+| Franchise pilots | Scaling experience | Case studies |
+| Tradespeople | Expert tips | Expert interviews |
+| Failed builds | What went wrong | Anonymous submissions |
+| Winter survivors | First winter stories | Community call |
+| Off-gridders | Systems integration | Photo essays |
+
 ---
 
 ## Release Strategy
@@ -346,8 +443,8 @@ Each chapter expands into:
 
 | Week | Release | Type | Purpose |
 |------|---------|------|---------|
-| 1-2 | Ch 0.1 "Why Yurts, Why Now" | PUBLIC | Hook, manifesto |
-| 3-4 | Ch 1.1 "Building Law & Permits" | PUBLIC | SEO, legal searchers |
+| 1-2 | Ch 0.1 "The Itch That Won't Go Away" | PUBLIC | Hook, manifesto |
+| 3-4 | Ch 1.1 "The Paper Jungle" | PUBLIC | SEO, legal searchers |
 | | ToC + signup | GATED | List building begins |
 
 ### Phase 2: GROW (Feb-Apr 2025)
@@ -355,12 +452,12 @@ Each chapter expands into:
 
 | Period | Chapters | Mix | Notes |
 |--------|----------|-----|-------|
-| Feb W1-2 | Ch 2.1 "Yurt Anatomy" | PUBLIC | Educational hook |
-| Feb W3-4 | Ch 4.1 "Cutting & Processing" | PUBLIC | Shows complexity |
-| Mar W1-2 | Ch 3.1 "Wood Selection" | GATED | First gated practical |
-| Mar W3-4 | Ch 7.1 "Safety & Site Prep" | PUBLIC | Safety universal value |
-| Apr W1-2 | Ch 9.1 "Seasonal Maintenance" | PUBLIC | Evergreen SEO |
-| Apr W3-4 | Ch 10.1 "Franchise Model" | PUBLIC | Recruitment hook |
+| Feb W1-2 | Ch 2.1 "The Circle and Its Parts" | PUBLIC | Educational hook |
+| Feb W3-4 | Ch 4.1 "The First Cut" | PUBLIC | Shows complexity |
+| Mar W1-2 | Ch 3.1 "The Wood Whisperer" | GATED | First gated practical |
+| Mar W3-4 | Ch 7.1 "Before Anyone Lifts a Finger" | PUBLIC | Safety universal value |
+| Apr W1-2 | Ch 9.1 "The Four Seasons Checklist" | PUBLIC | Evergreen SEO |
+| Apr W3-4 | Ch 10.1 "Joining the Network" | PUBLIC | Recruitment hook |
 
 **Parallel:** OTO funnel active with Investor Essentials Kit (37 PLN)
 
@@ -369,10 +466,10 @@ Each chapter expands into:
 
 | Period | Focus | Chapters |
 |--------|-------|----------|
-| May | PART III-IV | Materials + Wood Production |
-| Jun | PART V-VI | Covers + Insulation/Hardware |
-| Jul | PART VII | Full Assembly sequence |
-| Aug | PART VIII | Systems integration |
+| May | PART III-IV | The Gathering + The Craft: Wood |
+| Jun | PART V-VI | The Craft: Skin + Warmth |
+| Jul | PART VII | The Raising (full sequence) |
+| Aug | PART VIII | The Living (systems) |
 
 ### Phase 4: PRESALE (Sep-Oct 2025)
 **Goal:** Physical book presale to community
@@ -404,15 +501,15 @@ Week 1: RESEARCH & OUTLINE
 └── Outline approval
 
 Week 2: DRAFT
-├── Write chapter draft
+├── Write chapter draft (story + how-to + voices)
 ├── AI-assisted editing
 ├── Technical review
 └── Asset integration
 
 Week 3: MULTI-FORMAT
 ├── Blog post finalization
-├── Podcast recording
-├── Video production
+├── Podcast recording (extended interview)
+├── Video production (visual how-to)
 └── Course module creation
 
 Week 4: RELEASE & PROMOTE
@@ -432,6 +529,7 @@ Week 4: RELEASE & PROMOTE
 | Diagrams | Created | 2-4 per chapter | Process flows, specs |
 | Video clips | Filming sessions | 5-10 min raw per chapter | B-roll, demos |
 | Data sheets | SOPs, calculations | As needed | Downloadable |
+| Community quotes | Interviews | 2-4 per chapter | Named attribution |
 
 ---
 
@@ -443,7 +541,7 @@ Week 4: RELEASE & PROMOTE
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
 │  FREE                                                                   │
-│  ├── 7 Public Chapters (blog)                                          │
+│  ├── 8 Public Chapters (blog)                                          │
 │  └── Table of Contents + Chapter 1                                     │
 │                                                                         │
 │  ─────────────────────────────────────────────────────────────────────  │
@@ -463,21 +561,21 @@ Week 4: RELEASE & PROMOTE
 │  ─────────────────────────────────────────────────────────────────────  │
 │                                                                         │
 │  MID-TICKET                                                             │
-│  ├── Full Digital Book (all 37 chapters) ─────────────────── ~200 PLN  │
-│  └── Physical Book (presale) ─────────────────────────────── ~150 PLN  │
+│  ├── Full Digital Handbook (all 37 chapters) ────────────── ~200 PLN   │
+│  └── Physical Book (presale) ────────────────────────────── ~150 PLN   │
 │                                                                         │
 │  ─────────────────────────────────────────────────────────────────────  │
 │                                                                         │
 │  HIGH-TICKET                                                            │
-│  ├── Manual 12k (Full SOP Package) ───────────────────────── 12k PLN   │
-│  ├── EnklavaLab Subscription (ongoing) ───────────────────── monthly   │
-│  ├── KIT (materials + assembly support) ─────────────────── varies     │
-│  └── Full Service (pod klucz) ────────────────────────────── varies    │
+│  ├── Manual 12k (Full SOP Package) ──────────────────────── 12k PLN    │
+│  ├── EnklavaLab Subscription (ongoing) ──────────────────── monthly    │
+│  ├── KIT (materials + assembly support) ────────────────── varies      │
+│  └── Full Service (turnkey) ─────────────────────────────── varies     │
 │                                                                         │
 │  ─────────────────────────────────────────────────────────────────────  │
 │                                                                         │
 │  FRANCHISE                                                              │
-│  └── Franchise License + Training ────────────────────────── TBD       │
+│  └── Franchise License + Training ───────────────────────── TBD        │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
@@ -490,13 +588,13 @@ Week 4: RELEASE & PROMOTE
 
 | Book Part | SOP Phase | Depth | Relationship |
 |-----------|-----------|-------|--------------|
-| PART I: Legal/Business | SALES | Overview | Book = intro, SALES SOPs = internal process |
-| PART II: Design | PREP | Overview | Book = client-facing, PREP SOPs = execution |
-| PART III-VI: Production | PROD | Accessible | Book = understanding, PROD SOPs = precise execution |
-| PART VII: Assembly | ASSY | Accessible | Book = guidance, ASSY SOPs = step-by-step protocol |
-| PART VIII: Systems | (external) | Full | Book covers what SOPs don't (yet) |
-| PART IX: Operations | CARE | Overview | Book = customer guide, CARE SOPs = internal |
-| PART X: Scaling | All | Overview | Book = vision, SOPs = operational backbone |
+| PART I: The Map | SALES | Overview | Book = intro, SALES SOPs = internal process |
+| PART II: The Vision | PREP | Overview | Book = client-facing, PREP SOPs = execution |
+| PART III-VI: The Craft | PROD | Accessible | Book = understanding, PROD SOPs = precise execution |
+| PART VII: The Raising | ASSY | Accessible | Book = guidance, ASSY SOPs = step-by-step protocol |
+| PART VIII: The Living | (external) | Full | Book covers what SOPs don't (yet) |
+| PART IX: The Keeping | CARE | Overview | Book = customer guide, CARE SOPs = internal |
+| PART X: The Spreading | All | Overview | Book = vision, SOPs = operational backbone |
 
 ### Manual 12k Definition
 
@@ -520,8 +618,9 @@ Includes:
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.0 | Dec 2025 | Initial proposal based on SOPs + Whitepaper |
+| 2.0 | Dec 2025 | Journey Edition: story openers, evocative titles, community voices, chapter rhythm |
 
 ---
 
 *Document created: December 2025*
-*Next: Validate chapter list with community input*
+*The technical handbook that reads like an adventure*
