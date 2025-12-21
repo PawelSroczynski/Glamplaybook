@@ -131,11 +131,11 @@ LEGEND:
 
 ### SALES Quality Gates
 
-| Gate | Checkpoint | Pass Criteria | Fail Action |
-|------|------------|---------------|-------------|
-| QG-SALES-1 | Lead Qualified | Budget ≥ min, timeline realistic, site viable | Archive lead or nurture |
-| QG-SALES-2 | Proposal Accepted | Customer confirms specs in writing | Revise or close lost |
-| QG-SALES-3 | Payment Received | Deposit/full payment cleared | Hold until cleared |
+| Gate | Checkpoint | Pass Criteria | Pass Action | Fail Action |
+|------|------------|---------------|-------------|-------------|
+| QG-SALES-1 | Lead Qualified | Budget ≥ min, timeline realistic, site viable | → SALES-003 | Archive lead or nurture sequence |
+| QG-SALES-2 | Proposal Accepted | Customer confirms specs in writing | → SALES-006 | ↺ Revise proposal (SALES-005) or close lost |
+| QG-SALES-3 | Payment Received | Deposit/full payment cleared | → PREP-001 | Hold until cleared, send reminder |
 
 ---
 
@@ -154,11 +154,11 @@ LEGEND:
 
 ### PREP Quality Gates
 
-| Gate | Checkpoint | Pass Criteria | Fail Action |
-|------|------------|---------------|-------------|
-| QG-PREP-1 | Spec Confirmation | Customer sign-off on final specs | Clarify with customer |
-| QG-PREP-2 | Materials Ready | All materials received and QC passed | Reorder failed items (CORE-002) |
-| QG-PREP-3 | Production Ready | All 3 streams scheduled, workshop ready | Resolve blockers |
+| Gate | Checkpoint | Pass Criteria | Pass Action | Fail Action |
+|------|------------|---------------|-------------|-------------|
+| QG-PREP-1 | Spec Confirmation | Customer sign-off on final specs | → PREP-002 | ↺ Clarify with customer (PREP-001) |
+| QG-PREP-2 | Materials Ready | All materials received and QC passed | → PREP-005 | ↺ Reject & reorder (PREP-003) via CORE-002 |
+| QG-PREP-3 | Production Ready | All 3 streams scheduled, workshop ready | → PROD-001/006/010 | ↺ Resolve blockers (PREP-005/006) |
 
 ---
 
@@ -204,21 +204,21 @@ LEGEND:
 
 #### In-Process Gates (Per Stream)
 
-| Gate | After | Check | Pass Criteria |
-|------|-------|-------|---------------|
-| QG-PROD-A1 | PROD-001 | Cutting Accuracy | All pieces within ±2mm tolerance |
-| QG-PROD-A2 | PROD-003 | Khana Structure | Lattice expands/contracts smoothly, no cracks |
-| QG-PROD-A3 | PROD-005 | Crown Ring | Ring is true circle, all joints solid |
-| QG-PROD-B1 | PROD-006 | Canvas Cutting | All pieces match pattern, no waste errors |
-| QG-PROD-B2 | PROD-007 | Wall Cover Seams | Seams pass pull test, waterproof |
-| QG-PROD-B3 | PROD-009 | All Covers Complete | All 3 covers pass visual + seam inspection |
-| QG-PROD-C1 | PROD-011 | Insulation Complete | Full coverage, correct thickness, no gaps |
+| Gate | After | Check | Pass Criteria | Pass Action | Fail Action |
+|------|-------|-------|---------------|-------------|-------------|
+| QG-PROD-A1 | PROD-001 | Cutting Accuracy | All pieces within ±2mm tolerance | → PROD-002 | ↺ Recut (PROD-001) |
+| QG-PROD-A2 | PROD-003 | Khana Structure | Lattice expands/contracts smoothly, no cracks | → PROD-004 | ↺ Repair or remake (PROD-003) |
+| QG-PROD-A3 | PROD-005 | Crown Ring | Ring is true circle, all joints solid | → Merge | ↺ Rebuild (PROD-005) |
+| QG-PROD-B1 | PROD-006 | Canvas Cutting | All pieces match pattern, no waste errors | → PROD-007 | ↺ Recut (PROD-006) |
+| QG-PROD-B2 | PROD-007 | Wall Cover Seams | Seams pass pull test, waterproof | → PROD-008 | ↺ Resew seams (PROD-007) |
+| QG-PROD-B3 | PROD-009 | All Covers Complete | All 3 covers pass visual + seam inspection | → Merge | ↺ Repair defects (PROD-007/008/009) |
+| QG-PROD-C1 | PROD-011 | Insulation Complete | Full coverage, correct thickness, no gaps | → Merge | ↺ Rework (PROD-011) |
 
 #### Phase Exit Gate
 
-| Gate | Checkpoint | Pass Criteria | Fail Action |
-|------|------------|---------------|-------------|
-| QG-PROD-4 | Pre-Pack Inspection | All components present, labeled, QC stamped | Rework/remake failed items |
+| Gate | Checkpoint | Pass Criteria | Pass Action | Fail Action |
+|------|------------|---------------|-------------|-------------|
+| QG-PROD-4 | Pre-Pack Inspection | All components present, labeled, QC stamped | → LOG-001 | ↺ Rework/remake failed items → back to stream |
 
 ---
 
@@ -234,10 +234,10 @@ LEGEND:
 
 ### LOGISTICS Quality Gates
 
-| Gate | Checkpoint | Pass Criteria | Fail Action |
-|------|------------|---------------|-------------|
-| QG-LOG-1 | Packing Complete | All items on checklist packed, labeled | Complete packing |
-| QG-LOG-2 | Delivery Confirmed | Site contact signs inventory receipt, no damage | Document damage (CORE-002) |
+| Gate | Checkpoint | Pass Criteria | Pass Action | Fail Action |
+|------|------------|---------------|-------------|-------------|
+| QG-LOG-1 | Packing Complete | All items on checklist packed, labeled | → LOG-002 | ↺ Complete packing (LOG-001) |
+| QG-LOG-2 | Delivery Confirmed | Site contact signs inventory receipt, no damage | → ASSY-000 | Document damage via CORE-002, assess severity |
 
 ---
 
@@ -278,14 +278,14 @@ LEGEND:
 
 ### ASSEMBLY Quality Gates
 
-| Gate | After | Check | Pass Criteria |
-|------|-------|-------|---------------|
-| QG-ASSY-0 | ASSY-000 | Safety Ready | All crew briefed, PPE confirmed |
-| QG-ASSY-1 | ASSY-002 | Foundation Level | Platform level within 5mm across diameter |
-| QG-ASSY-2 | ASSY-006 | Structure Stable | Walls plumb, roof poles secure, crown centered |
-| QG-ASSY-3a | ASSY-007a | Insulation Coverage | No gaps, correct thickness throughout |
-| QG-ASSY-3b | ASSY-007b | Weatherproof | All seams sealed, no visible gaps |
-| QG-ASSY-4 | ASSY-008 | Customer Sign-off | Customer walks through, signs acceptance |
+| Gate | After | Check | Pass Criteria | Pass Action | Fail Action |
+|------|-------|-------|---------------|-------------|-------------|
+| QG-ASSY-0 | ASSY-000 | Safety Ready | All crew briefed, PPE confirmed | → ASSY-001 | ⛔ STOP WORK until resolved |
+| QG-ASSY-1 | ASSY-002 | Foundation Level | Platform level within 5mm across diameter | → ASSY-003 | ↺ Re-level foundation (ASSY-002) |
+| QG-ASSY-2 | ASSY-006 | Structure Stable | Walls plumb, roof poles secure, crown centered | → ASSY-007a | ↺ Structural adjustment (ASSY-003-006) |
+| QG-ASSY-3a | ASSY-007a | Insulation Coverage | No gaps, correct thickness throughout | → ASSY-007b | ↺ Fill gaps (ASSY-007a) |
+| QG-ASSY-3b | ASSY-007b | Weatherproof | All seams sealed, no visible gaps | → ASSY-007c | ↺ Reseal (ASSY-007b) |
+| QG-ASSY-4 | ASSY-008 | Customer Sign-off | Customer walks through, signs acceptance | → CARE-001 | Create punch list → rework → re-inspect |
 
 ---
 
@@ -317,10 +317,10 @@ LEGEND:
 
 ### CARE Quality Gates
 
-| Gate | Checkpoint | Pass Criteria | Fail Action |
-|------|------------|---------------|-------------|
-| QG-CARE-1 | Customer Satisfied | NPS ≥ 8, no open complaints | Escalate to founder |
-| QG-CARE-2 | Referral Active | Customer enrolled in referral program | Follow up in 30 days |
+| Gate | Checkpoint | Pass Criteria | Pass Action | Fail Action |
+|------|------------|---------------|-------------|-------------|
+| QG-CARE-1 | Customer Satisfied | NPS ≥ 8, no open complaints | → CARE-004 | Escalate to founder, trigger CORE-002 |
+| QG-CARE-2 | Referral Active | Customer enrolled in referral program | → CARE-006 | ↺ Follow up in 30 days (CARE-005) |
 
 ---
 
@@ -567,15 +567,47 @@ Glamplaybook/
 
 ## Quality Gate Summary
 
-| Phase | Gates | Critical Gates |
-|-------|-------|----------------|
-| SALES | 3 | QG-SALES-3 (Payment) |
-| PREP | 3 | QG-PREP-2 (Materials QC) |
-| PROD | 8 | QG-PROD-4 (Pre-Pack) |
-| LOG | 2 | QG-LOG-2 (Delivery) |
-| ASSY | 6 | QG-ASSY-2 (Structure), QG-ASSY-4 (Handover) |
-| CARE | 2 | QG-CARE-1 (Satisfaction) |
-| **TOTAL** | **24** | |
+| Phase | Gates | Critical Gates | Fail Pattern |
+|-------|-------|----------------|--------------|
+| SALES | 3 | QG-SALES-3 (Payment) | Archive / Revise / Hold |
+| PREP | 3 | QG-PREP-2 (Materials QC) | Clarify / Reorder / Resolve |
+| PROD | 8 | QG-PROD-4 (Pre-Pack) | ↺ Rework loop to source step |
+| LOG | 2 | QG-LOG-2 (Delivery) | Complete / CORE-002 |
+| ASSY | 6 | QG-ASSY-0 (Safety), QG-ASSY-4 (Handover) | ⛔ Stop / ↺ Rework / Punch list |
+| CARE | 2 | QG-CARE-1 (Satisfaction) | Escalate / Follow-up |
+| **TOTAL** | **24** | | |
+
+### Quality Gate Decision Pattern
+
+```
+                    ┌─────────────────┐
+                    │    Process      │
+                    │    (SOP-XXX)    │
+                    └────────┬────────┘
+                             │
+                             ▼
+                      ╔═════════════╗
+                      ║   QG-XXX    ║
+                      ║   Check?    ║
+                      ╚══════╤══════╝
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+              ▼              │              ▼
+        ┌─────────┐          │        ┌─────────┐
+        │   YES   │          │        │   NO    │
+        │  (Pass) │          │        │ (Fail)  │
+        └────┬────┘          │        └────┬────┘
+             │               │             │
+             ▼               │             ▼
+    ┌─────────────────┐      │    ┌─────────────────────┐
+    │  Next Process   │      │    │   Fail Action:      │
+    │  (Continue)     │      │    │   ↺ Rework loop     │
+    └─────────────────┘      │    │   ⛔ Stop work      │
+                             │    │   → CORE-002        │
+                             │    │   → Escalate        │
+                             │    └─────────────────────┘
+```
 
 ---
 
@@ -621,6 +653,7 @@ Glamplaybook/
 |---------|------|---------|
 | 1.0 | Dec 2025 | Initial structure (43 SOPs) |
 | 2.0 | Dec 2025 | Systemologist optimization: +CORE category, split ASSY-007, added in-process QGs, merged LOG-003/004, added PREP-006, PROD-002, PROD-013, ASSY-000, CARE-003b. Total: 53 SOPs, 24 QGs |
+| 2.1 | Dec 2025 | Added Pass/Fail actions to all Quality Gates, added QG Decision Pattern diagram, updated critical gates |
 
 ---
 
