@@ -34,6 +34,7 @@ The yurt is not the product. **Enklava is the story. Yurt is Chapter 1.**
 12. [Weekly Operator Checklist](#12-weekly-operator-checklist)
 13. [Revenue Modeling](#13-revenue-modeling)
 14. [Tech Stack](#14-tech-stack)
+15. [Community Conversion Playbook](#15-community-conversion-playbook)
 
 ---
 
@@ -877,6 +878,139 @@ CPL Check (7-day average)
 
 ---
 
+## 15. Community Conversion Playbook
+
+**Goal:** 1,000 paying community subscribers within 1-3 years.
+
+### The Gap in Current Funnel
+
+```
+Current: Lead → OTO → Books → Manual 12k → ... community?
+                                              ↑
+                              (implicit, not explicit)
+
+Fixed:   Lead → Products → Trial → Community (explicit destination)
+```
+
+The funnel currently ends at products. Community membership must become the **North Star destination**, not an afterthought.
+
+### The Warming Ladder
+
+```
+Cold lead → Email list → WhatsApp group → Community subscriber
+                              ↑
+              (the missing middle layer that warms leads)
+```
+
+**WhatsApp stats:** 98% open rate, instant engagement, lower friction than email.
+
+### WhatsApp Group Integration
+
+| Funnel Stage | WhatsApp Entry Point |
+|--------------|---------------------|
+| **Post-squeeze** | "Join the builders' chat" as free bump |
+| **Post-OTO decline** | Downsell: "Not ready? Join free WhatsApp first" |
+| **Email sequence** | CTA in email 2-3: "Get faster answers in the group" |
+| **Community bridge** | WhatsApp = free tier → Toloka = paid tier |
+
+### Graduation Model (Product → Trial → Subscribe)
+
+Every product purchase includes community trial access:
+
+| Purchase | Trial Included | Conversion Window |
+|----------|----------------|-------------------|
+| OTO (47 PLN) | 7-day trial | Day 5-7: upgrade email |
+| Full Book (97 PLN) | 30-day trial | Day 21-28: upgrade sequence |
+| Manual 12k | 6-month access | Month 5: renewal offer |
+| KIT 60k+ | 12-month access | Month 10: renewal + ambassador |
+
+Trial → Paid conversion is automated via email sequence at end of trial period.
+
+### Community-Gated Value
+
+Exclusive content/features only available to paying members:
+
+| Value Type | Description |
+|------------|-------------|
+| **Live Q&A** | Monthly video sessions with Paweł |
+| **Supplier discounts** | Bulk pricing on materials (10-30% off) |
+| **Builder directory** | Find local help, share tools, connect |
+| **Project tracking** | Toloka app features for documenting progress |
+| **Premium chapters** | Advanced content not in public books |
+| **Early access** | New products, beta features, first invites |
+
+### Retargeting Ad Ladder (Extended)
+
+| Ad # | Audience | CTA | Goal |
+|------|----------|-----|------|
+| 1 | Cold | Lead magnet | Capture email |
+| 2 | Leads (no purchase) | OTO/Book | First sale |
+| 3 | Engaged non-buyers | WhatsApp group | Warm relationship |
+| 4 | WhatsApp members | Community trial | Convert to paid |
+| 5 | Trial dropoffs | Testimonials + offer | Win back |
+| 6 | Churned members | "We miss you" + discount | Reactivation |
+
+### Direct Avatar D Funnel
+
+Enklava Builders (Avatar D) skip the product ladder — they want vision, not manual:
+
+```
+Video Ad (Vision-focused)
+    ↓
+Community Landing Page (Enklava story)
+    ↓
+30-day Trial or Direct Subscribe
+    ↓
+Toloka Community Member
+```
+
+**Ad copy focus:** "Building more than a yurt. Building sovereignty."
+
+### Milestone-Based Triggers
+
+Automated community invites based on engagement signals:
+
+| Trigger | Action |
+|---------|--------|
+| Finished yurt (survey/tag) | "Ready for energy systems? Join the community" |
+| Downloaded 3+ resources | "You're serious. Here's where serious builders gather" |
+| Engaged 5+ emails | "You've been reading — now let's talk" |
+| Asked energy/water question | "This is covered in depth inside the community" |
+| Bought Manual 12k | Auto-enroll in 6-month trial, nurture to annual |
+
+### Conversion Math
+
+| Scenario | Leads/Year | WhatsApp Conv. | Community Conv. | Subscribers/Year |
+|----------|------------|----------------|-----------------|------------------|
+| Conservative | 1,800 | 25% (450) | 10% of total | 180 |
+| Moderate | 2,500 | 30% (750) | 15% of total | 375 |
+| Aggressive | 3,500 | 35% (1,225) | 20% of total | 700 |
+
+**3-year projection (moderate):** 375 × 3 = **1,125 subscribers** ✓
+
+### Community Pricing Tiers
+
+| Tier | Price | Includes |
+|------|-------|----------|
+| **Trial** | Free (7-30 days) | Full access, time-limited |
+| **Monthly** | 47 PLN/mo | Full access, cancel anytime |
+| **Annual** | 397 PLN/yr (33 PLN/mo) | Full access + 2 months free |
+| **Lifetime** | 1,497 PLN | One-time, founding member perks |
+
+### Implementation Checklist
+
+- [ ] Set up WhatsApp Business group
+- [ ] Add WhatsApp CTA to squeeze page (free bump)
+- [ ] Add WhatsApp downsell to OTO rejection flow
+- [ ] Create trial access system (7/30/180 day tiers)
+- [ ] Build community landing page for Avatar D
+- [ ] Create retargeting Ad 3 (WhatsApp) and Ad 4 (Community trial)
+- [ ] Set up milestone-based email triggers
+- [ ] Add trial expiration email sequence
+- [ ] Create "Join the community" final email for all sequences
+
+---
+
 ## Implementation Roadmap
 
 ### Phase 1: Calibration (Weeks 1-4)
@@ -929,6 +1063,6 @@ CPL Check (7-day average)
 
 ---
 
-**Document Version:** 3.0
+**Document Version:** 3.1
 **Last Updated:** December 2025
 **Next Review:** After Phase 1 completion
