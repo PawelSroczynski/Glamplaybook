@@ -1,799 +1,934 @@
-# Writing in Public: Lead Magnet Strategy v2.0
+# Writing in Public Strategy v3.0
 
-**Document:** Paid Evergreen Funnel Strategy
-**Based on:** Analiza Strategii Marketingowej Jurt.docx
-**Goal:** Self-liquidating evergreen funnel with calibration levers
-
----
-
-## Glossary
-
-| Term | Definition |
-|------|------------|
-| **CPL** | Cost Per Lead — ad spend divided by leads captured |
-| **TSR** | Thank-you page Sales Rate — % of leads who buy OTO immediately after opt-in |
-| **OTO** | One-Time Offer — tripwire product shown on thank-you page |
-| **RPL** | Revenue Per Lead — total revenue from OTO + Bump + Downsell per lead |
-| **Bump** | Add-on offer shown as checkbox on OTO page |
-| **Downsell** | Lower-priced offer shown if OTO is rejected |
-| **SLO** | Self-Liquidating Offer — funnel where RPL ≥ CPL (breakeven or profit) |
+**Status:** Master Strategy Document
+**Updated:** December 2025
+**Architect:** Paweł Sroczyński
 
 ---
 
-## Part I: Funnel Strategy
+## Executive Summary
 
-### 1.1 Paid Evergreen Model (Two Paths)
+This document defines a **self-liquidating evergreen funnel** built on the "writing in public" philosophy. The yurt handbook serves as the entry point to the larger **Enklava vision** — a path from consumer dependency to sovereign living.
 
-**Core Concept:** All traffic is PAID. Blog chapters exist as retargeting fuel, not organic discovery.
+### North Star Story
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    PAID EVERGREEN FUNNEL (TWO PATHS)                    │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  ┌─────────────────────────────────────────────────────────────────┐    │
-│  │                         VIDEO ADS                                │    │
-│  │         (CTA: "Join the creation of the Yurt Handbook")         │    │
-│  └─────────────────────────────┬───────────────────────────────────┘    │
-│                                │                                        │
-│                ┌───────────────┴───────────────┐                        │
-│                │                               │                        │
-│                ▼                               ▼                        │
-│  ┌─────────────────────────┐     ┌─────────────────────────┐            │
-│  │      PATH A: DIRECT     │     │    PATH B: WARM-UP      │            │
-│  │                         │     │                         │            │
-│  │   Video Ad              │     │   Video Ad              │            │
-│  │       ↓                 │     │       ↓                 │            │
-│  │   Squeeze Page          │     │   Blog Chapter          │            │
-│  │       ↓                 │     │   (pixel visitor)       │            │
-│  │   OTO                   │     │       ↓                 │            │
-│  │                         │     │   RETARGET AD           │            │
-│  │                         │     │       ↓                 │            │
-│  │                         │     │   Squeeze Page          │            │
-│  │                         │     │       ↓                 │            │
-│  │                         │     │   OTO                   │            │
-│  └─────────────────────────┘     └─────────────────────────┘            │
-│                │                               │                        │
-│                └───────────────┬───────────────┘                        │
-│                                │                                        │
-│                                ▼                                        │
-│                    ┌───────────────────────┐                            │
-│                    │  A/B TEST BOTH PATHS  │                            │
-│                    │  Optimize for best    │                            │
-│                    │  RPL per path         │                            │
-│                    └───────────────────────┘                            │
-│                                                                         │
-│  PATH A: Lower CPL, colder audience, may have lower TSR                │
-│  PATH B: Higher CPL (2 touches), warmer audience, likely higher TSR    │
-│                                                                         │
-│  GOAL: Find which path delivers better NET (RPL - CPL)                 │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+> "From renting your life to owning it — one system at a time."
+
+The yurt is not the product. **Enklava is the story. Yurt is Chapter 1.**
 
 ---
 
-### 1.2 Complete Funnel Architecture
+## Table of Contents
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         FUNNEL ARCHITECTURE v2.0                        │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  PAID TRAFFIC (100% of acquisition)                                    │
-│  ├── Path A: Video Ad → Squeeze Page (direct conversion)              │
-│  └── Path B: Video Ad → Blog Chapter → Retarget → Squeeze Page        │
-│                                                                         │
-│  ─────────────────────────────────────────────────────────────────────  │
-│                                                                         │
-│  SQUEEZE PAGE                                                           │
-│  ├── Hook: "Join the creation of Year-Round Yurt Handbook"             │
-│  ├── Value: Free Chapter 1 + Table of Contents                         │
-│  ├── Segment: "What's your goal?" (A/B/C radio buttons)                │
-│  └── Capture: Email + First Name                                       │
-│                                                                         │
-│  ─────────────────────────────────────────────────────────────────────  │
-│                                                                         │
-│  THANK YOU PAGE (OTO)                                                   │
-│  │                                                                      │
-│  ├── DYNAMIC HEADLINE (based on segment)                               │
-│  │   ├── A (Investor): "Before you build... know the numbers"          │
-│  │   ├── B (KIT): "Before you buy materials... know real costs"        │
-│  │   └── C (DIY): "Before you cut wood... know the specs"              │
-│  │                                                                      │
-│  ├── CORE OTO: "Investor Essentials Kit" ──────────────── 47 PLN       │
-│  │   ├── ROI Calculator (Excel/Sheets)                                 │
-│  │   ├── Legal Safety Pack (PDF)                                       │
-│  │   ├── MPZP Checklist                                                │
-│  │   └── 360° Virtual Tour Access                                      │
-│  │                                                                      │
-│  ├── BUMP: "Ventilation & Technical Manual" ─────────────  67 PLN      │
-│  │   ├── Heat recovery system design                                   │
-│  │   ├── Insulation R-value calculator                                 │
-│  │   └── Climate zone requirements                                     │
-│  │   (Checkbox: "Yes, add this for only 67 PLN")                       │
-│  │                                                                      │
-│  ├── IF REJECT OTO → DOWNSELL PAGE                                     │
-│  │   └── "Quick Start Pack" ─────────────────────────────  27 PLN      │
-│  │       ├── Legal Safety Pack only                                    │
-│  │       └── Basic cost estimator                                      │
-│  │                                                                      │
-│  └── NEGATIVE OPT-OUT                                                  │
-│      "No thanks, I'll risk the legal complications"                    │
-│                                                                         │
-│  ─────────────────────────────────────────────────────────────────────  │
-│                                                                         │
-│  POST-PURCHASE UPSELL (Email sequence, Day 3)                          │
-│  └── Full Digital Handbook (pre-release) ────────────────  197 PLN     │
-│                                                                         │
-│  ─────────────────────────────────────────────────────────────────────  │
-│                                                                         │
-│  EMAIL NURTURE (Segment-specific)                                      │
-│  ├── A: ROI case studies, legal updates, project management            │
-│  ├── B: Assembly tips, material sourcing, cost breakdowns              │
-│  └── C: Technical deep-dives, CAD previews, engineering details        │
-│                                                                         │
-│  ─────────────────────────────────────────────────────────────────────  │
-│                                                                         │
-│  HIGH-TICKET OFFERS (Email + Retargeting)                              │
-│  ├── Manual 12k (Full SOP Package) ──────────────────────  12,000 PLN  │
-│  ├── KIT (Materials + Support) ──────────────────────────  varies      │
-│  └── Full Service (Turnkey Build) ───────────────────────  varies      │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+1. [The Enklava Path](#1-the-enklava-path)
+2. [Avatar Segmentation](#2-avatar-segmentation)
+3. [Video Ad Scripts](#3-video-ad-scripts)
+4. [Funnel Architecture](#4-funnel-architecture)
+5. [Squeeze Page](#5-squeeze-page)
+6. [Product Stack & Pricing](#6-product-stack--pricing)
+7. [Email Sequences](#7-email-sequences)
+8. [Book Series](#8-book-series)
+9. [Tagging System](#9-tagging-system)
+10. [Price Adjustment Protocol](#10-price-adjustment-protocol)
+11. [Campaign Calibration Manual](#11-campaign-calibration-manual)
+12. [Weekly Operator Checklist](#12-weekly-operator-checklist)
+13. [Revenue Modeling](#13-revenue-modeling)
+14. [Tech Stack](#14-tech-stack)
 
 ---
 
-### 1.3 Pricing Architecture with Calibration Levers
+## 1. The Enklava Path
 
-**Core Principle:** Multiple price points create calibration flexibility.
+### The Vision
+
+Enklava is a **Civilization Protocol** — an incremental transition from dependent consumerism to sovereign, off-grid resilience.
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                      PRICING CALIBRATION MATRIX                         │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  PRODUCT              │ FLOOR │ DEFAULT │ CEILING │ LEVER              │
-│  ─────────────────────┼───────┼─────────┼─────────┼────────────────     │
-│  OTO (Essentials)     │ 37    │ 47      │ 197     │ Main calibration   │
-│  BUMP (Technical)     │ 47    │ 67      │ 147     │ Margin boost       │
-│  DOWNSELL (Quick)     │ 17    │ 27      │ 97      │ Rescue conversions │
-│  POST-UPSELL (Book)   │ 147   │ 197     │ 297     │ LTV extension      │
-│                                                                         │
-│  CALIBRATION RULES (closed ranges):                                     │
-│  ─────────────────────────────────────────────────────────────────────  │
-│  CPL 0.00–15.00      → Use FLOOR prices (scale mode)                   │
-│  CPL 15.01–25.00     → Use DEFAULT prices                              │
-│  CPL 25.01–35.00     → Raise OTO to 97, Bump to 97, Downsell to 47     │
-│  CPL 35.01–45.00     → Use CEILING prices (197/147/97)                 │
-│  CPL > 45.00         → PAUSE ADS, ceiling insufficient                 │
-│                                                                         │
-│  TSR < 15%           → Lower OTO to 37 PLN, add scarcity               │
-│  Bump Rate < 15%     → Lower Bump to 47 PLN                            │
-│  Downsell < 15%      → Lower Downsell to 17 PLN                        │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│                    THE ENKLAVA STORY                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   THE PROBLEM (Civilization-level)                              │
+│   You rent your life from utility companies.                    │
+│   Grid power. City water. Supermarket food. Bank mortgage.      │
+│   One disruption and you're exposed.                            │
+│                                                                 │
+│   THE VISION                                                    │
+│   Sovereign households. Networked communities.                  │
+│   You produce what you need. You share what you have.           │
+│   Resilient by design.                                          │
+│                                                                 │
+│   THE PATH (One system at a time)                               │
+│   1. Shelter — a roof that's yours                              │
+│   2. Energy — power you generate                                │
+│   3. Water — supply you control                                 │
+│   4. Food — land that feeds you                                 │
+│   5. Knowledge — tools to keep learning                         │
+│   6. Community — network that multiplies everything             │
+│                                                                 │
+│   THE INVITATION                                                │
+│   You don't have to do it all at once.                          │
+│   You start with shelter. The rest follows.                     │
+│   This is Enklava.                                              │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
 ```
+
+### The Enklava Path Visual
+
+```
+    ┌─────────┐
+    │ SHELTER │  ← You are here (Yurt)
+    └────┬────┘
+         ↓
+    ┌─────────┐
+    │ ENERGY  │  ← Solar, batteries, gasifier
+    └────┬────┘
+         ↓
+    ┌─────────┐
+    │  WATER  │  ← Collection, filtration, greywater
+    └────┬────┘
+         ↓
+    ┌─────────┐
+    │  FOOD   │  ← Garden, greenhouse, systems
+    └────┬────┘
+         ↓
+    ┌─────────┐
+    │KNOWLEDGE│  ← Local AI, skills, documentation
+    └────┬────┘
+         ↓
+    ┌─────────┐
+    │COMMUNITY│  ← Toloka, network, nodes
+    └────┬────┘
+         ↓
+    ╔═════════╗
+    ║ ENKLAVA ║  ← Sovereign life
+    ╚═════════╝
+```
+
+### Taglines
+
+| Option | Vibe |
+|--------|------|
+| "From renting your life to owning it." | Aspirational |
+| "Shelter first. Sovereignty follows." | Sequential |
+| "One system at a time." | Practical |
+| "Build your Enklava." | Action-oriented |
+| "The path to sovereign living." | Journey |
 
 ---
 
-## Part II: Financial Model
+## 2. Avatar Segmentation
 
-### 2.1 Revenue Per Lead Calculation
+### The Four Avatars
 
-**Assumptions (Calibrated by Scenario):**
+| Avatar | Who | Goal | Yurt Role | Vision Alignment |
+|--------|-----|------|-----------|------------------|
+| **A** | Glamping Investor | ROI, scale business | Multiple units | Low |
+| **B** | Self-Builder | DIY, live on own land | Personal dwelling | Medium |
+| **C** | Special-Use Client | One yurt for specific purpose | Studio, therapy, etc. | Low |
+| **D** | Enklava Builder | Full sovereign homestead + income | Everything | **High** |
 
-| Metric | Pessimistic | Realistic | Optimistic |
-|--------|-------------|-----------|------------|
-| CPL (Cost Per Lead) | **45 PLN** | 15 PLN | 10 PLN |
-| OTO Price | **197 PLN** (ceiling) | 47 PLN | 47 PLN |
-| OTO Conversion (TSR) | 15% | 22% | 30% |
-| Bump Price | **147 PLN** (ceiling) | 67 PLN | 67 PLN |
-| Bump Take Rate | 20% | 30% | 40% |
-| Downsell Price | **97 PLN** (ceiling) | 27 PLN | 27 PLN |
-| Downsell Rate (of rejectors) | 15% | 20% | 25% |
+### Avatar A: Glamping Investor
 
-**Key Insight:** Pessimistic scenario uses CEILING prices. That's the whole point of calibration levers - when CPL is extremely high (45 PLN in construction niche), you raise prices to maintain breakeven.
+**Profile:** Business-minded, wants passive income, thinks in ROI
 
-**Revenue Per Lead (RPL) Formula:**
+**Primary Interest:** Multiple yurts, hospitality business, franchise
+
+**Buying Signals:** Purchases ROI Calculator, asks about occupancy rates
+
+**Tag:** `avatar-a-investor`
+
+**Upsell Path:** ROI Calculator → Manual 12k → Franchise
+
+### Avatar B: Self-Builder
+
+**Profile:** DIY mindset, wants independence, resourceful
+
+**Primary Interest:** Build own home, live on land, off-grid systems
+
+**Buying Signals:** Purchases Offgrid Guide, asks about materials
+
+**Tag:** `avatar-b-builder`
+
+**Upsell Path:** Offgrid Guide → KIT → Builder's Circle → Toloka
+
+### Avatar C: Special-Use Client
+
+**Profile:** Professional needing dedicated space, not interested in living off-grid
+
+**Primary Interest:** One yurt for specific purpose
+
+**Sub-Worlds:**
+
+| Sub-World | Use Case | Tag |
+|-----------|----------|-----|
+| Wellness | Yoga studio, meditation, retreat | `avatar-c-wellness` |
+| Therapy | Psychologist, counseling, coaching | `avatar-c-therapy` |
+| Bodywork | Massage, physio, osteopath | `avatar-c-bodywork` |
+| Creative | Art studio, music, writing | `avatar-c-creative` |
+| Hospitality | Guest room, small Airbnb | `avatar-c-hospitality` |
+| Coaching | Business coaching, consulting | `avatar-c-coaching` |
+
+**Upsell Path:** Turnkey service, Design consultation
+
+### Avatar D: Enklava Builder (Vision Carrier)
+
+**Profile:** Wants complete sovereign homestead with income stream
+
+**Primary Interest:** Live on land + earn from it + build all systems
+
+**What They're Building:**
 
 ```
-RPL = (TSR × OTO) + (TSR × Bump Rate × Bump) + ((1-TSR) × Downsell Rate × Downsell)
+┌─────────────────────────────────────────────────────────────────┐
+│                    AVATAR D: "MY ENKLAVA"                       │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   DWELLING                                                      │
+│   └── Yurt → Climate Fortress (incremental)                     │
+│                                                                 │
+│   HOSPITALITY                                                   │
+│   └── 1-4 guest yurts (glamping income)                         │
+│                                                                 │
+│   SPECIAL USE (optional)                                        │
+│   └── Workshop / studio / therapy space                         │
+│                                                                 │
+│   UBS SYSTEMS                                                   │
+│   └── Solar, water, food production, composting                 │
+│                                                                 │
+│   COMMUNITY CONNECTION                                          │
+│   └── Toloka host, skill sharing, network node                  │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-**Calculations:**
+**Their Timeline:**
 
-| Scenario | OTO Rev | Bump Rev | Downsell Rev | Total RPL | CPL | Net/Lead |
-|----------|---------|----------|--------------|-----------|-----|----------|
-| **Pessimistic** | 29.55 | 4.41 | 12.37 | **46.33 PLN** | 45 | **≈0** |
-| **Realistic** | 10.34 | 4.42 | 4.21 | **18.97 PLN** | 15 | **+3.97** |
-| **Optimistic** | 14.10 | 8.04 | 4.73 | **26.87 PLN** | 10 | **+16.87** |
+| Phase | What They Build | Timeframe |
+|-------|-----------------|-----------|
+| 1 | First yurt (live in it) | Year 1 |
+| 2 | Offgrid systems (solar, water) | Year 1-2 |
+| 3 | 1-2 guest yurts (income starts) | Year 2 |
+| 4 | Food systems (garden, greenhouse) | Year 2-3 |
+| 5 | Climate Fortress (permanent home) | Year 3-4 |
+| 6 | Scale hospitality (3-4 units) | Year 4+ |
+| 7 | Special use space | When ready |
+
+**Tag:** `avatar-d-enklava`
+
+**Upsell Path:** Full book series → Manual 12k → KIT → Franchise / Node partnership
 
 ---
 
-### 2.2 Breakeven Analysis
+## 3. Video Ad Scripts
 
-**Question:** At what conversion rates do we break even for each CPL?
+### Main Ad (North Star Version)
 
-| CPL | Required TSR (OTO only) | Required TSR (with Bump 30%) | Required TSR (with Bump + Downsell) |
-|-----|-------------------------|------------------------------|-------------------------------------|
-| 10 PLN | 21.3% | 17.5% | 14.2% |
-| 15 PLN | 31.9% | 26.2% | 21.3% |
-| 25 PLN | 53.2% | 43.7% | 35.5% |
-| 45 PLN | 95.7% | 78.6% | **15% at ceiling prices** |
+| Section | Timing | Script |
+|---------|--------|--------|
+| **Hook** | 0-3s | "Start living comfortably on your land fast, with only 60k in your pocket. Built in weeks, not years." |
+| **Problem** | 3-15s | "But where do you even start? YouTube has a thousand videos. Forums contradict each other. You spend months lost in details — permits, insulation, stoves — and you're still not sure if it'll survive January. The information is everywhere and nowhere." |
+| **Solution** | 15-35s | "I built a year-round yurt on my land in Poland. Handles -20°C winters. Legal. Under 60k in materials. A bunch of friends and a few weekends. Done. But here's the thing — the yurt was just step one." |
+| **Bridge** | 35-45s | "Shelter first. Then energy. Then water. Then food. One system at a time, until your land sustains you — and maybe earns for you too. This is what I call Enklava." |
+| **Offer** | 45-65s | "I'm writing down everything I've learned building 17 yurts since 2020. Three chapters are ready — free. Why this works when permits fail. Surviving your first winter. The real costs. The rest of the guide? I'm writing it now, with people building their own Enklavas." |
+| **CTA** | 65-75s | "Link below. Free guide. Start your Enklava." |
 
-**Key Insight:** At 45 PLN CPL, default prices can't break even. But with ceiling prices (197/147/97), even 15% TSR hits breakeven. That's the power of calibration.
+### Avatar C Variations
 
----
+#### Yoga / Wellness
 
-### 2.3 Calibration Decision Tree
+| Section | Script |
+|---------|--------|
+| **Hook** | "Your yoga practice deserves more than a rented room with fluorescent lights." |
+| **Problem** | "You share walls with spin classes. You negotiate time slots. You set up and tear down every session. The space doesn't match the energy you bring — and your students feel it." |
+| **Solution** | "Imagine a yurt in your garden. A wooden circle. Natural light through the crown. Warm in winter, cool in summer. Your students arrive to birdsong, not elevator music. No rent. No scheduling. Your practice, your space, your terms." |
+| **Offer** | "I've built 17 yurts since 2020. Three chapters are ready — free. How to get one on your land legally. What it actually costs. How it survives Polish winters. This is step one of Enklava — shelter first, then the systems that make it sovereign." |
+| **CTA** | "Link below. Free guide. Build your practice space." |
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                      CALIBRATION DECISION TREE                          │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  START: Run test campaign (500 PLN budget, ~25-50 leads)                │
-│                                                                         │
-│  ┌─────────────────────────────────────────────────────────────────┐    │
-│  │  MEASURE: CPL, TSR, Bump Rate, Downsell Rate                    │    │
-│  └─────────────────────────────────────────────────────────────────┘    │
-│                              │                                          │
-│                              ▼                                          │
-│                    ┌─────────────────┐                                  │
-│                    │  RPL ≥ CPL?     │                                  │
-│                    └────────┬────────┘                                  │
-│                             │                                           │
-│              ┌──────────────┴──────────────┐                            │
-│              ▼                             ▼                            │
-│         ┌────────┐                    ┌────────┐                        │
-│         │  YES   │                    │   NO   │                        │
-│         └───┬────┘                    └───┬────┘                        │
-│             │                             │                             │
-│             ▼                             ▼                             │
-│    ┌──────────────┐              ┌──────────────────────┐               │
-│    │ SCALE UP     │              │ DIAGNOSE:            │               │
-│    │ Increase     │              │ Which metric failing?│               │
-│    │ ad spend     │              └──────────┬───────────┘               │
-│    └──────────────┘                         │                           │
-│                                  ┌──────────┼──────────┐                │
-│                                  ▼          ▼          ▼                │
-│                               ┌──────┐  ┌──────┐  ┌──────┐              │
-│                               │ CPL  │  │ TSR  │  │ Bump │              │
-│                               │ High │  │ Low  │  │ Low  │              │
-│                               └──┬───┘  └──┬───┘  └──┬───┘              │
-│                                  │         │         │                  │
-│                                  ▼         ▼         ▼                  │
-│                               ┌────────┐ ┌────────┐ ┌────────┐          │
-│                               │RAISE   │ │Lower   │ │Lower   │          │
-│                               │price   │ │OTO to  │ │Bump    │          │
-│                               │tier    │ │floor   │ │price   │          │
-│                               │(see    │ │(37 PLN)│ │to 47   │          │
-│                               │matrix) │ │+scarcity│ │PLN    │          │
-│                               └────────┘ └────────┘ └────────┘          │
-│                                  │         │         │                  │
-│                                  └─────────┴─────────┘                  │
-│                                            │                            │
-│                                            ▼                            │
-│                                   ┌──────────────┐                      │
-│                                   │ RETEST with  │                      │
-│                                   │ new config   │                      │
-│                                   └──────┬───────┘                      │
-│                                          │                              │
-│                                          ▼                              │
-│                                 ┌─────────────────┐                     │
-│                                 │  RPL ≥ CPL?     │──YES──▶ SCALE       │
-│                                 └────────┬────────┘                     │
-│                                          │NO                            │
-│                                          ▼                              │
-│                                 ┌─────────────────┐                     │
-│                                 │ At ceiling      │──NO──▶ RAISE TO     │
-│                                 │ prices?         │        CEILING      │
-│                                 └────────┬────────┘                     │
-│                                          │YES                           │
-│                                          ▼                              │
-│                                 ┌─────────────────┐                     │
-│                                 │ PAUSE ADS       │                     │
-│                                 │ Ceiling cannot  │                     │
-│                                 │ cover CPL       │                     │
-│                                 └─────────────────┘                     │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+**Tag:** `avatar-c-wellness`
 
----
+#### Therapy / Counseling
 
-### 2.4 Path A vs Path B Cost Comparison
+| Section | Script |
+|---------|--------|
+| **Hook** | "A private practice that actually feels private." |
+| **Problem** | "You rent an office in a building. Thin walls. Your clients hear the dentist next door. The waiting room is shared. Is this really where healing happens?" |
+| **Solution** | "A yurt in your garden. Separate entrance — clients never enter your home. Sound-dampened walls. Nature outside the window. Thirty seconds from your kitchen. Your practice, rooted where you live." |
+| **Offer** | "I've helped therapists, coaches, and counselors build exactly this. Three free chapters: legal setup, real costs, winter-proof design. The rest of the guide? I'm writing it now — with questions from people like you." |
+| **CTA** | "Link below. Free guide. Your practice, your land." |
 
-**Two Parallel Paid Paths — A/B Test to Find Winner:**
+**Tag:** `avatar-c-therapy`
 
-| Metric | Path A (Direct) | Path B (Warm-Up) |
-|--------|-----------------|------------------|
-| **Flow** | Video Ad → Squeeze | Video Ad → Blog → Retarget → Squeeze |
-| **Touches** | 1 | 2 (initial + retarget) |
-| **Est. CPL** | 15–25 PLN | 25–40 PLN (higher due to 2 ad touches) |
-| **Expected TSR** | 15–20% (cold) | 25–35% (warmer audience) |
-| **Pixel Value** | Squeeze page only | Blog page + Squeeze page |
+#### Massage / Bodywork
 
-**Cost Model Example (1,000 PLN test budget each):**
+| Section | Script |
+|---------|--------|
+| **Hook** | "Stop commuting to your own business." |
+| **Problem** | "You rent a room by the hour. You carry your table across town. You pay for space you use twenty hours a week. The overhead eats your margins, and the commute eats your energy." |
+| **Solution** | "A yurt in your garden. Heated floor. Ambient lighting. Your table stays set up. Clients park on your driveway and walk into calm — not a strip mall. Zero commute. Full control. You keep what you earn." |
+| **Offer** | "I built this for myself. Now I'm writing the complete guide. Three chapters are free: permits, costs, winter heating. If you've got land or a big garden, this could be your clinic by next season." |
+| **CTA** | "Link below. Free guide. Build your treatment room." |
 
-| Path | Budget | Est. CPL | Leads | Est. TSR | OTO Sales | Revenue (47 PLN) |
-|------|--------|----------|-------|----------|-----------|------------------|
-| A | 1,000 | 20 PLN | 50 | 18% | 9 | 423 PLN |
-| B | 1,000 | 35 PLN | 29 | 30% | 9 | 423 PLN |
+**Tag:** `avatar-c-bodywork`
 
-**Key Insight:** Both paths can yield similar revenue, but:
-- **Path A** = more leads, lower quality, bigger email list
-- **Path B** = fewer leads, higher quality, better TSR, retargetable blog visitors
+#### Creative Studio
 
-**Recommendation:** Run both in parallel. Measure NET per path (Revenue - Ad Spend). Scale the winner.
+| Section | Script |
+|---------|--------|
+| **Hook** | "Your art deserves a room of its own." |
+| **Problem** | "You paint in the garage. You write at the kitchen table. Your studio is wherever the kids aren't. The creative space you dream of stays a dream — because building one feels impossible." |
+| **Solution** | "A yurt is 28 square meters of yours. Natural light from above. Wood walls. Silence. A space your brain recognizes as 'work happens here.' You walk across the garden and you're in the zone. No commute. No coworking. No compromise." |
+| **Offer** | "I've built 17 yurts. Three chapters are ready — free. What it costs, how it's legal, how it stays warm. This could be your studio before next winter." |
+| **CTA** | "Link below. Free guide. Build your creative space." |
+
+**Tag:** `avatar-c-creative`
+
+#### Guest Accommodation / Small Airbnb
+
+| Section | Script |
+|---------|--------|
+| **Hook** | "Turn your garden into a guest suite — without a construction crew." |
+| **Problem** | "Your in-laws sleep on the couch. Your Airbnb idea stays an idea. Building an extension costs a fortune, takes a year, and needs permits you'll never get." |
+| **Solution** | "A yurt goes up in a weekend. Sleeps two. Heated. Cozy. Legal under Polish recreation rules. Your guests get privacy. You get your house back. Or you list it and let it pay for itself." |
+| **Offer** | "I've built 17 of these. The free guide covers: legal setup, real costs, year-round comfort. Three chapters. Yours now." |
+| **CTA** | "Link below. Free guide. Add a guest room this year." |
+
+**Tag:** `avatar-c-hospitality`
+
+#### Coaching / Consulting
+
+| Section | Script |
+|---------|--------|
+| **Hook** | "Coach from a space that matches your message." |
+| **Problem** | "You talk about transformation on Zoom calls from your bedroom. You preach presence while sitting in front of a bookshelf backdrop. Your space says 'working from home' — not 'this is where change happens.'" |
+| **Solution** | "A yurt is a circle. No corners. Natural materials. A space your clients feel the moment they see it on camera — or step into it in person. A place that says: this work matters." |
+| **Offer** | "Three free chapters: how it's legal, what it costs, how it handles winter. I'm building this guide in public — your questions shape the next chapters." |
+| **CTA** | "Link below. Free guide. Build your coaching space." |
+
+**Tag:** `avatar-c-coaching`
+
+#### Avatar D: Enklava Builder
+
+| Section | Script |
+|---------|--------|
+| **Hook** | "What if your land paid for itself — while you lived on it?" |
+| **Problem** | "You dream of homesteading, but the math doesn't work. Land costs money. Building costs money. And you're supposed to wait years before any income? Most people give up before they start." |
+| **Solution** | "I built a yurt, moved onto my land, then added two more for guests. Within 18 months, the glamping income covered my costs. Now I'm building the permanent house — funded by the land itself. Solar, water, food systems — all incremental. No massive loan. No waiting." |
+| **Offer** | "I wrote down the whole sequence. Three chapters free: how to start legal, what it really costs, how to survive the first winter. The rest? I'm writing it with people who are building their own Enklavas right now. This is the framework — shelter, energy, water, food, income. One system at a time." |
+| **CTA** | "Link below. Free guide. Start your Enklava." |
+
+**Tag:** `avatar-d-enklava`
 
 ---
 
-### 2.5 Ad Operations Playbook
+## 4. Funnel Architecture
 
-**Purpose:** Clear actions for campaign operator based on measured metrics.
-
-#### 2.5.1 Single Metric Triggers
-
-| IF... | THEN... | TIMEFRAME |
-|-------|---------|-----------|
-| **CPL 0.00–15.00** | Scale budget +25%, test new audiences | After 50+ leads |
-| **CPL 15.01–25.00** | Maintain, optimize creatives | Ongoing |
-| **CPL 25.01–35.00** | Raise OTO to 97 PLN, Bump to 97 PLN | Within 24h |
-| **CPL 35.01–45.00** | Raise to ceiling prices (197/147/97) | Within 24h |
-| **CPL > 45.00** | Pause campaign, audit targeting | Immediate |
-| **TSR > 25%** | Test raising OTO price +20 PLN | After 100+ leads |
-| **TSR 15–25%** | Maintain current OTO price | Ongoing |
-| **TSR 10–15%** | Lower OTO to floor (37 PLN), add urgency copy | Within 48h |
-| **TSR < 10%** | A/B test completely new OTO offer | Within 48h |
-| **Bump > 35%** | Test raising Bump price +30 PLN | After 50+ OTO sales |
-| **Bump 20–35%** | Maintain current Bump price | Ongoing |
-| **Bump < 20%** | Lower Bump to 47 PLN, reposition as "bonus" | Within 48h |
-| **Downsell > 25%** | Test raising Downsell +20 PLN | After 50+ rejections |
-| **Downsell < 15%** | Lower to 17 PLN, simplify offer | Within 48h |
-
----
-
-#### 2.5.2 Combined Scenario Matrix
-
-| CPL | TSR | Action Priority |
-|-----|-----|-----------------|
-| Low (<15) | High (>22%) | 🟢 **SCALE** - Increase budget aggressively |
-| Low (<15) | Low (<15%) | 🟡 **FIX OTO** - Traffic quality good, offer weak |
-| High (>25) | High (>22%) | 🟡 **RAISE PRICES** - Good conversion, need margin |
-| High (>25) | Low (<15%) | 🔴 **PAUSE & AUDIT** - Both metrics failing |
-| Mid (15-25) | Mid (15-22%) | 🟡 **OPTIMIZE** - A/B test both ads and OTO |
-
----
-
-#### 2.5.3 Facebook/Meta Automation Rules
-
-**Set up these automated rules in Meta Ads Manager:**
+### Complete Flow — All YES/NO Paths
 
 ```
-RULE 1: "CPL Alert High"
-────────────────────────
-Condition: Cost per Lead > 35 PLN (last 3 days)
-Action: Send notification to operator
-Frequency: Once per day
-
-RULE 2: "CPL Kill Switch"
-────────────────────────
-Condition: Cost per Lead > 50 PLN (last 7 days)
-Action: Turn off ad set
-Frequency: Continuous
-
-RULE 3: "Scale Winners"
-────────────────────────
-Condition: Cost per Lead < 12 PLN AND Leads > 10 (last 7 days)
-Action: Increase daily budget by 20%
-Frequency: Once per day
-Cap: Max 3x original budget
-
-RULE 4: "Kill Losers"
-────────────────────────
-Condition: Spend > 100 PLN AND Leads = 0 (last 3 days)
-Action: Turn off ad set
-Frequency: Continuous
-
-RULE 5: "Frequency Cap"
-────────────────────────
-Condition: Frequency > 3.0 (last 7 days)
-Action: Send notification (audience fatigue)
-Frequency: Once per day
+┌─────────────────────────────────────────────────────────────────┐
+│                         VIDEO AD                                │
+│                      (60-75 seconds)                            │
+└────────────────────────────┬────────────────────────────────────┘
+                             ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                       SQUEEZE PAGE                              │
+│                                                                 │
+│  "Year-Round Yurt Handbook"                                     │
+│   3 free chapters + join the Enklava path                       │
+│                                                                 │
+│                       PRICE: FREE                               │
+│                  Target: 100% of clicks                         │
+│                                                                 │
+│  [Email] → [START YOUR ENKLAVA]                                 │
+│                                                                 │
+│  Tag: `lead-new`                                                │
+└────────────────────────────┬────────────────────────────────────┘
+                             ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                          OTO PAGE                               │
+│                                                                 │
+│  "Glamping ROI Calculator + Investor Kit"                       │
+│                                                                 │
+│  • ROI modeling spreadsheet                                     │
+│  • Occupancy & pricing scenarios                                │
+│  • Breakeven calculator                                         │
+│  • Legal safety checklist                                       │
+│                                                                 │
+│                      PRICE: 47 PLN                              │
+│                    Target: 15-22%                               │
+│                                                                 │
+│         [YES - 47 PLN]              [NO THANKS]                 │
+│              │                           │                      │
+│    Tag: `buyer-oto`              Tag: `lead-cold`               │
+│    Tag: `avatar-a-investor`                                     │
+└────────────────┬───────────────────────────┬────────────────────┘
+                 ↓                           ↓
+┌────────────────────────────────┐ ┌─────────────────────────────────┐
+│         UPSELL #1              │ │         DOWNSELL #1             │
+│                                │ │                                 │
+│  "Offgrid Systems Guide"       │ │  "Just the Legal Guide"         │
+│                                │ │                                 │
+│  • Solar sizing basics         │ │  • The 70m² loophole            │
+│  • Water collection & filter   │ │  • Permit vs notification       │
+│  • Heating (wood stove)        │ │  • Zoning classification        │
+│  • Composting sanitation       │ │  • Risk mitigation checklist    │
+│  • Ventilation essentials      │ │                                 │
+│                                │ │                                 │
+│      PRICE: 67 PLN             │ │      PRICE: 27 PLN              │
+│   Target: 25-30% of OTO        │ │   Target: 15-20% of rejecters   │
+│                                │ │                                 │
+│  Tag: `buyer-offgrid`          │ │  Tag: `buyer-legal`             │
+│  Tag: `avatar-b-diy`           │ │  Tag: `needs-legal`             │
+│                                │ │                                 │
+│     [YES]          [NO]        │ │       [YES]          [NO]       │
+└────────┬────────────┬──────────┘ └──────────┬────────────┬─────────┘
+         ↓            ↓                       ↓            ↓
+┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐ ┌─────────┐
+│   UPSELL #2     │ │  DOWNSELL #1B   │ │   UPSELL #2     │ │ THANK   │
+│                 │ │                 │ │                 │ │  YOU    │
+│ "Builder's      │ │ "Offgrid Mini"  │ │ "Builder's      │ │         │
+│  Circle"        │ │                 │ │  Circle"        │ │ Free    │
+│                 │ │ • Solar basics  │ │                 │ │ only    │
+│ • Priority Q&A  │ │ • Water basics  │ │ • Priority Q&A  │ │         │
+│ • Your Qs →     │ │ • Heating quick │ │ • Your Qs →     │ │  END    │
+│   chapters      │ │                 │ │   chapters      │ │         │
+│ • Monthly call  │ │ PRICE: 37 PLN   │ │ • Monthly call  │ │ Tag:    │
+│ • Early access  │ │                 │ │ • Early access  │ │`lead-   │
+│ • Toloka access │ │ Tag: `avatar-b- │ │ • Toloka access │ │ cold`   │
+│                 │ │       budget`   │ │                 │ │         │
+│ PRICE: 47 PLN   │ │                 │ │ PRICE: 47 PLN   │ └─────────┘
+│ (first month)   │ │ Target: 20-25%  │ │ (first month)   │
+│ then 67 PLN/mo  │ │                 │ │ then 67 PLN/mo  │
+│                 │ │                 │ │                 │
+│ Tag: `community-│ │ [YES]    [NO]   │ │ Target: 10-15%  │
+│       member`   │ └───┬────────┬────┘ │                 │
+│                 │     ↓        ↓      │ [YES]    [NO]   │
+│ Target: 10-15%  │     │        │      └──┬─────────┬────┘
+│                 │     │        │         ↓         ↓
+│ [YES]    [NO]   │     │        │     ┌──────┐  ┌──────┐
+└──┬─────────┬────┘     │        │     │THANK │  │THANK │
+   ↓         ↓          │        │     │ YOU  │  │ YOU  │
+┌──────┐ ┌──────────┐   │        │     │      │  │      │
+│THANK │ │DOWNSELL  │   │        │     │ END  │  │ END  │
+│ YOU  │ │   #2     │   │        │     └──────┘  └──────┘
+│      │ │          │   │        │
+│ END  │ │"Community│   │        │
+│      │ │  Trial"  │   │        │
+│ Tag: │ │          │   │        │
+│`avatar│ │ • 7-day  │   │        │
+│-c-   │ │   access │   │        │
+│engin-│ │ • 1 live │   │        │
+│eer`* │ │   Q&A    │   │        │
+│      │ │          │   │        │
+└──────┘ │ PRICE:   │   │        │
+         │ 17 PLN   │   │        │
+         │          │   │        │
+         │ Target:  │   │        │
+         │ 15-20%   │   │        │
+         │          │   │        │
+         │[YES][NO] │   │        │
+         └─┬────┬───┘   │        │
+           ↓    ↓       │        │
+       ┌──────┐┌──────┐ │        │
+       │THANK ││THANK │ │        │
+       │ YOU  ││ YOU  │ │        │
+       │ END  ││ END  │ │        │
+       └──────┘└──────┘ │        │
+                        ↓        ↓
+                ┌─────────────────┐    ┌──────────┐
+                │   UPSELL #2     │    │  THANK   │
+                │ "Builder's      │    │   YOU    │
+                │  Circle"        │    │   END    │
+                │ PRICE: 47 PLN   │    └──────────┘
+                │                 │
+                │ [YES]    [NO]   │
+                └──┬─────────┬────┘
+                   ↓         ↓
+               ┌──────┐  ┌──────┐
+               │THANK │  │THANK │
+               │ YOU  │  │ YOU  │
+               │ END  │  │ END  │
+               └──────┘  └──────┘
 ```
 
----
+*If bought OTO + Offgrid + Community → upgrade to `avatar-c-engineer` or `avatar-d-enklava`
 
-#### 2.5.4 Price Adjustment Protocol
-
-**Step-by-step for operator when CPL rises:**
+### Thank You Page
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    PRICE ADJUSTMENT PROTOCOL                            │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  STEP 1: Confirm CPL trend (minimum 30 leads data)                     │
-│          └── Is this spike or trend? Check 7-day rolling average       │
-│                                                                         │
-│  STEP 2: Calculate current RPL                                         │
-│          └── RPL = (TSR × OTO) + (TSR × Bump% × Bump)                  │
-│                    + ((1-TSR) × Downsell% × Downsell)                  │
-│                                                                         │
-│  STEP 3: Compare RPL vs CPL                                            │
-│          ├── RPL > CPL → Profitable, no action needed                  │
-│          └── RPL < CPL → Proceed to Step 4                             │
-│                                                                         │
-│  STEP 4: Calculate required price increase                             │
-│          └── Gap = CPL - RPL                                           │
-│          └── New OTO = Current OTO + (Gap / TSR)                       │
-│                                                                         │
-│  STEP 5: Apply price tier                                              │
-│          ├── If New OTO ≤ 97  → Set OTO = 97 PLN                       │
-│          ├── If New OTO ≤ 147 → Set OTO = 147 PLN                      │
-│          ├── If New OTO ≤ 197 → Set OTO = 197 PLN (ceiling)            │
-│          └── If New OTO > 197 → PAUSE ADS, ceiling insufficient        │
-│                                                                         │
-│  STEP 6: Proportionally adjust Bump and Downsell                       │
-│          ├── OTO 97  → Bump 97, Downsell 47                            │
-│          ├── OTO 147 → Bump 127, Downsell 67                           │
-│          └── OTO 197 → Bump 147, Downsell 97                           │
-│                                                                         │
-│  STEP 7: Update landing pages (use URL parameters or tool config)      │
-│                                                                         │
-│  STEP 8: Monitor for 48h, then re-evaluate                             │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-#### 2.5.5 Weekly Operator Checklist
-
-```
-□ MONDAY: Pull last 7 days data
-  ├── CPL trend (up/down/stable?)
-  ├── TSR trend
-  ├── Bump rate
-  ├── Downsell rate
-  └── Calculate RPL vs CPL
-
-□ TUESDAY: Creative audit
-  ├── Which ads have highest CTR?
-  ├── Which ads have lowest CPL?
-  ├── Any ad with Frequency > 2.5?
-  └── Plan 1-2 new creatives if needed
-
-□ WEDNESDAY: Funnel audit
-  ├── Check landing page load speed
-  ├── Review OTO page conversion rate
-  ├── Check email delivery rates
-  └── Test all payment links
-
-□ THURSDAY: Price calibration review
-  ├── Are current prices optimal for CPL?
-  ├── Any price adjustment needed?
-  └── Update prices if required
-
-□ FRIDAY: Reporting
-  ├── Weekly summary to stakeholder
-  ├── Net profit/loss calculation
-  ├── Recommendations for next week
-  └── Update tracking spreadsheet
+┌─────────────────────────────────────────────────────────────────┐
+│                       THANK YOU PAGE                            │
+│                      (All paths end here)                       │
+│                                                                 │
+│  "Check your email for your downloads"                          │
+│                                                                 │
+│  SURVEY: "What's your goal?"                                    │
+│                                                                 │
+│  ○ Run a glamping business → `avatar-a`                         │
+│  ○ Build my own home on land → `avatar-b`                       │
+│  ○ One yurt for specific use → `avatar-c`                       │
+│  ○ Live on land + earn + build all systems → `avatar-d`         │
+│                                                                 │
+│  QUESTION: "What's your #1 question about building on land?"    │
+│                                                                 │
+│  → Answers feed "writing in public" process                     │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-#### 2.5.6 Escalation Matrix
+## 5. Squeeze Page
 
-| Situation | Operator Action | Escalate to Owner If... |
-|-----------|-----------------|-------------------------|
-| CPL spike (1 day) | Monitor, don't react | Spike lasts 3+ days |
-| CPL > 45 PLN sustained | Apply ceiling prices | Still losing after 48h |
-| TSR < 10% | A/B test new OTO | No improvement after 3 tests |
-| Zero leads (24h) | Check pixel, landing page | Technical issue confirmed |
-| Negative comments on ads | Hide, don't delete | Pattern of complaints |
-| Budget depleted early | Reduce daily cap | Happening weekly |
-| Competitor copying ads | Document, notify owner | Immediate |
-
----
-
-#### 2.5.7 Quick Reference Card (Print This)
+### North Star Version
 
 ```
-╔═══════════════════════════════════════════════════════════════════════╗
-║                    ENKLAVA AD OPERATIONS CHEAT SHEET                  ║
-╠═══════════════════════════════════════════════════════════════════════╣
-║                                                                       ║
-║  PRICE TIERS:                                                         ║
-║  ┌─────────┬────────┬─────────┬─────────┐                            ║
-║  │ Tier    │ OTO    │ Bump    │ Downsell│                            ║
-║  ├─────────┼────────┼─────────┼─────────┤                            ║
-║  │ Floor   │ 37     │ 47      │ 17      │                            ║
-║  │ Default │ 47     │ 67      │ 27      │                            ║
-║  │ Mid     │ 97     │ 97      │ 47      │                            ║
-║  │ High    │ 147    │ 127     │ 67      │                            ║
-║  │ Ceiling │ 197    │ 147     │ 97      │                            ║
-║  └─────────┴────────┴─────────┴─────────┘                            ║
-║                                                                       ║
-║  CPL RESPONSE:                                                        ║
-║  < 15 PLN  → Scale (+25% budget)                                     ║
-║  15-25 PLN → Optimize (test creatives)                               ║
-║  25-35 PLN → Raise to Mid tier                                       ║
-║  35-45 PLN → Raise to Ceiling tier                                   ║
-║  > 45 PLN  → PAUSE & ESCALATE                                        ║
-║                                                                       ║
-║  BREAKEVEN FORMULA:                                                   ║
-║  RPL = (TSR × OTO) + (TSR × Bump% × Bump) + ((1-TSR) × DS% × DS)     ║
-║  IF RPL ≥ CPL → Profitable ✓                                         ║
-║  IF RPL < CPL → Raise prices or pause                                ║
-║                                                                       ║
-║  TARGETS:          RED FLAGS:                                         ║
-║  CPL < 15          CPL > 45                                          ║
-║  TSR > 22%         TSR < 10%                                         ║
-║  Bump > 25%        Bump < 15%                                        ║
-║  Downsell > 20%    Downsell < 10%                                    ║
-║                                                                       ║
-║  EMERGENCY CONTACTS:                                                  ║
-║  Owner: [phone]    Tech: [phone]    Payments: [phone]                ║
-║                                                                       ║
-╚═══════════════════════════════════════════════════════════════════════╝
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│                         ENKLAVA                                 │
+│          "From renting your life to owning it."                 │
+│                                                                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   It starts with shelter.                                       │
+│                                                                 │
+│   A year-round yurt. 60,000 PLN. Built in weeks.                │
+│   Legal. Warm in winter. Yours.                                 │
+│                                                                 │
+│   Three chapters. Free.                                         │
+│                                                                 │
+│   ☑ Why this works when permits fail                            │
+│   ☑ Surviving your first Polish winter                          │
+│   ☑ The real costs — no bullshit                                │
+│                                                                 │
+│   This is step one of the Enklava path.                         │
+│   Shelter → Energy → Water → Food → Sovereignty.                │
+│                                                                 │
+│   [Email]                                                       │
+│   [START YOUR ENKLAVA]                                          │
+│                                                                 │
+│   "Join 147 people building their Enklavas right now."          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Part III: Blog as Retargeting Fuel
+## 6. Product Stack & Pricing
 
-### 3.1 How Blog Powers Path B
+### Funnel Products
 
-**Primary Purpose:** Warm up cold traffic before squeeze page.
+| Step | Product | Price (PLN) | Price (€) | Target Conv. |
+|------|---------|-------------|-----------|--------------|
+| Lead Magnet | 3 Free Chapters | 0 | 0 | 100% |
+| OTO | ROI Calculator + Investor Kit | 47 | ~11 | 15-22% |
+| Upsell #1 | Offgrid Systems Guide | 67 | ~15 | 25-30% of OTO |
+| Downsell #1 | Legal Mini Guide | 27 | ~6 | 15-20% of rejecters |
+| Downsell #1B | Offgrid Mini | 37 | ~8 | 20-25% of Upsell #1 rejecters |
+| Upsell #2 | Builder's Circle (1st month) | 47 | ~11 | 10-15% |
+| Downsell #2 | Community Trial (7 days) | 17 | ~4 | 15-20% of Upsell #2 rejecters |
+
+### Backend Products
+
+| Product | Price (PLN) | Price (€) | Timeline |
+|---------|-------------|-----------|----------|
+| Full Book (Digital) | 150-200 | ~35-45 | Week 3-4 |
+| Full Book (Physical) | 150 | ~35 | Presale Month 2 |
+| Builder's Circle (ongoing) | 67/month | ~15/mo | Ongoing |
+| Manual 12k (Full SOPs) | 12,000 | ~2,700 | Month 2-3 |
+| KIT (Materials + Guide) | 25,000-40,000 | ~5,700-9,000 | Month 3+ |
+| Turnkey Service | 60,000+ | ~13,500+ | On request |
+| Franchise License | 50,000+ | ~11,000+ | Month 6+ |
+
+---
+
+## 7. Email Sequences
+
+### Story Arc Across Touchpoints
+
+| Touchpoint | Story Beat |
+|------------|------------|
+| **Ad** | "There's a path. It starts with shelter." |
+| **Squeeze Page** | "This is Enklava. Shelter first." |
+| **OTO Page** | "Know your numbers before you build." |
+| **Email Day 1** | "Welcome to the path." |
+| **Email Day 7** | "What comes after shelter? Energy." |
+| **Email Day 14** | "The full Enklava framework." |
+| **Builder's Circle** | "Build with others on the same path." |
+| **Toloka** | "The community that builds together." |
+| **Book Series** | Each book = one system on the path |
+| **Franchise** | "Become an Enklava node." |
+
+### Avatar A: Glamping Investor
+
+| Day | Subject | Content |
+|-----|---------|---------|
+| 0 | "Your ROI Calculator is ready" | Deliver + quick win tutorial |
+| 2 | "How Marek hit 78% occupancy in year 1" | Case study |
+| 5 | "The legal setup that protects your asset" | Legal framework |
+| 8 | "What a 4-yurt glamping site actually costs" | Full P&L breakdown |
+| 12 | "Ready to scale? Franchise options" | High-ticket intro |
+| 20 | "Manual 12k: Everything for your builder" | Upsell SOPs |
+
+### Avatar B: Self-Builder
+
+| Day | Subject | Content |
+|-----|---------|---------|
+| 0 | "Your Offgrid Guide is ready" | Deliver + first steps |
+| 2 | "How Ania built her yurt with 3 friends" | Story + photos |
+| 5 | "The tools you actually need (skip the rest)" | Practical list |
+| 8 | "Where to source materials in Poland" | Supplier guide |
+| 12 | "Join a build — Toloka community projects" | Toloka invite |
+| 20 | "KIT option: We prep, you build" | Upsell KIT |
+
+### Avatar C: Special-Use
+
+| Day | Subject | Content |
+|-----|---------|---------|
+| 0 | "Your guide is ready" | Deliver + use-case tips |
+| 3 | "How [therapist/yoga teacher] built their space" | Case study from their world |
+| 7 | "Permits for commercial use — what you need" | Practical legal |
+| 14 | "Need it done for you?" | Turnkey service intro |
+| 21 | "The bigger picture (if you're curious)" | Soft Enklava intro |
+
+### Avatar D: Enklava Builder
+
+| Day | Subject | Content |
+|-----|---------|---------|
+| 0 | "Your first step on the Enklava path" | Deliver + roadmap |
+| 3 | "How I funded my homestead with glamping" | Your story |
+| 7 | "The 18-month plan: live + earn from land" | Phase breakdown |
+| 12 | "What system are you building first?" | Engagement |
+| 18 | "Builder's Circle: build with others doing this" | Community pitch |
+| 25 | "Toloka: find help, offer skills" | Platform intro |
+| 35 | "The Enklava framework: where this is going" | Full vision |
+| 50 | "KIT options: we prep, you build" | High-ticket |
+| 90 | "Franchise: become an Enklava node" | Top of ladder |
+
+### Cold Leads (No Purchase)
+
+| Day | Subject | Content |
+|-----|---------|---------|
+| 0 | "Your 3 chapters are ready" | Deliver lead magnet |
+| 3 | "Most people get stuck here..." | Address objections |
+| 7 | "Still thinking about land life?" | Re-engagement |
+| 14 | "Last chance: ROI Calculator (24h)" | Scarcity re-offer |
+| 21 | "What's YOUR biggest question?" | Engagement ask |
+| 30 | "This is why people wait too long" | Story-based nudge |
+
+---
+
+## 8. Book Series
+
+### The Enklava Path — Book by Book
+
+| Book | Title | Story Role | Focus |
+|------|-------|------------|-------|
+| 1 | **Year-Round Yurt** | Chapter 1: Shelter | Entry point, yurt construction |
+| 2 | **Offgrid Systems** | Chapter 2: Energy + Water | Solar, batteries, water systems |
+| 3 | **Land & Food** | Chapter 3: Cultivation | Garden, greenhouse, food production |
+| 4 | **Climate Fortress** | Chapter 4: Permanent Home | Prefab strawbale, thermal mass |
+| 5 | **The Enklava Protocol** | Chapter 5: Full Stack | Community, network, sovereignty |
+
+### Writing in Public Model
+
+**Time-Lag Protocol:**
+
+- **Real-Time (Paid):** Builder's Circle members get immediate access to drafts, CAD, BOMs
+- **12-Month Delay (Free):** Version 1.0 released to public as open content
+
+**Community Input:**
+
+- Questions from readers shape upcoming chapters
+- Most common questions become priority content
+- Contributors acknowledged in book
+
+---
+
+## 9. Tagging System
+
+### Purchase-Based Tags
+
+| Purchase Combination | Tags Applied |
+|---------------------|--------------|
+| Nothing | `lead-cold` |
+| Legal Mini only | `lead-cold`, `needs-legal`, `buyer-legal` |
+| OTO only | `buyer-oto`, `avatar-a-investor` |
+| OTO + Offgrid | `buyer-oto`, `buyer-offgrid`, `avatar-b-diy` |
+| OTO + Community | `buyer-oto`, `community-member`, `avatar-a-investor` |
+| OTO + Offgrid + Community | `buyer-oto`, `buyer-offgrid`, `community-member`, `avatar-d-enklava` |
+| OTO + Offgrid Mini | `buyer-oto`, `avatar-b-budget` |
+| Downsell + Community | `buyer-legal`, `community-member`, `needs-legal` |
+
+### Survey-Based Tags
+
+| Survey Response | Tag |
+|-----------------|-----|
+| "Run a glamping business" | `avatar-a-investor` |
+| "Build my own home on land" | `avatar-b-builder` |
+| "One yurt for specific use" | `avatar-c-special` |
+| "Live + earn + build all systems" | `avatar-d-enklava` |
+
+### Avatar C Sub-Tags
+
+| Use Case | Tag |
+|----------|-----|
+| Yoga / meditation / retreat | `avatar-c-wellness` |
+| Therapy / counseling / coaching | `avatar-c-therapy` |
+| Massage / bodywork | `avatar-c-bodywork` |
+| Art / music / creative | `avatar-c-creative` |
+| Guest accommodation / Airbnb | `avatar-c-hospitality` |
+| Business coaching | `avatar-c-coaching` |
+
+---
+
+## 10. Price Adjustment Protocol
+
+### Calibration Tiers by CPL
+
+| CPL Range | OTO | Upsell #1 | Downsell #1 | Downsell #1B | Upsell #2 | Downsell #2 |
+|-----------|-----|-----------|-------------|--------------|-----------|-------------|
+| 0-15 PLN | 47 | 67 | 27 | 37 | 47 | 17 |
+| 15-25 PLN | 67 | 97 | 37 | 47 | 67 | 27 |
+| 25-35 PLN | 97 | 127 | 47 | 67 | 97 | 37 |
+| 35-45 PLN | 147 | 167 | 67 | 97 | 127 | 47 |
+| >45 PLN | **PAUSE** | — | — | — | — | — |
+
+### Conversion-Based Adjustments
+
+| Metric | Threshold | Action |
+|--------|-----------|--------|
+| TSR (OTO) < 10% | Too low | Lower OTO to 37 PLN floor, test copy |
+| TSR (OTO) > 30% | Very high | Test raising to next tier |
+| Bump rate < 15% | Too low | Lower bump price, reposition as bonus |
+| Downsell < 10% | Too low | Lower to floor price, test urgency |
+
+### Decision Tree
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    PATH B: BLOG RETARGETING FLOW                        │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  STEP 1: Video Ad (CTA: "Read how we build yurts year-round")          │
-│          └── Drives to: Blog chapter (e.g., "Surviving January")       │
-│                                                                         │
-│  STEP 2: Blog Chapter                                                   │
-│          ├── Visitor reads valuable content                            │
-│          ├── Facebook Pixel fires → visitor added to custom audience   │
-│          └── Soft CTA at end: "Want to join the handbook creation?"    │
-│                                                                         │
-│  STEP 3: Retarget Ad (shown 1-7 days later)                            │
-│          ├── "You read about winter yurts. Here's what's next..."      │
-│          └── CTA: Direct to squeeze page                               │
-│                                                                         │
-│  STEP 4: Squeeze Page → OTO → Bump → Downsell                          │
-│          └── Warmer lead = higher TSR expected                         │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
+CPL Check (7-day average)
+    │
+    ├── < 15 PLN → Scale budget +25%
+    │
+    ├── 15-25 PLN → Maintain, optimize creatives
+    │
+    ├── 25-35 PLN → Raise prices one tier
+    │
+    ├── 35-45 PLN → Apply ceiling prices
+    │
+    └── > 45 PLN → PAUSE campaigns, diagnose
 ```
 
-**Why This Works:**
-- First touch = value (blog), not ask (squeeze)
-- Pixel builds retargetable audience automatically
-- Second touch = familiar brand, warmer reception
-- Blog readers self-qualify by topic interest
+---
+
+## 11. Campaign Calibration Manual
+
+### Automated Rules (Meta Ads Manager)
+
+| Rule | Trigger | Action |
+|------|---------|--------|
+| CPL Alert | CPL > 35 PLN (3-day avg) | Notify operator |
+| Kill Switch | CPL > 50 PLN (7-day avg) | Auto-pause campaign |
+| Scale Winners | CPL < 12 PLN (7-day avg) | Increase budget +20% (max 3x) |
+| Kill Losers | Spent > 100 PLN, 0 leads | Auto-pause ad set |
+| Frequency Cap | Frequency > 3.0 | Alert: audience fatigue |
+
+### A/B Testing Protocol
+
+**Always test:**
+1. Hook variations (first 3 seconds)
+2. Thumbnail images
+3. CTA text
+4. Audience segments
+
+**Test duration:** Minimum 100 impressions per variant before decisions
+
+**Winner criteria:** Statistical significance or 20%+ difference in CPL
+
+### Audience Strategy
+
+**Cold Audiences:**
+
+| Audience | Description |
+|----------|-------------|
+| Dreamers | Homesteading, off-grid, tiny houses, permaculture |
+| Investors | Glamping, Airbnb hosts, passive income, rural tourism |
+| Special-Use | Yoga teachers, therapists, massage therapists, coaches |
+
+**Retargeting:**
+
+| Audience | Window | Use |
+|----------|--------|-----|
+| Blog visitors | 1-7 days | Path B warm-up |
+| Squeeze visitors (no signup) | 1-14 days | Re-engagement |
+| OTO rejectors | 1-30 days | Downsell campaigns |
 
 ---
 
-### 3.2 Blog Chapters for Path B
+## 12. Weekly Operator Checklist
 
-**8 Chapters = 8 Warm-Up Landing Pages**
+### Monday: Metrics Review
 
-| Chapter | Topic | Best For Avatar | Retarget Message |
-|---------|-------|-----------------|------------------|
-| 0.1 The Itch | Why year-round yurts | All | "Ready to take the first step?" |
-| 0.2 Surviving January | Winter insulation | B, C | "Get the full insulation specs" |
-| 1.1 Paper Jungle | Legal & permits | A, B | "Avoid the legal traps we discovered" |
-| 2.1 Circle and Parts | Yurt anatomy | B, C | "See the full construction breakdown" |
-| 4.1 First Cut | Workshop basics | C | "Access the technical manual" |
-| 7.1 Before Anyone Lifts | Assembly safety | B, C | "Don't lift without this checklist" |
-| 9.1 Four Seasons | Maintenance | A, B | "Protect your investment year-round" |
-| 10.1 Joining Network | Franchise model | A | "Join our builder network" |
+- [ ] Pull 7-day CPL average
+- [ ] Check TSR (OTO conversion rate)
+- [ ] Review Bump and Downsell rates
+- [ ] Calculate RPL (Revenue Per Lead)
+- [ ] Check overall ROAS
 
----
+### Tuesday: Creative Audit
 
-### 3.3 Retargeting Audience Setup (Meta Ads)
+- [ ] Review CTR by ad creative
+- [ ] Check frequency scores
+- [ ] Identify fatigued creatives (frequency > 3)
+- [ ] Queue new creatives if needed
 
-**Custom Audiences to Create:**
+### Wednesday: Funnel Audit
 
-| Audience Name | Source | Retention | Use For |
-|---------------|--------|-----------|---------|
-| Blog_All_Visitors | All blog pages | 30 days | Broad retarget |
-| Blog_Legal_Readers | Ch 1.1 page | 14 days | Avatar A retarget |
-| Blog_Technical_Readers | Ch 2.1, 4.1, 7.1 | 14 days | Avatar C retarget |
-| Blog_Winter_Readers | Ch 0.2 | 14 days | Insulation-focused retarget |
-| Squeeze_Visitors_NoConvert | Squeeze page, no thank-you | 7 days | Abandonment retarget |
+- [ ] Check page load speeds
+- [ ] Review squeeze → OTO conversion
+- [ ] Check email deliverability
+- [ ] Monitor cart abandonment
 
-**Lookalike Audiences (after 500+ conversions):**
-- 1% Lookalike of OTO Buyers
-- 1% Lookalike of Blog_Technical_Readers
+### Thursday: Price Calibration
 
----
+- [ ] Compare CPL to calibration tiers
+- [ ] Adjust prices if threshold crossed
+- [ ] Document any changes
 
-### 3.4 Blog SEO Bonus (Long-Term)
+### Friday: Reporting & Planning
 
-**Secondary benefit:** Blog posts index in Google over time.
+- [ ] Weekly summary report
+- [ ] Compare to previous week
+- [ ] Plan next week's tests
+- [ ] Update content calendar (writing in public)
 
-| Chapter | Target Keyword | Est. Monthly Search (PL) |
-|---------|----------------|--------------------------|
-| 0.1 The Itch | "jurta całoroczna" | 500 |
-| 0.2 Surviving January | "jurta zimą" | 200 |
-| 1.1 Paper Jungle | "jurta pozwolenie na budowę" | 300 |
-| 2.1 Circle and Parts | "budowa jurty" | 400 |
+### Monthly: Strategic Review
 
-**Note:** SEO is a bonus, not the strategy. Primary acquisition remains paid ads. Any organic traffic is free bonus leads that enter the same funnel.
+- [ ] Avatar distribution analysis
+- [ ] High-ticket pipeline check
+- [ ] Community growth (Builder's Circle)
+- [ ] Content production progress (book chapters)
 
 ---
 
-## Part IV: Implementation Roadmap
+## 13. Revenue Modeling
 
-### 4.1 Phase 1: Calibration (Weeks 1-4)
+### Revenue Per 100 Leads (Conservative)
 
-**Goal:** Find profitable configuration
+| Scenario | Path | Buyers | Revenue (PLN) |
+|----------|------|--------|---------------|
+| Full stack | OTO + Offgrid + Community | 3 | 483 |
+| OTO + Offgrid | OTO + Upsell #1 | 4 | 456 |
+| OTO + Community | OTO + Upsell #2 | 2 | 188 |
+| OTO + Offgrid + Trial | OTO + Upsell #1 + Downsell #2 | 2 | 262 |
+| OTO only | OTO | 5 | 235 |
+| OTO + Mini + Community | OTO + Downsell #1B + Upsell #2 | 1 | 131 |
+| OTO + Mini | OTO + Downsell #1B | 1 | 84 |
+| Downsell + Community | Downsell #1 + Upsell #2 | 2 | 148 |
+| Downsell only | Downsell #1 | 3 | 81 |
+| Free only | — | 77 | 0 |
+| **TOTAL** | | **100** | **~2,068 PLN** |
 
-| Week | Action | Budget | KPIs |
-|------|--------|--------|------|
-| 1 | Build funnel (Squeeze + OTO + Bump + Downsell) | 0 | Funnel live |
-| 2 | Launch test ads (3 creatives, 2 audiences) | 500 PLN | CPL < 20 |
-| 3 | Measure conversions, first calibration | 500 PLN | TSR, Bump%, Downsell% |
-| 4 | Optimize prices based on data | 500 PLN | RPL > CPL |
+**RPL (Revenue Per Lead): ~20.68 PLN**
 
-**Total calibration budget:** 1,500 PLN
-**Expected leads:** 75-150
+### Break-Even Analysis
 
----
+| CPL | RPL Required | Status |
+|-----|--------------|--------|
+| 15 PLN | 15 PLN | Profitable at 20.68 RPL ✓ |
+| 20 PLN | 20 PLN | Profitable at 20.68 RPL ✓ |
+| 25 PLN | 25 PLN | Need price tier increase |
+| 30 PLN | 30 PLN | Need ceiling prices |
 
-### 4.2 Phase 2: Stabilization (Weeks 5-12)
+### Lifetime Value by Avatar
 
-**Goal:** Consistent profitable acquisition
-
-| Month | Paid Budget | Expected Leads | Target RPL | Target Net |
-|-------|-------------|----------------|------------|------------|
-| 2 | 2,000 PLN | 130-150 | 19+ PLN | +450 PLN |
-| 3 | 3,000 PLN | 200-230 | 19+ PLN | +700 PLN |
-
-**Parallel:** Launch first 2 public blog posts for SEO
-
----
-
-### 4.3 Phase 3: Evergreen (Month 4+)
-
-**Goal:** Reduce paid dependency, increase organic
-
-| Quarter | Paid Budget | Organic Leads | Blended CPL | Net Margin |
-|---------|-------------|---------------|-------------|------------|
-| Q2 | 6,000 PLN | 50/month | 10 PLN | Positive |
-| Q3 | 4,500 PLN | 100/month | 7 PLN | Very positive |
-| Q4 | 3,000 PLN | 150/month | 5 PLN | Highly profitable |
+| Avatar | Immediate | 90-day | 1-year | 3-year |
+|--------|-----------|--------|--------|--------|
+| A (Investor) | 47-114 PLN | 200-500 PLN | 12,000+ PLN | 50,000+ PLN |
+| B (Builder) | 47-114 PLN | 200-800 PLN | 25,000+ PLN | 40,000+ PLN |
+| C (Special) | 27-114 PLN | 100-200 PLN | 200 PLN | 200 PLN |
+| D (Enklava) | 114-161 PLN | 500-2,000 PLN | 40,000+ PLN | 100,000+ PLN |
 
 ---
 
-## Part V: Risk Mitigation
+## 14. Tech Stack
 
-### 5.1 Scenario Planning
+### Minimum Viable Stack
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| CPL 25-35 PLN | Medium | Medium | Raise OTO to 97-147 PLN |
-| CPL 35-45 PLN | Low | High | Use ceiling prices (197/147/97) |
-| CPL > 45 PLN | Very Low | Critical | Pause paid, pivot to organic only |
-| TSR < 15% | Low | High | A/B test OTO copy, lower price to 37 |
-| Bump < 15% | Medium | Medium | Reposition as "limited offer", lower to 47 |
-| Organic slow to build | Medium | Medium | Increase paid, guest post for backlinks |
-| Competition copies | Low | Low | Brand authority, community moat |
+| Tool | Purpose | Cost |
+|------|---------|------|
+| Carrd / Webflow | Squeeze + OTO pages | 0-20 USD/mo |
+| MailerLite / ConvertKit | Email sequences + tagging | 0-30 USD/mo |
+| Stripe / TPay | Payment processing | 2.9% + 0.30 |
+| Meta Ads Manager | Traffic | Variable |
+| Plausible / GA4 | Analytics | 0-10 USD/mo |
+| **Total fixed** | | **~50-100 PLN/mo + 3%** |
 
----
+### Recommended Upgrades
 
-### 5.2 Kill Criteria
-
-**Stop paid campaigns if after 4 weeks:**
-- CPL > 45 PLN consistently (ceiling prices already in use)
-- TSR < 10% after 3 A/B tests
-- Combined (OTO + Bump + Downsell) < 50% of CPL at ceiling prices
-
-**If kill criteria met:**
-- Pause all paid campaigns
-- Audit offer positioning, pricing, and creative
-- Consider market timing (seasonality, competition)
-- Resume testing with new hypothesis after 30 days
+| Tool | Purpose | When |
+|------|---------|------|
+| Skool / Circle | Community platform | When Builder's Circle launches |
+| Notion / Airtable | Product delivery | When digital products scale |
+| Zapier | Automation | When volume increases |
+| Hotjar | Funnel optimization | When testing at scale |
 
 ---
 
-## Part VI: Metrics Dashboard
+## Implementation Roadmap
 
-### 6.1 Weekly Tracking
+### Phase 1: Calibration (Weeks 1-4)
 
-| Metric | Target | Red Flag |
-|--------|--------|----------|
-| CPL | < 15 PLN | > 45 PLN |
-| TSR (OTO) | > 22% | < 15% |
-| Bump Rate | > 25% | < 15% |
-| Downsell Rate | > 20% | < 10% |
-| RPL | > 19 PLN | < CPL |
-| Net per Lead | > 4 PLN | < 0 PLN (at ceiling) |
+- [ ] Build squeeze page
+- [ ] Create lead magnet (3 chapters PDF)
+- [ ] Build OTO page + ROI Calculator
+- [ ] Set up email sequence (cold leads)
+- [ ] Create first video ad
+- [ ] Launch with 1,500 PLN budget
+- [ ] Target: Find profitable configuration
 
----
+### Phase 2: Stabilization (Month 2-3)
 
-### 6.2 Monthly Tracking
+- [ ] Scale to 2,000-3,000 PLN/month
+- [ ] Add Upsell/Downsell pages
+- [ ] Segment email sequences by avatar
+- [ ] Publish first 3 blog chapters (SEO)
+- [ ] Launch Builder's Circle
+- [ ] Target: 200+ leads/month, positive ROI
 
-| Metric | Target | Red Flag |
-|--------|--------|----------|
-| Total Leads | Growth +20% | Decline |
-| Organic % | Increasing | Flat at < 10% |
-| Email Open Rate | > 35% | < 20% |
-| Unsubscribe Rate | < 1% | > 3% |
-| High-ticket conversions | > 0 | None after 90 days |
+### Phase 3: Evergreen (Month 4+)
 
----
-
-## Part VII: Product Requirements
-
-### 7.1 Assets to Create
-
-| Asset | Priority | Est. Effort | Deadline |
-|-------|----------|-------------|----------|
-| Squeeze Page | P0 | 4h | Week 1 |
-| OTO Page (dynamic) | P0 | 8h | Week 1 |
-| Bump Page Section | P0 | 2h | Week 1 |
-| Downsell Page | P0 | 4h | Week 1 |
-| ROI Calculator (Sheets) | P0 | 8h | Week 1 |
-| Legal Pack (PDF) | P0 | 16h | Week 1 |
-| Technical Manual (Bump) | P1 | 24h | Week 2 |
-| 3 Ad Creatives | P0 | 8h | Week 1 |
-| Email Welcome Sequence (5) | P0 | 8h | Week 1 |
-| Segment Nurture Sequences (3x5) | P1 | 24h | Week 3 |
+- [ ] Organic traffic growing
+- [ ] Blended CPL dropping
+- [ ] Community active
+- [ ] First high-ticket sales
+- [ ] Avatar C variations live
+- [ ] Target: 500+ leads/month, sustainable growth
 
 ---
 
-### 7.2 Tech Stack
+## Appendix: All Possible Buyer Journeys
 
-| Function | Tool | Cost |
-|----------|------|------|
-| Landing Pages | Carrd / Webflow | 0-20 USD/mo |
-| Email | MailerLite / ConvertKit | 0-30 USD/mo |
-| Payments | Stripe / TPay | 2.9% + 0.30 |
-| Analytics | Plausible / GA4 | 0-10 USD/mo |
-| Ads | Meta Business Suite | Variable |
-| CRM Tagging | Email tool native | Included |
-
-**Fixed monthly cost:** ~50-100 PLN
-**Variable cost:** Payment processing (~3%)
-
----
-
-## Summary: Key Changes from Original Strategy
-
-| Aspect | Original | Improved |
-|--------|----------|----------|
-| OTO Price | Fixed 37 PLN | Flexible 37-67 PLN |
-| Bump | Mentioned as idea | Core component (67 PLN) |
-| Downsell | Missing | Added (27 PLN) |
-| Organic layer | Not addressed | 8 public chapters SEO |
-| Calibration | None | Decision tree + price matrix |
-| Evergreen | Not designed | Blended CPL model |
-| Risk model | Optimistic CPL | Conservative 45 PLN CPL |
-| Breakeven | 27% TSR (no help) | **0 net at 45 PLN CPL** (ceiling prices) |
+| # | Path | Products | Total Revenue |
+|---|------|----------|---------------|
+| 1 | YES → YES → YES | OTO + Offgrid + Community | 161 PLN |
+| 2 | YES → YES → NO → YES | OTO + Offgrid + Trial | 131 PLN |
+| 3 | YES → YES → NO → NO | OTO + Offgrid | 114 PLN |
+| 4 | YES → NO → YES → YES | OTO + Mini + Community | 131 PLN |
+| 5 | YES → NO → YES → NO → YES | OTO + Mini + Trial | 101 PLN |
+| 6 | YES → NO → YES → NO → NO | OTO + Mini | 84 PLN |
+| 7 | YES → NO → NO → YES | OTO + Community | 94 PLN |
+| 8 | YES → NO → NO → NO → YES | OTO + Trial | 64 PLN |
+| 9 | YES → NO → NO → NO → NO | OTO only | 47 PLN |
+| 10 | NO → YES → YES | Downsell + Community | 74 PLN |
+| 11 | NO → YES → NO → YES | Downsell + Trial | 44 PLN |
+| 12 | NO → YES → NO → NO | Downsell only | 27 PLN |
+| 13 | NO → NO | Free only | 0 PLN |
 
 ---
 
-## Action Items
-
-1. **Immediate:** Build funnel pages (Week 1)
-2. **Week 2:** Launch calibration campaign (500 PLN)
-3. **Week 3:** First optimization round
-4. **Week 4:** Price calibration based on data
-5. **Month 2:** Publish first 2 public SEO chapters
-6. **Month 3:** Scale if profitable, pivot if not
-
----
-
-*Document Version: 2.0*
-*Created: December 2025*
-*Strategy: Writing in Public as Self-Liquidating Evergreen Funnel*
+**Document Version:** 3.0
+**Last Updated:** December 2025
+**Next Review:** After Phase 1 completion
